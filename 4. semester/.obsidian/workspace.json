@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "2eda65ab4711b339",
+    "type": "split",
+    "children": [
+      {
+        "id": "37db9920a3b45234",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61513486e13a3271",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f89112e15dc8b0cb",
+    "type": "split",
+    "children": [
+      {
+        "id": "4eadb424a857c9f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e2586818a156850",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f7fe4bff2c40e084",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e9061cc30ff46e68",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ee496c24ab06da8b",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5e23c569d23732a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec654419f0279d44",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3515f75553c17f4a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9187be9420360738",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "651932b8d410c88c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 241.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-ocr:Search OCR": false
+    }
+  },
+  "active": "61513486e13a3271",
+  "lastOpenFiles": [
+    "programmeringssprog/2. bnf-semantics.md",
+    "programmeringssprog/13. Historical Perspective.md",
+    "_02_bnf_semantics.pdf",
+    "operativstystemer/assignment 1/Thoughts.md",
+    "programmeringssprog/Haskell/Intro.md",
+    "programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Haskell/Untitled.md",
+    "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md",
+    "Data mining and machine learning/3. Classification.md",
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md"
+  ]
+}
