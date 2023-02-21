@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md",
+                "file": "programmeringssprog/2. bnf-semantics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8923358fea9f128a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cdbe45a3234d496f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data mining and machine learning/3. Classification.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md",
+                "file": "Data mining and machine learning/3. Classification.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md",
+                "file": "Data mining and machine learning/3. Classification.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md"
+                "file": "Data mining and machine learning/3. Classification.md"
               }
             }
           }
@@ -147,17 +172,17 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "61513486e13a3271",
+  "active": "cdbe45a3234d496f",
   "lastOpenFiles": [
-    "programmeringssprog/2. bnf-semantics.md",
-    "programmeringssprog/13. Historical Perspective.md",
-    "_02_bnf_semantics.pdf",
-    "operativstystemer/assignment 1/Thoughts.md",
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
+    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
+    "programmeringssprog/Theory problems/Problems 1.md",
+    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
     "programmeringssprog/Haskell/Intro.md",
     "programmeringssprog/Haskell/Remember.md",
-    "programmeringssprog/Haskell/Untitled.md",
-    "programmeringssprog/1. Abstract Machines with Interpeters and Compilæers.md",
     "Data mining and machine learning/3. Classification.md",
-    "Data mining and machine learning/2. Feature Spaces and Clustering.md"
+    "programmeringssprog/3. Names, Environment, Scoping Rules.md",
+    "programmeringssprog/2. bnf-semantics.md",
+    "programmeringssprog/13. Historical Perspective.md"
   ]
 }
