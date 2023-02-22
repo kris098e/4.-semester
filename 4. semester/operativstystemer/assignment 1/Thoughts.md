@@ -3,8 +3,12 @@
 Get errors when compiling since the .h files cannot be found
 [can be that we should not compile the file, but only add it to the makefile as here](https://imada.sdu.dk/u/daniel/DM510-2023/system-call/#:~:text=asmlinkage%0Aint%20sys_hellokernel(%20int%20flag%20)%20%7B%0A%20%20printk(%22Your%20kernel%20greets%20you%20%25d%20times!%20%5Cn%22%2C%20flag)%3B%0A%20%20return%200%3B%0A%7D)
 
-# KOMMET TIL ikke helt sikker på null, få implementeret program til at checke program om det virker (SE OM NULL VIRKER). Ligesom der er gjort i eksemplet med syscall. 
-# måske allocate memory til den en struct af msg_t og når noget peger derhen så fungerer den som null-pointer. MEN DER MÅ VÆRE EN NULL POINTER
+# man kan have null
+# access_ok() kan man ikke få til at breake?
+
+# use perror("")??
+
+# ENOMEM?? skal denne bruges til memory fejl-allocate
 
 ### Thoughts
 1. follow the guide for the sycall
