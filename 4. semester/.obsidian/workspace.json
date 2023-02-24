@@ -4,59 +4,57 @@
     "type": "split",
     "children": [
       {
-        "id": "37db9920a3b45234",
+        "id": "c9f07d9f613e977e",
         "type": "tabs",
         "children": [
           {
-            "id": "61513486e13a3271",
+            "id": "9b87452ad5926599",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/2. bnf-semantics.md",
+                "file": "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8923358fea9f128a",
+            "id": "252c677a4ad7de20",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "_DM566-2023-part1 (1).pdf"
+              }
+            }
+          },
+          {
+            "id": "0bc27a220b97ea77",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
+                "file": "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "cdbe45a3234d496f",
+            "id": "82f0a2d7388f9cb5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/3. Names, Environment, Scoping Rules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ee312d2175b4d3ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/Theory problems/Problems 1.md",
+                "file": "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 237.50260543823242
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -122,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/Problems 1.md",
+                "file": "_DM566-2023-part1 (1).pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/Problems 1.md",
+                "file": "_DM566-2023-part1 (1).pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/Problems 1.md"
+                "file": "_DM566-2023-part1 (1).pdf"
               }
             }
           }
@@ -171,30 +169,51 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "canvas:Create new canvas": false,
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "ee312d2175b4d3ba",
+  "active": "252c677a4ad7de20",
   "lastOpenFiles": [
-    "operativstystemer/Problems/problems 3 and 4.md",
-    "operativstystemer/Problems/problems 2 and 3.md",
-    "programmeringssprog/3. Names, Environment, Scoping Rules.md",
-    "programmeringssprog/2. bnf-semantics.md",
+    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
+    "Pasted image 20230224092923.png",
+    "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/Problems/1. Problems Set-rules.md",
+    "Pasted image 20230224092704.png",
+    "_DM566-2023-part1 (1).pdf",
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
+    "_DM566-2023-part2.pdf",
+    "Pasted image 20230224081603.png",
+    "operativstystemer/2. operating system structures.md",
     "operativstystemer/3. processes.md",
-    "operativstystemer/assignment 1/Thoughts.md",
+    "solution02.pdf",
+    "Data mining and machine learning/3. Classification.md",
+    "Data mining and machine learning/4. Bayesian Learning.md",
+    "operativstystemer/Problems/problems 3 and 4.md",
+    "Pasted image 20230223160247.png",
+    "Pasted image 20230223155435.png",
+    "Pasted image 20230223155415.png",
+    "Pasted image 20230223152116.png",
+    "Pasted image 20230223150101.png",
+    "programmeringssprog/Haskell/Function syntax.md",
+    "Pasted image 20230223115940.png",
+    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
+    "programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Haskell/Intro.md",
+    "operativstystemer/5..md",
     "operativstystemer/4. threads.md",
-    "operativstystemer/0. Intro.md",
-    "programmeringssprog/13. Historical Perspective.md",
-    "Data mining and machine learning/3. Classification.md"
+    "programmeringssprog/Theory problems/Problems 1.md",
+    "programmeringssprog/3. undecidability.md",
+    "programmeringssprog/2. bnf-semantics.md"
   ]
 }

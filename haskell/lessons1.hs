@@ -45,6 +45,24 @@ mySum :: [Int] -> Int
 mySum [] = 0
 mySum (x:xs) = x + mySum xs  
 
+-- slow --
 myReverse :: [a] -> [a]
 myReverse [] = []
 myReverse (x:xs) = ((myReverse xs)++x:[])
+
+-- fast --
+myReverse' :: [a] -> [a]
+myReverse' xs = myReverseAux [] xs
+
+myReverseAux :: [a] -> [a] -> [a]
+myReverseAux acc [] = acc
+myReverseAux acc (x:xs) = myReverseAux (x : acc) xs
+
+myelem :: Eq a => a -> [a] -> Bool
+myelem _ [] = False
+myelem x (y : ys) = x == y || myelem x ys
+
+
+-- [x+2 | x <- [1,2,3,4]]
+-- [[x] | x <- [1,2,3,4]]
+-- [x | x<-"hej", x/='e']
