@@ -1,7 +1,16 @@
 *When connecting to ssh via VScode, just type krabr21@imada0.stud-srv.sdu.dk, and dont add the ssh infront*
 
-Get errors when compiling since the .h files cannot be found
-[can be that we should not compile the file, but only add it to the makefile as here](https://imada.sdu.dk/u/daniel/DM510-2023/system-call/#:~:text=asmlinkage%0Aint%20sys_hellokernel(%20int%20flag%20)%20%7B%0A%20%20printk(%22Your%20kernel%20greets%20you%20%25d%20times!%20%5Cn%22%2C%20flag)%3B%0A%20%20return%200%3B%0A%7D)
+# _kommet til concurrency_ der er noget der ikke helt fungerer, stacken bliver ikke opdateret korrekt? (prøv at flytte local_irq... til at blive større). 
+
+# Overall thought: ensure the user are not allowed to make mistakes, guide the process via errors
+
+# cannot test for put too small length, as `copy_from_user` only writes how many bytes as length defines.
+
+# get fails if too small buffer compared to buffer stored - `stack smashing`
+
+# test put fail on allocating memory, by putting until no more memory for the process?
+
+
 
 # man kan have null
 # access_ok() kan man ikke få til at breake?

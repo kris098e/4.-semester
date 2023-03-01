@@ -13,19 +13,81 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
+                "file": "programmeringssprog/5. Memory Management.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "252c677a4ad7de20",
+            "id": "8fe43448ecf64daa",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "_DM566-2023-part1 (1).pdf"
+                "file": "programmeringssprog/6. Implement scope rules.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ba9641095f3ea0ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/4. Names, Environment, Scoping Rules.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "95182df00b2f9dca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/4. Names, Environment, Scoping Rules.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0632fded0ed1e686",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "operativstystemer/5. Schedualing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d57b2c78662435b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data mining and machine learning/4. Bayesian Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7ce6fe353da27ca4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "operativstystemer/assignment 1/Thoughts.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -54,7 +116,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -120,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_DM566-2023-part1 (1).pdf",
+                "file": "Data mining and machine learning/4. Bayesian Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_DM566-2023-part1 (1).pdf",
+                "file": "Data mining and machine learning/4. Bayesian Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_DM566-2023-part1 (1).pdf"
+                "file": "Data mining and machine learning/4. Bayesian Learning.md"
               }
             }
           }
@@ -182,38 +244,49 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "252c677a4ad7de20",
+  "active": "d57b2c78662435b1",
   "lastOpenFiles": [
+    "operativstystemer/5. Schedualing.md",
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/assignment 1/Thoughts.md",
+    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
+    "programmeringssprog/2. bnf-semantics.md",
+    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
+    "Data mining and machine learning/4. Bayesian Learning.md",
+    "Data mining and machine learning/3. Classification.md",
+    "programmeringssprog/Theory problems/Problems 4th chapter.md",
+    "_04_name_scopes.pdf",
+    "Pasted image 20230228111511.png",
+    "Pasted image 20230228111232.png",
+    "programmeringssprog/7. Flow control, expressions, commands.md",
+    "Pasted image 20230228104854.png",
+    "programmeringssprog/3. undecidability.md",
+    "_DM566-2023-part4.pdf",
+    "programmeringssprog/6. Implement scope rules.md",
+    "programmeringssprog/5. Memory Management.md",
+    "_05_memory.pdf",
+    "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
     "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
+    "_DM566-2023-part1 (1).pdf",
     "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
     "Pasted image 20230224092923.png",
-    "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
     "Data mining and machine learning/Problems/1. Problems Set-rules.md",
     "Pasted image 20230224092704.png",
-    "_DM566-2023-part1 (1).pdf",
     "Data mining and machine learning/2. Feature Spaces and Clustering.md",
     "_DM566-2023-part2.pdf",
     "Pasted image 20230224081603.png",
     "operativstystemer/2. operating system structures.md",
     "operativstystemer/3. processes.md",
     "solution02.pdf",
-    "Data mining and machine learning/3. Classification.md",
-    "Data mining and machine learning/4. Bayesian Learning.md",
     "operativstystemer/Problems/problems 3 and 4.md",
     "Pasted image 20230223160247.png",
     "Pasted image 20230223155435.png",
     "Pasted image 20230223155415.png",
     "Pasted image 20230223152116.png",
-    "Pasted image 20230223150101.png",
     "programmeringssprog/Haskell/Function syntax.md",
-    "Pasted image 20230223115940.png",
     "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
     "programmeringssprog/Haskell/Remember.md",
     "programmeringssprog/Haskell/Intro.md",
-    "operativstystemer/5..md",
-    "operativstystemer/4. threads.md",
-    "programmeringssprog/Theory problems/Problems 1.md",
-    "programmeringssprog/3. undecidability.md",
-    "programmeringssprog/2. bnf-semantics.md"
+    "operativstystemer/4. threads.md"
   ]
 }
