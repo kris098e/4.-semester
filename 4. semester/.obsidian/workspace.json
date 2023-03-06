@@ -4,143 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "c9f07d9f613e977e",
+        "id": "de32b973e4fba28a",
         "type": "tabs",
         "children": [
           {
-            "id": "9b87452ad5926599",
+            "id": "dd3212974e0ede66",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/5. Memory Management.md",
+                "file": "programmeringssprog/7. Flow control, expressions, commands.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8fe43448ecf64daa",
+            "id": "69804790c86e8ac1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/6. Implement scope rules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ba9641095f3ea0ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/4. Names, Environment, Scoping Rules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "95182df00b2f9dca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/4. Names, Environment, Scoping Rules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0632fded0ed1e686",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/5. Schedualing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d57b2c78662435b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Problems/problems 3 and 4.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "facec9bf656f1a4d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Problems/problems 4 and 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "98fd72f671e53ac7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/4. Bayesian Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7ce6fe353da27ca4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/assignment 1/Thoughts.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0bc27a220b97ea77",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "82f0a2d7388f9cb5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
+                "file": "programmeringssprog/8. Subprograms.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data mining and machine learning/4. Bayesian Learning.md",
+                "file": "programmeringssprog/8. Subprograms.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -223,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data mining and machine learning/4. Bayesian Learning.md",
+                "file": "programmeringssprog/8. Subprograms.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -246,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data mining and machine learning/4. Bayesian Learning.md"
+                "file": "programmeringssprog/8. Subprograms.md"
               }
             }
           }
@@ -268,49 +160,53 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "98fd72f671e53ac7",
+  "active": "69804790c86e8ac1",
   "lastOpenFiles": [
-    "Data mining and machine learning/3. Classification.md",
-    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
-    "operativstystemer/Problems/problems 2 and 3.md",
-    "Pasted image 20230302114129.png",
+    "programmeringssprog/7. Flow control, expressions, commands.md",
+    "programmeringssprog/8. Subprograms.md",
+    "programmeringssprog/6. Implement scope rules.md",
+    "programmeringssprog/5. Memory Management.md",
+    "Data mining and machine learning/4. Bayesian Learning.md",
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/assignment 1/Thoughts.md",
+    "operativstystemer/assignment 1/sources/Makefile",
+    "operativstystemer/assignment 1/sources/dm510_msgbox.c",
+    "operativstystemer/assignment 1/sources/dm510_msgbox.h",
+    "operativstystemer/assignment 1/sources/syscall_64.tbl",
+    "operativstystemer/assignment 1/sources/unistd_64.h",
+    "operativstystemer/assignment 1/video/video1118553402.mp4",
+    "operativstystemer/Problems/Problems 1.md",
     "operativstystemer/Problems/problems 3 and 4.md",
+    "operativstystemer/Problems/problems 2 and 3.md",
+    "Pasted image 20230303115216.png",
     "operativstystemer/Problems/problems 4 and 5.md",
+    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
+    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
+    "Data mining and machine learning/Problems/lu8150s8vkz1.tmp",
+    "Data mining and machine learning/Problems/4. problems floyd.ods",
+    "Data mining and machine learning/Problems/Untitled 1.ods",
+    "Data mining and machine learning/Untitled 1.ods",
+    "Data mining and machine learning/3. Classification.md",
     "programmeringssprog/Haskell/Remember.md",
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
+    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
+    "Pasted image 20230302162704.png",
+    "Pasted image 20230302161709.png",
+    "Pasted image 20230302155016.png",
+    "Pasted image 20230302154235.png",
+    "Pasted image 20230302152033.png",
+    "Pasted image 20230302114129.png",
     "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
     "programmeringssprog/Theory problems/Problems 4th chapter.md",
     "programmeringssprog/Theory problems/Problems 1.md",
     "programmeringssprog/Haskell/Intro.md",
     "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
     "programmeringssprog/4. Names, Environment, Scoping Rules.md",
-    "Data mining and machine learning/4. Bayesian Learning.md",
     "operativstystemer/5. Schedualing.md",
-    "operativstystemer/6. Synchronization tools.md",
-    "operativstystemer/assignment 1/Thoughts.md",
     "programmeringssprog/2. bnf-semantics.md",
-    "_04_name_scopes.pdf",
     "Pasted image 20230228111511.png",
     "Pasted image 20230228111232.png",
-    "programmeringssprog/7. Flow control, expressions, commands.md",
     "Pasted image 20230228104854.png",
-    "programmeringssprog/3. undecidability.md",
-    "_DM566-2023-part4.pdf",
-    "programmeringssprog/6. Implement scope rules.md",
-    "programmeringssprog/5. Memory Management.md",
-    "_05_memory.pdf",
-    "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
-    "_DM566-2023-part1 (1).pdf",
-    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
-    "Pasted image 20230224092923.png",
-    "Data mining and machine learning/Problems/1. Problems Set-rules.md",
-    "Pasted image 20230224092704.png",
-    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
-    "_DM566-2023-part2.pdf",
-    "Pasted image 20230224081603.png",
-    "operativstystemer/2. operating system structures.md",
-    "solution02.pdf",
-    "Pasted image 20230223160247.png",
-    "Pasted image 20230223155435.png",
-    "Pasted image 20230223155415.png"
+    "programmeringssprog/3. undecidability.md"
   ]
 }

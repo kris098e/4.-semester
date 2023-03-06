@@ -112,6 +112,7 @@ maximum' (x:xs)
     | otherwise = maxTail  
     where maxTail = maximum' xs  
 ```
+
 ```haskell
 maximum' :: (Ord a) => [a] -> a  
 maximum' [] = error "maximum of empty list"  
