@@ -4,59 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "37db9920a3b45234",
+        "id": "a41ae10000b30407",
         "type": "tabs",
         "children": [
           {
-            "id": "61513486e13a3271",
+            "id": "834e6d16af4ee866",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/2. bnf-semantics.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
-            "id": "8923358fea9f128a",
+            "id": "ebf762a9815c59cc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cdbe45a3234d496f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/3. Names, Environment, Scoping Rules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ee312d2175b4d3ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/Theory problems/Problems 1.md",
+                "file": "operativstystemer/6. Synchronization tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 237.50260543823242
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -122,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/Problems 1.md",
+                "file": "operativstystemer/6. Synchronization tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/Problems 1.md",
+                "file": "operativstystemer/6. Synchronization tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/Problems 1.md"
+                "file": "operativstystemer/6. Synchronization tools.md"
               }
             }
           }
@@ -171,30 +143,66 @@
       }
     ],
     "direction": "horizontal",
-    "width": 241.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "canvas:Create new canvas": false,
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "ee312d2175b4d3ba",
+  "active": "ebf762a9815c59cc",
   "lastOpenFiles": [
-    "operativstystemer/Problems/problems 3 and 4.md",
-    "operativstystemer/Problems/problems 2 and 3.md",
-    "programmeringssprog/3. Names, Environment, Scoping Rules.md",
-    "programmeringssprog/2. bnf-semantics.md",
-    "operativstystemer/3. processes.md",
-    "operativstystemer/assignment 1/Thoughts.md",
+    "operativstystemer/5. Schedualing.md",
     "operativstystemer/4. threads.md",
-    "operativstystemer/0. Intro.md",
+    "operativstystemer/6. Synchronization tools.md",
+    "programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Haskell/Intro.md",
+    "programmeringssprog/2. bnf-semantics.md",
     "programmeringssprog/13. Historical Perspective.md",
-    "Data mining and machine learning/3. Classification.md"
+    "operativstystemer/assignment 1/Thoughts.md",
+    "operativstystemer/Problems/Problems 1.md",
+    "operativstystemer/3. processes.md",
+    "operativstystemer/2. operating system structures.md",
+    "ch03.pdf",
+    "ch02.pdf",
+    "ch01.pdf",
+    "_solution01.pdf",
+    "_DM566-2023-part2.pdf",
+    "_DM566-2023-part1 (1).pdf",
+    "_02_bnf_semantics.pdf",
+    "_01_abstract_machine.pdf",
+    "_00_history.pdf",
+    "Pasted image 20230217085005.png",
+    "Pasted image 20230217082553.png",
+    "Pasted image 20230216132343.png",
+    "Pasted image 20230216132328.png",
+    "Data mining and machine learning/Problems/Problems frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/Problems/Problems Set-rules.md",
+    "Data mining and machine learning/3. Classification.md",
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
+    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
+    "operativstystemer/Problems/problems 4 and 5.md",
+    "Data mining and machine learning/5. Learning with Distributions.md",
+    "Data mining and machine learning/4. Bayesian Learning.md",
+    "DM552 - Programmeringssprog/Haskell/Lecture 3 - Map, local declarations, operators, infix declarations.md",
+    "DM552 - Programmeringssprog/Haskell/Lecture 2 - Variables, conditional definitions, list comprehensions.md",
+    "DM552 - Programmeringssprog/Haskell/Lecture 1 - Kristian.md",
+    "DM552 - Programmeringssprog/Haskell/Book notes/Learn You a Haskell for Great Good!.md",
+    "DM552 - Programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
+    "programmeringssprog/Haskell/Function syntax.md",
+    "Pasted image 20230221102253.png",
+    "Pasted image 20230228104854.png",
+    "DM566 - Data mining and machine learning/DM566 Appendix/DM566-2023-part4.pdf",
+    "DM552 - Programmeringssprog/DM552 Appendix/Pasted image 20230216132328.png",
+    "DM552 - Programmeringssprog/DM552 Appendix/Pasted image 20230216132343.png",
+    "DM510 - Operativsystemer/DM510 Appendix/forkTree.jpg",
+    "DM566 - Data mining and machine learning/DM566 Appendix/Lattice cfi.jpg"
   ]
 }
