@@ -6,7 +6,7 @@
       {
         "id": "a41ae10000b30407",
         "type": "tabs",
-        "dimension": 43.60967184801382,
+        "dimension": 38.5146804835924,
         "children": [
           {
             "id": "834e6d16af4ee866",
@@ -14,31 +14,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DM566 - Data mining and machine learning/4 - Bayesian Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ebf762a9815c59cc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DM566 - Data mining and machine learning/8 - Ensemble Learning.md",
+                "file": "DM566 - Data mining and machine learning/5 - Learning with Distributions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "ec363b7eb9dccd40",
         "type": "tabs",
-        "dimension": 56.39032815198618,
+        "dimension": 61.4853195164076,
         "children": [
           {
             "id": "17f417ed54bf462a",
@@ -49,8 +36,19 @@
                 "file": "DM566 - Data mining and machine learning/DM566 Appendix/DM566-2023-part4.pdf"
               }
             }
+          },
+          {
+            "id": "8060f2476a5ad49f",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "DM566 - Data mining and machine learning/DM566 Appendix/DM566-2023-part5.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -116,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DM566 - Data mining and machine learning/8 - Ensemble Learning.md",
+                "file": "DM566 - Data mining and machine learning/5 - Learning with Distributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DM566 - Data mining and machine learning/8 - Ensemble Learning.md",
+                "file": "DM566 - Data mining and machine learning/5 - Learning with Distributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DM566 - Data mining and machine learning/8 - Ensemble Learning.md"
+                "file": "DM566 - Data mining and machine learning/5 - Learning with Distributions.md"
               }
             }
           }
@@ -179,10 +177,13 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "7e2586818a156850",
+  "active": "834e6d16af4ee866",
   "lastOpenFiles": [
-    "DM566 - Data mining and machine learning/Part 8 - Ensemble Learning 1.md",
+    "DM566 - Data mining and machine learning/DM566 Appendix/DM566-2023-part5.pdf",
+    "DM566 - Data mining and machine learning/5 - Learning with Distributions.md",
     "DM566 - Data mining and machine learning/4 - Bayesian Learning.md",
+    "DM566 - Data mining and machine learning/8 - Ensemble Learning.md",
+    "DM566 - Data mining and machine learning/Part 8 - Ensemble Learning 1.md",
     "DM566 - Data mining and machine learning/DM566 Appendix/DM566-2023-part4.pdf",
     "DM552 - Programmeringssprog/DM552 Appendix/Pasted image 20230216132328.png",
     "DM552 - Programmeringssprog/Haskell/Lecture 1 - Kristian.md",
@@ -210,9 +211,6 @@
     "Pasted image 20230217082553.png",
     "Pasted image 20230217085005.png",
     "Pasted image 20230303115216.png.md",
-    "programmeringssprog/13. Historical Perspective.md",
-    "DM510 - Operativsystemer/DM510 exercises/Aassignments/Assignment 1 - Thoughts.md",
-    "DM510 - Operativsystemer/DM510 exercises/Week 9.md",
     "DM510 - Operativsystemer/DM510 Appendix/forkTree.jpg",
     "ch03.pdf",
     "DM566 - Data mining and machine learning",
@@ -221,7 +219,6 @@
     "DM552 - Programmeringssprog/Haskell",
     "DM552 - Programmeringssprog",
     "DM510 - Operativsystemer/DM510 exercises",
-    "DM510 - Operativsystemer",
     "DM566 - Data mining and machine learning/DM566 Appendix/Lattice cfi.jpg",
     "DM566 - Data mining and machine learning/DM566 Appendix/Graph between overfitting and underfitting.jpg",
     "Pasted image 20230303115216.png",
