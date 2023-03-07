@@ -134,7 +134,7 @@ lorem ipsum
 
 ##### Spørgsmål
 Følg op på de få spørgsmål fra OS spørgetime
-Hvad mente Daniel Merkel ift. bit GBit osv... se skemaet i noter [[Week 5 (Chapter 01 - Introduction to the lecture)]]
+Hvad mente Daniel Merkel ift. bit GBit osv... se skemaet i noter [[1 (Chapter 01 - Introduction to the lecture)]]
 Search in PDF? Plugin: Obsidian OCR
 Brug af plugins
 

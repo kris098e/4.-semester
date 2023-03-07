@@ -4,5 +4,6 @@
   "spellcheckLanguages": [
     "da",
     "en"
-  ]
+  ],
+  "alwaysUpdateLinks": true
 }

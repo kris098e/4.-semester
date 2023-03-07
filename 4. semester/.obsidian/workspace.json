@@ -14,13 +14,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md",
+                "file": "DM566 - Data mining and machine learning/4 - Bayesian Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ebf762a9815c59cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DM566 - Data mining and machine learning/8 - Ensemble Learning.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "ec363b7eb9dccd40",
@@ -33,7 +46,7 @@
             "state": {
               "type": "pdf",
               "state": {
-                "file": "DM566 - Data mining and machine learning/Appendix DM566/DM566-2023-part4.pdf"
+                "file": "DM566 - Data mining and machine learning/DM566 Appendix/DM566-2023-part4.pdf"
               }
             }
           }
@@ -103,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md",
+                "file": "DM566 - Data mining and machine learning/8 - Ensemble Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md",
+                "file": "DM566 - Data mining and machine learning/8 - Ensemble Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md"
+                "file": "DM566 - Data mining and machine learning/8 - Ensemble Learning.md"
               }
             }
           }
@@ -166,51 +179,51 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "834e6d16af4ee866",
+  "active": "7e2586818a156850",
   "lastOpenFiles": [
-    "DM566 - Data mining and machine learning/Appendix DM566/DM566-2023-part4.pdf",
-    "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md",
-    "DM552 - Programmeringssprog/Appendix DM552/Pasted image 20230216132328.png",
+    "DM566 - Data mining and machine learning/Part 8 - Ensemble Learning 1.md",
+    "DM566 - Data mining and machine learning/4 - Bayesian Learning.md",
+    "DM566 - Data mining and machine learning/DM566 Appendix/DM566-2023-part4.pdf",
+    "DM552 - Programmeringssprog/DM552 Appendix/Pasted image 20230216132328.png",
     "DM552 - Programmeringssprog/Haskell/Lecture 1 - Kristian.md",
     "DM552 - Programmeringssprog/Haskell/Remember.md",
-    "DM552 - Programmeringssprog/Theory/Week 7 - Abstract Mahines, Interpreters, compilers.md",
-    "DM552 - Programmeringssprog/Theory/Week 8 - Names, Environment, Scoping Rules.md",
+    "DM552 - Programmeringssprog/Theory/2 - Abstract Mahines, Interpreters, compilers.md",
+    "DM552 - Programmeringssprog/Theory/3 - Names, Environment, Scoping Rules.md",
     "DM552 - Programmeringssprog/Theory/2. bnf-semantics.md",
     "DM552 - Programmeringssprog/Haskell/Book notes/Learn You a Haskell for Great Good!.md",
-    "DM510 exercises/Week 8.md",
-    "DM510 exercises/Week 7.md",
-    "DM510 exercises/Week 6 - Theis.md",
-    "DM510 - Operativsystemer/Week 9 (Chapter 05 - CPU scheduling, Chapter 06 - Synchronization Tools).md",
-    "DM510 - Operativsystemer/Week 8 (Chapter 04 - Threads and Concurrency, Chapter 05 CPU scheduling).md",
-    "DM510 - Operativsystemer/Week 6 (Chapter 02 - Operating - System Structures and Chapter 03 - Processes).md",
+    "DM510 - Operativsystemer/DM510 exercises/Week 8.md",
+    "DM510 - Operativsystemer/DM510 exercises/Week 7.md",
+    "DM510 - Operativsystemer/DM510 exercises/Week 6 - Theis.md",
+    "DM510 - Operativsystemer/4 (Chapter 05 - CPU scheduling, Chapter 06 - Synchronization Tools).md",
+    "DM510 - Operativsystemer/3 (Chapter 04 - Threads and Concurrency, Chapter 05 CPU scheduling).md",
+    "DM510 - Operativsystemer/2 (Chapter 02 - Operating - System Structures and Chapter 03 - Processes).md",
     "General commands and signs.md",
-    "DM566 - Data mining and machine learning/Part 2 -  Feature Spaces and Clustering.md",
-    "DM566 - Data mining and machine learning/Part 1 - Introduction + Frequent Pattern Mining.md",
+    "DM566 - Data mining and machine learning/2 -  Feature Spaces and Clustering.md",
+    "DM566 - Data mining and machine learning/1 - Introduction + Frequent Pattern Mining.md",
     "DM566 - Data mining and machine learning/DB cheat sheet.md",
     "DM552 - Programmeringssprog/Haskell/Book notes",
     "DM552 - Programmeringssprog/Haskell/Lecture 3 - Map, local declarations, operators, infix declarations.md",
     "DM552 - Programmeringssprog/Haskell/Lecture 4.md",
     "DM552 - Programmeringssprog/Haskell/Lecture 2 - Variables, conditional definitions, list comprehensions.md",
     "DM552 - Programmeringssprog/Haskell/Lecture 1 - Functional programming, Basic Haskell.md",
-    "DM552 - Programmeringssprog/Appendix DM552/Pasted image 20230216132343.png",
+    "DM552 - Programmeringssprog/DM552 Appendix/Pasted image 20230216132343.png",
     "Pasted image 20230217082553.png",
     "Pasted image 20230217085005.png",
     "Pasted image 20230303115216.png.md",
     "programmeringssprog/13. Historical Perspective.md",
-    "DM510 exercises/Aassignments/Assignment 1 - Thoughts.md",
-    "DM510 exercises/Week 9.md",
-    "DM510 - Operativsystemer/Appendix DM510/forkTree.jpg",
+    "DM510 - Operativsystemer/DM510 exercises/Aassignments/Assignment 1 - Thoughts.md",
+    "DM510 - Operativsystemer/DM510 exercises/Week 9.md",
+    "DM510 - Operativsystemer/DM510 Appendix/forkTree.jpg",
     "ch03.pdf",
     "DM566 - Data mining and machine learning",
-    "DM552 exercises",
+    "DM552 - Programmeringssprog/DM552 exercises",
     "DM552 - Programmeringssprog/Theory",
     "DM552 - Programmeringssprog/Haskell",
     "DM552 - Programmeringssprog",
-    "DM510 exercises",
+    "DM510 - Operativsystemer/DM510 exercises",
     "DM510 - Operativsystemer",
-    "DM566 - Data mining and machine learning/Appendix DM566/solution03.pdf",
-    "DM566 - Data mining and machine learning/Appendix DM566/Lattice cfi.jpg",
-    "DM566 - Data mining and machine learning/Appendix DM566/Graph between overfitting and underfitting.jpg",
+    "DM566 - Data mining and machine learning/DM566 Appendix/Lattice cfi.jpg",
+    "DM566 - Data mining and machine learning/DM566 Appendix/Graph between overfitting and underfitting.jpg",
     "Pasted image 20230303115216.png",
     "Pasted image 20230302162704.png",
     "Pasted image 20230302161709.png"
