@@ -262,6 +262,11 @@ Likelihood
 $$\operatorname{Pr}(S \mid F) = 0.8$$
 $$\operatorname{Pr}(S \mid A) = 0.4$$
 $$\operatorname{Pr}(S \mid I) = 0.9$$
+...
+
+$$\operatorname{Pr}(S \mid I)$$
+S -> Observation experience
+I -> Hypothesis/Cause 
 
 Prior knowledge
 $$Pr(F) = 0.5$$
@@ -270,7 +275,12 @@ $$Pr(I) = 0.1$$
 
 Posterior model
 $$Pr(I|S)$$
+Evidence
+$${\operatorname{Pr}(S)}$$
 
+
+
+? Likelihood -> (There's No likelihood of data!)
 ? Probability -> an outcome given an output.
 ? Evidence -> outcome
 
@@ -284,3 +294,14 @@ If a model is 95% right it is interpreted as true
 $$
 h_{MAP} = \arg \max _{c_i \in C} \operatorname{Pr}\left(a_q \mid c_i\right) \operatorname{Pr}\left(c_i\right)
 $$
+
+#### Model types
+$$
+\operatorname{Pr}(I \mid S)=\frac{\operatorname{Pr}(S \mid I) \operatorname{Pr}(I)}{\operatorname{Pr}(S)}
+$$
+
+Generative models
+$$\operatorname{Pr}(S \mid I) \operatorname{Pr}(I)$$
+
+Discriminative models
+$$\operatorname{Pr}(I \mid S)$$

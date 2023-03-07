@@ -6,13 +6,35 @@
       {
         "id": "a41ae10000b30407",
         "type": "tabs",
+        "dimension": 43.60967184801382,
         "children": [
           {
             "id": "834e6d16af4ee866",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "ec363b7eb9dccd40",
+        "type": "tabs",
+        "dimension": 56.39032815198618,
+        "children": [
+          {
+            "id": "17f417ed54bf462a",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "DM566 - Data mining and machine learning/Appendix DM566/DM566-2023-part4.pdf"
+              }
             }
           }
         ]
@@ -81,6 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +142,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md"
+              }
             }
           }
         ],
@@ -126,7 +152,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -141,6 +168,8 @@
   },
   "active": "834e6d16af4ee866",
   "lastOpenFiles": [
+    "DM566 - Data mining and machine learning/Appendix DM566/DM566-2023-part4.pdf",
+    "DM566 - Data mining and machine learning/Part 4 - Bayesian Learning.md",
     "DM552 - Programmeringssprog/Appendix DM552/Pasted image 20230216132328.png",
     "DM552 - Programmeringssprog/Haskell/Lecture 1 - Kristian.md",
     "DM552 - Programmeringssprog/Haskell/Remember.md",
@@ -171,7 +200,6 @@
     "DM510 exercises/Aassignments/Assignment 1 - Thoughts.md",
     "DM510 exercises/Week 9.md",
     "DM510 - Operativsystemer/Appendix DM510/forkTree.jpg",
-    "DM510 exercises/Week 6 - Kristian.md",
     "ch03.pdf",
     "DM566 - Data mining and machine learning",
     "DM552 exercises",
