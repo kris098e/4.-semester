@@ -1,1 +1,8 @@
-{}
+{
+  "promptDelete": false,
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "da",
+    "en"
+  ]
+}
