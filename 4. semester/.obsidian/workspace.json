@@ -11,24 +11,15 @@
             "id": "834e6d16af4ee866",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "ebf762a9815c59cc",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md"
+                "file": "Data mining and machine learning/5. Learning with Distributions.md"
               }
             }
           }
@@ -156,53 +147,53 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "ebf762a9815c59cc",
+  "active": "834e6d16af4ee866",
   "lastOpenFiles": [
-    "operativstystemer/5. Schedualing.md",
-    "operativstystemer/4. threads.md",
+    "_DM566-2023-part5.pdf",
+    "Data mining and machine learning/5. Learning with Distributions.md",
     "operativstystemer/6. Synchronization tools.md",
+    "Pasted image 20230216132343.png",
+    "Pasted image 20230217085005.png",
+    "Pasted image 20230223160247.png",
+    "Pasted image 20230224092704.png",
+    "Pasted image 20230228111232.png",
+    "Pasted image 20230221114432.png",
+    "Pasted image 20230221102253.png",
+    "Pasted image 20230217082553.png",
+    "Pasted image 20230216132328.png",
+    "operativstystemer/5. Schedualing.md",
+    "solution02.pdf",
+    "programmeringssprog/Theory problems/Problems 4th chapter.md",
+    "programmeringssprog/Theory problems/Problems 1.md",
     "programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
     "programmeringssprog/Haskell/Intro.md",
+    "programmeringssprog/Haskell/Function syntax.md",
+    "programmeringssprog/Theory problems",
+    "programmeringssprog/Haskell",
+    "programmeringssprog/8. Subprograms.md",
+    "programmeringssprog/7. Flow control, expressions, commands.md",
+    "programmeringssprog/6. Implement scope rules.md",
+    "programmeringssprog/5. Memory Management.md",
+    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
+    "programmeringssprog/3. undecidability.md",
     "programmeringssprog/2. bnf-semantics.md",
     "programmeringssprog/13. Historical Perspective.md",
+    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
+    "programmeringssprog",
+    "operativstystemer/assignment 1/video/video1118553402.mp4",
+    "operativstystemer/assignment 1/video",
+    "operativstystemer/assignment 1/sources/unistd_64.h",
+    "operativstystemer/assignment 1/sources/syscall_64.tbl",
+    "operativstystemer/assignment 1/sources/dm510_msgbox.h",
+    "operativstystemer/assignment 1/sources/dm510_msgbox.c",
     "operativstystemer/assignment 1/Thoughts.md",
-    "operativstystemer/Problems/Problems 1.md",
-    "operativstystemer/3. processes.md",
-    "operativstystemer/2. operating system structures.md",
-    "ch03.pdf",
-    "ch02.pdf",
-    "ch01.pdf",
-    "_solution01.pdf",
-    "_DM566-2023-part2.pdf",
-    "_DM566-2023-part1 (1).pdf",
-    "_02_bnf_semantics.pdf",
-    "_01_abstract_machine.pdf",
-    "_00_history.pdf",
-    "Pasted image 20230217085005.png",
-    "Pasted image 20230217082553.png",
-    "Pasted image 20230216132343.png",
-    "Pasted image 20230216132328.png",
-    "Data mining and machine learning/Problems/Problems frequent pattern mining, Set-rules.md",
-    "Data mining and machine learning/Problems/Problems Set-rules.md",
-    "Data mining and machine learning/3. Classification.md",
-    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
-    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
     "operativstystemer/Problems/problems 4 and 5.md",
-    "Data mining and machine learning/5. Learning with Distributions.md",
-    "Data mining and machine learning/4. Bayesian Learning.md",
-    "DM552 - Programmeringssprog/Haskell/Lecture 3 - Map, local declarations, operators, infix declarations.md",
-    "DM552 - Programmeringssprog/Haskell/Lecture 2 - Variables, conditional definitions, list comprehensions.md",
-    "DM552 - Programmeringssprog/Haskell/Lecture 1 - Kristian.md",
-    "DM552 - Programmeringssprog/Haskell/Book notes/Learn You a Haskell for Great Good!.md",
-    "DM552 - Programmeringssprog/Haskell/Remember.md",
-    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
-    "programmeringssprog/Haskell/Function syntax.md",
-    "Pasted image 20230221102253.png",
-    "Pasted image 20230228104854.png",
-    "DM566 - Data mining and machine learning/DM566 Appendix/DM566-2023-part4.pdf",
-    "DM552 - Programmeringssprog/DM552 Appendix/Pasted image 20230216132328.png",
-    "DM552 - Programmeringssprog/DM552 Appendix/Pasted image 20230216132343.png",
-    "DM510 - Operativsystemer/DM510 Appendix/forkTree.jpg",
-    "DM566 - Data mining and machine learning/DM566 Appendix/Lattice cfi.jpg"
+    "operativstystemer/Problems/problems 3 and 4.md",
+    "operativstystemer/Problems/problems 2 and 3.md",
+    "operativstystemer/Problems/Problems 1.md",
+    "operativstystemer/4. threads.md",
+    "operativstystemer/3. processes.md",
+    "Pasted image 20230307105046.png"
   ]
 }
