@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
+                "file": "programmeringssprog/6. Implement scope rules.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a5db4682e4a24dfa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/Theory problems/problems 5th chapter.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "27249b9976868b74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "operativstystemer/Problems/problems 5 and 6.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
+                "file": "operativstystemer/Problems/problems 5 and 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
+                "file": "operativstystemer/Problems/problems 5 and 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md"
+                "file": "operativstystemer/Problems/problems 5 and 6.md"
               }
             }
           }
@@ -147,21 +172,24 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "834e6d16af4ee866",
+  "active": "27249b9976868b74",
   "lastOpenFiles": [
-    "_DM566-2023-part5.pdf",
-    "Data mining and machine learning/5. Learning with Distributions.md",
-    "operativstystemer/6. Synchronization tools.md",
-    "Pasted image 20230216132343.png",
-    "Pasted image 20230217085005.png",
-    "Pasted image 20230223160247.png",
-    "Pasted image 20230224092704.png",
-    "Pasted image 20230228111232.png",
-    "Pasted image 20230221114432.png",
-    "Pasted image 20230221102253.png",
-    "Pasted image 20230217082553.png",
-    "Pasted image 20230216132328.png",
-    "operativstystemer/5. Schedualing.md",
+    "Pasted image 20230307153550.png",
+    "Pasted image 20230307153432.png",
+    "programmeringssprog/Theory problems/problems 5th chapter.md",
+    "operativstystemer/Problems/problems 5 and 6.md",
+    "programmeringssprog/7. Flow control, expressions, commands.md",
+    "programmeringssprog/2. bnf-semantics.md",
+    "programmeringssprog/6. Implement scope rules.md",
+    "programmeringssprog/8. Subprograms.md",
+    "_07_procedures.pdf",
+    "_05a_implementing_scoping 1.pdf",
+    "_05a_implementing_scoping.pdf",
+    "programmeringssprog/5. Memory Management.md",
+    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
+    "programmeringssprog/3. undecidability.md",
+    "operativstystemer/2. operating system structures.md",
+    "operativstystemer/0. Intro.md",
     "solution02.pdf",
     "programmeringssprog/Theory problems/Problems 4th chapter.md",
     "programmeringssprog/Theory problems/Problems 1.md",
@@ -171,29 +199,26 @@
     "programmeringssprog/Haskell/Function syntax.md",
     "programmeringssprog/Theory problems",
     "programmeringssprog/Haskell",
-    "programmeringssprog/8. Subprograms.md",
-    "programmeringssprog/7. Flow control, expressions, commands.md",
-    "programmeringssprog/6. Implement scope rules.md",
-    "programmeringssprog/5. Memory Management.md",
-    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
-    "programmeringssprog/3. undecidability.md",
-    "programmeringssprog/2. bnf-semantics.md",
     "programmeringssprog/13. Historical Perspective.md",
     "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
     "programmeringssprog",
     "operativstystemer/assignment 1/video/video1118553402.mp4",
     "operativstystemer/assignment 1/video",
     "operativstystemer/assignment 1/sources/unistd_64.h",
-    "operativstystemer/assignment 1/sources/syscall_64.tbl",
-    "operativstystemer/assignment 1/sources/dm510_msgbox.h",
-    "operativstystemer/assignment 1/sources/dm510_msgbox.c",
     "operativstystemer/assignment 1/Thoughts.md",
     "operativstystemer/Problems/problems 4 and 5.md",
     "operativstystemer/Problems/problems 3 and 4.md",
     "operativstystemer/Problems/problems 2 and 3.md",
     "operativstystemer/Problems/Problems 1.md",
-    "operativstystemer/4. threads.md",
-    "operativstystemer/3. processes.md",
-    "Pasted image 20230307105046.png"
+    "operativstystemer/6. Synchronization tools.md",
+    "Pasted image 20230307105046.png",
+    "Pasted image 20230307103720.png",
+    "Pasted image 20230303115216.png",
+    "Pasted image 20230302162704.png",
+    "Pasted image 20230302161709.png",
+    "Pasted image 20230302155016.png",
+    "Pasted image 20230302154235.png",
+    "Pasted image 20230302152033.png",
+    "Pasted image 20230302114129.png"
   ]
 }
