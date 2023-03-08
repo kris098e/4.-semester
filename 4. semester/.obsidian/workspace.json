@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "834e6d16af4ee866",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/6. Implement scope rules.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a5db4682e4a24dfa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/Theory problems/problems 5th chapter.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "27249b9976868b74",
             "type": "leaf",
             "state": {
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -174,44 +149,38 @@
   },
   "active": "27249b9976868b74",
   "lastOpenFiles": [
-    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
-    "programmeringssprog/Haskell/Intro.md",
-    "programmeringssprog/Haskell/Remember.md",
+    "solution02.pdf",
     "programmeringssprog/Theory problems/problems 5th chapter.md",
-    "operativstystemer/6. Synchronization tools.md",
-    "operativstystemer/5. Schedualing.md",
-    "Data mining and machine learning/5. Learning with Distributions.md",
-    "operativstystemer/Problems/problems 5 and 6.md",
-    "Pasted image 20230307153550.png",
-    "Pasted image 20230307153432.png",
-    "programmeringssprog/7. Flow control, expressions, commands.md",
-    "programmeringssprog/2. bnf-semantics.md",
-    "programmeringssprog/6. Implement scope rules.md",
+    "programmeringssprog/Theory problems/Problems 4th chapter.md",
+    "programmeringssprog/Theory problems/Problems 1.md",
+    "programmeringssprog/Theory problems",
+    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
+    "programmeringssprog/Haskell/Function syntax.md",
     "programmeringssprog/8. Subprograms.md",
-    "_07_procedures.pdf",
-    "_05a_implementing_scoping 1.pdf",
-    "_05a_implementing_scoping.pdf",
+    "programmeringssprog/7. Flow control, expressions, commands.md",
+    "programmeringssprog/6. Implement scope rules.md",
     "programmeringssprog/5. Memory Management.md",
     "programmeringssprog/4. Names, Environment, Scoping Rules.md",
     "programmeringssprog/3. undecidability.md",
-    "operativstystemer/2. operating system structures.md",
-    "operativstystemer/0. Intro.md",
-    "solution02.pdf",
-    "programmeringssprog/Theory problems/Problems 4th chapter.md",
-    "programmeringssprog/Theory problems/Problems 1.md",
-    "programmeringssprog/Haskell/Function syntax.md",
-    "programmeringssprog/Theory problems",
-    "programmeringssprog/Haskell",
-    "programmeringssprog/13. Historical Perspective.md",
     "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
-    "programmeringssprog",
     "operativstystemer/assignment 1/video/video1118553402.mp4",
     "operativstystemer/assignment 1/video",
     "operativstystemer/assignment 1/sources/unistd_64.h",
-    "operativstystemer/assignment 1/Thoughts.md",
+    "operativstystemer/assignment 1/sources/syscall_64.tbl",
+    "operativstystemer/assignment 1/sources/dm510_msgbox.h",
+    "operativstystemer/assignment 1/sources/dm510_msgbox.c",
+    "operativstystemer/assignment 1/sources/Makefile",
+    "operativstystemer/assignment 1/sources",
+    "operativstystemer/Problems/problems 5 and 6.md",
     "operativstystemer/Problems/problems 4 and 5.md",
     "operativstystemer/Problems/problems 3 and 4.md",
     "operativstystemer/Problems/problems 2 and 3.md",
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/5. Schedualing.md",
+    "operativstystemer/0. Intro.md",
+    "ch04.pdf",
+    "Pasted image 20230307153550.png",
+    "Pasted image 20230307153432.png",
     "Pasted image 20230307105046.png",
     "Pasted image 20230307103720.png",
     "Pasted image 20230303115216.png",
@@ -219,6 +188,12 @@
     "Pasted image 20230302161709.png",
     "Pasted image 20230302155016.png",
     "Pasted image 20230302154235.png",
-    "Pasted image 20230302152033.png"
+    "Pasted image 20230302152033.png",
+    "Data mining and machine learning/Problems/Problems frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/Problems/Problems Set-rules.md",
+    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
+    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
+    "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/Problems/1. Problems Set-rules.md"
   ]
 }
