@@ -45,6 +45,7 @@ we will then execute p3 , then p2 and then p1
 **RR (assume no priority, as FCFS)**:p1(done)->p2(done)->p3(6 left)->p4(2 left)->p5(3 left)->p3(4 left)->p4(2 left)->p5(1 left)->p3(2 left)->p4(done)->p5(done)->p3(done) 
 
     -   What is the turnaround time of each process for each of the scheduling algorithms in part a?
+**THIS IS ASSUMING THAT p4 IS ACTUALLY 6 LONG.** made mistake at p4. look at p4(2 left) -> p4(2 left)...
 **RR**:
 p1=2=2
 p2=2(wait for p1)+1=3
@@ -53,113 +54,101 @@ p4=p2+2+2+2+2+2+2+2+2=19
 p5=p2+2+2+2+2+2+2+2+2+1=20
 
     -   What is the waiting time of each process for each of these scheduling algorithms?
-        
+**RR:**
+p1: 0
+p2: 2
+p3: 2+1+2+2+2+2+2+1=14
+p4: 2+1+2+2+2+2+2=13
+p5: 2+1+2+2+2+2+2+2=15
+
     -   Which of the algorithms results in the minimum average waiting time (over all processes)?
+calculate the wait time for each schedualing,  and rank them by ascending order and take the first one
+
         
 5.  The following processes are being scheduled using a preemptive, roundrobin scheduling algorithm.
-    
-    Process
-    
-    Priority
-    
-    Burst
-    
-    Arrival
-    
-    P1�1
-    
-    40
-    
-    20
-    
-    0
-    
-    P2�2
-    
-    30
-    
-    25
-    
-    25
-    
-    P3�3
-    
-    30
-    
-    25
-    
-    30
-    
-    P4�4
-    
-    35
-    
-    15
-    
-    60
-    
-    P5�5
-    
-    5
-    
-    10
-    
-    100
-    
-    P6�6
-    
-    10
-    
-    10
-    
-    105
-    
-    Each process is assigned a numerical priority, with a higher number indicating a higher relative priority. In addition to the processes listed below, the system also has an idle task (which consumes no CPU resources and is identified as Pidle�����). This task has priority 0 and is scheduled whenever the system has no other available processes to run. The length of a time quantum is 10 units. If a process is preempted by a higher-priority process, the preempted process is placed at the end of the queue.
-    
+    Each process is assigned a numerical priority, with a higher number indicating a higher relative priority. In addition to the processes listed below, the system also has an idle task (which consumes no CPU resources and is identified as $P_{idle}$). This task has priority 0 and is scheduled whenever the system has no other available processes to run. The length of a time quantum is 10 units. If a process is preempted by a higher-priority process, the preempted process is placed at the end of the queue.
+    ![[Pasted image 20230308123658.png]]
     -   Show the scheduling order of the processes using a Gantt chart.
-        
+	Gantt chart: ![[Pasted image 20230308124129.png]]
+	when two processes overlap, if one has higher priority, it gets the cpu time.
+	
+	p1, p1(done), $p_{idle}$(5), p2(15 left), p3(15 left, overall time is 45), p2(5 left, overall time 55), p3(10 left, overall time 60), p4(5 left), p4(done, overall time 75), p2(done, overall time 80), p3(done, overall time 90), Pidle(10), p5(5 left), p6(done, overall time 115), p5(done, overall time 120)  
+
     -   What is the turnaround time for each process?
-        
+	p1 arrives at 0 and bursts for 20, the entirety of the process. 
+	**p1 turnaround time**=20
+	**p2 turnaround time**=80-25=55
+	**p3 turnaround time**=90-30= 60
+	**p4 turnaround time**=75-60=15
+	**p5 turnaround time**=120-100= 20
+	**p6 turnaround time**=115-105=10
+
     -   What is the waiting time for each process?
-        
+	**p1**=0
+	**p2**=10+5+10+5=30
+	**p3**=5+10+10+5+5=35
+	**p4**=0
+	**p5**=10
+	**p6**=0
+
     -   What is the CPU utilization rate?
-        
+	for the entirety the idle process gets 5+10 cpu bursts and we use 120 overall, so the utilization rate is $\frac{120-15}{120} \cdot 100=87.5$%
+
 6.  What advantage is there in having different time-quantum sizes at different levels of a multilevel queueing system?
-    
+	can checkout more frequently whether new tasks in the higher level que are in ready state.
+	providing bigger time quantums to higher priority tasks will ensure that tasks with higher priority will get more execution time, before eventuelly checking for new tasks in the priority que.
+
+
 7.  Many CPU-scheduling algorithms are parameterized. For example, the RR algorithm requires a parameter to indicate the time slice. Multilevel feedback queues require parameters to define the number of queues, the scheduling algorithms for each queue, the criteria used to move processes between queues, and so on. These algorithms are thus really sets of algorithms (for example, the set of RR algorithms for all time slices, and so on). One set of algorithms may include another (for example, the FCFS algorithm is the RR algorithm with an infinite time quantum). What (if any) relation holds between the following pairs of algorithm sets?
-    
+
     -   Priority and SJF
+	    - shortest job has highest priority?
         
     -   Multilevel feedback queues and FCFS
+	    - in the priority queue belonging to the priority should have first come first served.
         
     -   Priority and FCFS
+	    - taks that comes first
         
     -   RR and SJF
+	    - no relation, first come first served and priority
         
 8.  Suppose that a CPU scheduling algorithm favors those processes that have used the least processor time in the recent past. Why will this algorithm favor I/O-bound programs and yet not permanently starve CPU-bound programs?
+
+	it will favour I/O-bound programs since the CPU-bound programs will use the processor more than theese. If the I/O-bound programs will start to get more processor time, the CPU-bound processes will then get less time and will then get increased time on the CPU, when many I/O-bound programs has used the processor.
     
 9.  Distinguish between PCS and SCS scheduling.
+
+
+
     
 10.  The traditional UNIX scheduler enforces an inverse relationship between priority numbers and priorities: the higher the number, the lower the priority. The scheduler recalculates process priorities once per second using the following function:
     
-    Priority = (recent CPU usage / 2) + base
+	    Priority = (recent CPU usage / 2) + base
     
-    where base = 60 and recent CPU usage refers to a value indicating how often a process has used the CPU since priorities were last recalculated. Assume that recent CPU usage for process P1�1 is 40, for process P2�2 is 18, and for process P3�3 is 10. What will be the new priorities for these three processes when priorities are recalculated? Based on this information, does the traditional UNIX scheduler raise or lower the relative priority of a CPU-bound process?
-    
+	    where base = 60 and recent CPU usage refers to a value indicating how often a process has used the CPU since priorities were last recalculated. Assume that recent CPU usage for process P1 is 40, for process P2 is 18, and for process P3 is 10. What will be the new priorities for these three processes when priorities are recalculated? Based on this information, does the traditional UNIX scheduler raise or lower the relative priority of a CPU-bound process?
+		$p_{1} = (\frac{40}{2})+60=80$
+		$p_{2} = (\frac{18}{2})+60=69$
+		$p_{3} = (\frac{10}{2})+60=65$
+
+
 11.  Of these two types of programs:
     
-    -   I/O-bound
-    -   CPU-bound
+	    -   I/O-bound
+	    -   CPU-bound
     
-    which is more likely to have voluntary context switches, and which is more likely to have nonvoluntary context switches? Explain your answer.
+	    which is more likely to have voluntary context switches, and which is more likely to have nonvoluntary context switches? Explain your answer.
+	I/O-bound uses the I/O devices more, and therefore they will more voluntary context switch
     
 12.  One technique for implementing **lottery scheduling** works by assigning processes lottery tickets, which are used for allocating CPU time. Whenever a scheduling decision has to be made, a lottery ticket is chosen at random, and the process holding that ticket gets the CPU. The BTV operating system implements lottery scheduling by holding a lottery 50 times each second, with each lottery winner getting 20 milliseconds of CPU time (20 milliseconds × 50 = 1 second). Describe how the BTV scheduler can ensure that higher-priority threads receive more attention from the CPU than lower-priority threads.
-    
+
+give more lottery tickets to the higher priority ones. Or if the processes are given numbers as lottery tickets, multiply the number by some value giving the higher numbers a bigger chance.
+
 13.  Consider the exponential average formula used to predict the length of the next CPU burst. What are the implications of assigning the following values to the parameters used by the algorithm?
     
-    -   α = 0 and τ0�0 = 100 milliseconds
+    -   α = 0 and τ0 = 100 milliseconds
         
-    -   α = 0.99 and τ0�0 = 10 milliseconds
+    -   α = 0.99 and τ0 = 10 milliseconds
         
 14.  A variation of the round-robin scheduler is the **regressive round-robin scheduler**. This scheduler assigns each process a time quantum and a priority. The initial value of a time quantum is 50 milliseconds. However, every time a process has been allocated the CPU and uses its entire time quantum (does not block for I/O), 10 milliseconds is added to its time quantum, and its priority level is boosted. (The time quantum for a process can be increased to a maximum of 100 milliseconds.) When a process blocks before using its entire time quantum, its time quantum is reduced by 5 milliseconds, but its priority remains the same. What type of process (CPU-bound or I/O-bound) does the regressive round-robin scheduler favor? Explain.
     

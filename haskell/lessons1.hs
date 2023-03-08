@@ -114,11 +114,11 @@ flatten' (xs : xss) = xs ++ flatten' xss
 
 alternate :: Floating a => [a] -> [a]
 alternate xs = f xs
-    where 
+    where
         f [] = []
         f (y : ys) = y : g ys
         g [] = []
-        g (y : ys) = negate y : f xs
+        g (y : ys) = negate y : f ys
 
 
 
