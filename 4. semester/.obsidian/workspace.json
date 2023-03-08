@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "operativstystemer/7. Synchronization tools examples.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "operativstystemer/7. Synchronization tools examples.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "operativstystemer/7. Synchronization tools examples.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md"
+                "file": "operativstystemer/7. Synchronization tools examples.md"
               }
             }
           }
@@ -162,9 +162,9 @@
   },
   "active": "58c3e6b5835f213d",
   "lastOpenFiles": [
-    "operativstystemer/7. Synchronization tools.md",
-    "ch07-2023.pdf",
     "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/7. Synchronization tools examples.md",
+    "ch07-2023.pdf",
     "operativstystemer/5. Schedualing.md",
     "ch05-new.pdf",
     "ch06-2023.pdf",
