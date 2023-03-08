@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/Problems/problems 5 and 6.md",
+                "file": "operativstystemer/6. Synchronization tools.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "58c3e6b5835f213d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "operativstystemer/6. Synchronization tools.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/Problems/problems 5 and 6.md",
+                "file": "operativstystemer/6. Synchronization tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/Problems/problems 5 and 6.md",
+                "file": "operativstystemer/6. Synchronization tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/Problems/problems 5 and 6.md"
+                "file": "operativstystemer/6. Synchronization tools.md"
               }
             }
           }
@@ -147,14 +160,19 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "27249b9976868b74",
+  "active": "58c3e6b5835f213d",
   "lastOpenFiles": [
+    "operativstystemer/7. Synchronization tools.md",
+    "ch07-2023.pdf",
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/5. Schedualing.md",
+    "ch05-new.pdf",
+    "ch06-2023.pdf",
+    "operativstystemer/Problems/problems 5 and 6.md",
     "Pasted image 20230308124129.png",
     "Pasted image 20230308123658.png",
     "Pasted image 20230308123656.png",
     "Pasted image 20230308123652.png",
-    "operativstystemer/6. Synchronization tools.md",
-    "operativstystemer/Problems/problems 5 and 6.md",
     "programmeringssprog/Haskell/Remember.md",
     "solution02.pdf",
     "programmeringssprog/Theory problems/problems 5th chapter.md",
@@ -175,13 +193,9 @@
     "operativstystemer/assignment 1/sources/unistd_64.h",
     "operativstystemer/assignment 1/sources/syscall_64.tbl",
     "operativstystemer/assignment 1/sources/dm510_msgbox.h",
-    "operativstystemer/assignment 1/sources/dm510_msgbox.c",
-    "operativstystemer/assignment 1/sources/Makefile",
-    "operativstystemer/assignment 1/sources",
     "operativstystemer/Problems/problems 4 and 5.md",
     "operativstystemer/Problems/problems 3 and 4.md",
     "operativstystemer/Problems/problems 2 and 3.md",
-    "operativstystemer/5. Schedualing.md",
     "operativstystemer/0. Intro.md",
     "Pasted image 20230307153550.png",
     "Pasted image 20230307153432.png",
@@ -189,11 +203,9 @@
     "Pasted image 20230307103720.png",
     "Pasted image 20230303115216.png",
     "Pasted image 20230302162704.png",
-    "Pasted image 20230302161709.png",
     "Data mining and machine learning/Problems/Problems frequent pattern mining, Set-rules.md",
     "Data mining and machine learning/Problems/Problems Set-rules.md",
     "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
-    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
-    "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md"
+    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md"
   ]
 }
