@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/Problems/problems 5 and 6.md",
+                "file": "programmeringssprog/Theory problems/problems 5th chapter.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/Problems/problems 5 and 6.md",
+                "file": "programmeringssprog/Theory problems/problems 5th chapter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/Problems/problems 5 and 6.md",
+                "file": "programmeringssprog/Theory problems/problems 5th chapter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/Problems/problems 5 and 6.md"
+                "file": "programmeringssprog/Theory problems/problems 5th chapter.md"
               }
             }
           }
@@ -174,10 +174,13 @@
   },
   "active": "27249b9976868b74",
   "lastOpenFiles": [
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/5. Schedualing.md",
+    "Data mining and machine learning/5. Learning with Distributions.md",
+    "operativstystemer/Problems/problems 5 and 6.md",
     "Pasted image 20230307153550.png",
     "Pasted image 20230307153432.png",
     "programmeringssprog/Theory problems/problems 5th chapter.md",
-    "operativstystemer/Problems/problems 5 and 6.md",
     "programmeringssprog/7. Flow control, expressions, commands.md",
     "programmeringssprog/2. bnf-semantics.md",
     "programmeringssprog/6. Implement scope rules.md",
@@ -209,8 +212,6 @@
     "operativstystemer/Problems/problems 4 and 5.md",
     "operativstystemer/Problems/problems 3 and 4.md",
     "operativstystemer/Problems/problems 2 and 3.md",
-    "operativstystemer/Problems/Problems 1.md",
-    "operativstystemer/6. Synchronization tools.md",
     "Pasted image 20230307105046.png",
     "Pasted image 20230307103720.png",
     "Pasted image 20230303115216.png",
@@ -218,7 +219,6 @@
     "Pasted image 20230302161709.png",
     "Pasted image 20230302155016.png",
     "Pasted image 20230302154235.png",
-    "Pasted image 20230302152033.png",
-    "Pasted image 20230302114129.png"
+    "Pasted image 20230302152033.png"
   ]
 }

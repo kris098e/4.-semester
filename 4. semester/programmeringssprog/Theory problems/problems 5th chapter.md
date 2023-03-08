@@ -1,12 +1,14 @@
 # 1. Using some pseudo-language, write a fragment of code such that the maximum number of activation records present on the stack at runtime is not statically determinable
 ```java
 int j; // when not initialized this variable will get the value that is stored at the address it gets at runtime when executing the program
+func(j);
 
 func(int c) {
 	if c == 0 return 0;
 	else return func(c-1);
 }
 ```
+Can also take user input, which can only be determined at runtime
 
 # 2. In some pseudo-language, write a recursive function such that the maximum number of activation records present at runtime on the stack is statically deter-minable. Can this example be generalised?
 ```java
@@ -18,6 +20,8 @@ sum(int n) {
 }
 ```
 as we know we are gonna call the function n-1 times, and n is determened at compilation time/static memory allocation, the program knows n before runtime.
+
+can also do this with tail-recursion, having the accumulator in function call as argument. This way we dont have to store any values other than the arguments. The call will just reuse the activation record of the tail (the function calling it). This can only be done if the function call is the last thing i.e in the above function is `+` not the function call.
 
 # 3. Consider the following code fragment:
 ```java
