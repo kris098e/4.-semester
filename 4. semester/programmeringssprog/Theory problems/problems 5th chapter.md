@@ -36,6 +36,21 @@ A:{int X = 1;
 # Assume that B is nested one level deeper than A. To resolve the reference to X present in B, why is it not enough to consider the activation record which immediate precedes that of B on the stack? Provide a counter-example filling the spaces in the fragment with dots with appropriate code.
 
 
+```java
+A:{int X = 1;
+
+  void foo() { x=3 }
+  void bar() { int x = 5; foo() }
+  bar(); // put bars activation record on the stack below A
+  
+  B:{X=3;
+	  ....
+  }
+  ....
+}
+```
+in the example we have the activation records: A, bar, foo, B
+
 # 4. Consider the following program fragment written in a pseudo-language using static scope:
 ```c
 void P1 {
@@ -50,8 +65,7 @@ void P1 {
 }
 ```
 # Draw the activation record stack region that occurs between the static and dy-namic chain pointers when the following sequence of calls, P1, P2, P3,P4,P2 has been made (is it understood that at this time they are all active: none has returned)
-
-> _static-link_ : to the block (its activation record) that contains this block
+> _static-link_ : to the block (its activation record) that contains this block, **this can be known at compile time**
 > _dynamic-link_ : to the activation record that was created before this
 
 1. p1 has no pointers
@@ -61,5 +75,8 @@ void P1 {
 5. p2 static link to P1 and dynamic link to p4
 
 # 6. Is it easier to implement the static scope rule or the one for dynamic scope? Give your reasons
-dynamic scope, only has to remember the last variable seen and use this. Static scope has to use activation records or implement CRT or A-list to find the variable needed.
+dynamic scope, only has to remember the last variable seen in the scope and use this. Static scope has to use activation records or implement CRT or A-list to find the variable needed.
+
+static scope is easier for the programmer to use. 
+
 

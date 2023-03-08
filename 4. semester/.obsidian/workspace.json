@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Theory problems/problems 5th chapter.md",
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/problems 5th chapter.md",
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/problems 5th chapter.md",
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/problems 5th chapter.md"
+                "file": "programmeringssprog/Haskell/Remember.md"
               }
             }
           }
@@ -174,13 +174,16 @@
   },
   "active": "27249b9976868b74",
   "lastOpenFiles": [
+    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
+    "programmeringssprog/Haskell/Intro.md",
+    "programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Theory problems/problems 5th chapter.md",
     "operativstystemer/6. Synchronization tools.md",
     "operativstystemer/5. Schedualing.md",
     "Data mining and machine learning/5. Learning with Distributions.md",
     "operativstystemer/Problems/problems 5 and 6.md",
     "Pasted image 20230307153550.png",
     "Pasted image 20230307153432.png",
-    "programmeringssprog/Theory problems/problems 5th chapter.md",
     "programmeringssprog/7. Flow control, expressions, commands.md",
     "programmeringssprog/2. bnf-semantics.md",
     "programmeringssprog/6. Implement scope rules.md",
@@ -196,9 +199,6 @@
     "solution02.pdf",
     "programmeringssprog/Theory problems/Problems 4th chapter.md",
     "programmeringssprog/Theory problems/Problems 1.md",
-    "programmeringssprog/Haskell/Remember.md",
-    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
-    "programmeringssprog/Haskell/Intro.md",
     "programmeringssprog/Haskell/Function syntax.md",
     "programmeringssprog/Theory problems",
     "programmeringssprog/Haskell",

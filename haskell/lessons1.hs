@@ -48,3 +48,15 @@ mySum (x:xs) = x + mySum xs
 myReverse :: [a] -> [a]
 myReverse [] = []
 myReverse (x:xs) = ((myReverse xs)++x:[])
+
+root :: (Floating t, Ord t) => t -> t -> t -> (t,t)
+root a b c
+    | d == 0 = (calcrootOnce, calcrootOnce)
+    | d > 0 = (calcrootTwice, calcrootTwice)
+    | d < 0 = error "d has no solutions"
+    where
+        d = (b*b) - 4*a*c
+        calcrootOnce = a*b*c
+        calcrootTwice = a+b*c
+
+ 
