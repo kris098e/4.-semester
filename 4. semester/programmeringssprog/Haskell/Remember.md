@@ -158,3 +158,126 @@ quicksort (x:xs) =
         biggerSorted = quicksort [a | a <- xs, a > x]  
     in  smallerSorted ++ [x] ++ biggerSorted  
 ```
+
+# Higher ordered functions / curried-functions
+![[Pasted image 20230309102218.png]]
+
+```Haskell
+ghci> let multTwoWithNine = multThree 9  
+ghci> multTwoWithNine 2 3  
+54  
+ghci> let multWithEighteen = multTwoWithNine 2  
+ghci> multWithEighteen 10  
+180  
+```
+Since multThree is a function that takes 3 parameters, but returns a function that multiplies the next parameter with `9` it will return a function that takes 2 arguments multiplied by 9.
+Thats where we supply the last 2 arguments on the command-line
+
+```haskell
+compareWithHundred :: (Num a, Ord a) => a -> Ordering  
+compareWithHundred = compare 100  
+```
+Compare returns a function that then compares 100 with an argument that we give it.
+
+## Infix function
+
+```haskell
+isUpperAlphanum :: Char -> Bool  
+isUpperAlphanum = (`elem` ['A'..'Z'])  
+```
+When sorrounding the expression with `()` haskell will put the argument passed in on the side that is missing an upperand.
+```haskell
+divideByTen :: (Floating a) => a -> a  
+divideByTen = (/10)  
+```
+When supplying the `divideByTen` with an argument, it will divide the argument with 10 and return it, if we wrote
+
+```haskell
+divideByTen :: (Floating a) => a -> a  
+divideByTen = (10/)  
+```
+then `10` would be divided with the argument applied.
+
+
+## Map and filters
+### Map
+```haskell
+map :: (a -> b) -> [a] -> [b]  
+map _ [] = []  
+map f (x:xs) = f x : map f xs  
+```
+**example**
+```haskell
+ghci> map (+3) [1,5,3,1,6]  
+[4,8,6,4,9]  
+ghci> map (++ "!") ["BIFF", "BANG", "POW"]  
+["BIFF!","BANG!","POW!"]  
+ghci> map (replicate 3) [3..6]  
+[[3,3,3],[4,4,4],[5,5,5],[6,6,6]]  
+ghci> map (map (^2)) [[1,2],[3,4,5,6],[7,8]]  
+[[1,4],[9,16,25,36],[49,64]]  
+ghci> map fst [(1,2),(3,5),(6,3),(2,6),(2,5)]  
+[1,3,6,2,2]  
+```
+fx `map (+3) ...` uses infix function, which here is a function that has already has taken `+3` and needs the 2nd parameter to give the final output as `+` is a function of type 
+`(+) :: Num a => a -> a -> a`. The supplied value for the function will then be `x` in the `map`.
+
+Using map, we can also do stuff like map (*) [0..], if not for any other reason than to illustrate how currying works and how (partially applied) functions are real values that you can pass around to other functions or put into lists (you just can't turn them to strings). So far, we've only mapped functions that take one parameter over lists, like map (*2) [0..] to get a list of type (Num a) => [a], but we can also do map (*) [0..] without a problem. What happens here is that the number in the list is applied to the function *, which has a type of (Num a) => a -> a -> a. Applying only one parameter to a function that takes two parameters returns a function that takes one parameter. If we map * over the list [0..], we get back a list of functions that only take one parameter, so (Num a) => [a -> a]. map (*) [0..] produces a list like the one we'd get by writing [(0*),(1*),(2*),(3*),(4*),(5*)...
+
+```haskell
+ghci> let listOfFuns = map (*) [0..]  
+ghci> (listOfFuns !! 4) 5  
+20  
+```
+Getting the element with the index 4 from our list returns a function that's equivalent to (4*). And then, we just apply 5 to that function. So that's like writing (4*) 5 or just 4 * 5.
+
+### filter
+```haskell
+filter :: (a -> Bool) -> [a] -> [a]  
+filter _ [] = []  
+filter p (x:xs)   
+    | p x       = x : filter p xs  
+    | otherwise = filter p xs  
+```
+**example**
+```haskell
+ghci> filter (>3) [1,5,3,2,1,6,4,3,2,1]  
+[5,6,4]  
+ghci> filter (==3) [1,2,3,4,5]  
+[3]  
+ghci> filter even [1..10]  
+[2,4,6,8,10]  
+ghci> let notNull x = not (null x) in filter notNull [[1,2,3],[],[3,4,5],[2,2],[],[],[]]  
+[[1,2,3],[3,4,5],[2,2]]  
+ghci> filter (`elem` ['a'..'z']) "u LaUgH aT mE BeCaUsE I aM diFfeRent"  
+"uagameasadifeent"  
+ghci> filter (`elem` ['A'..'Z']) "i lauGh At You BecAuse u r aLL the Same"  
+"GAYBALLS"  
+```
+again, in the example `filter (>3) [1,5,3,2,1,6,4,3,2,1] ` the `(>3)` is an infix function of type `(>) :: Ord a => a -> a -> Bool`, the infix function needs another agument, since the `(>3)` returns a function of type `a->Bool` and will put the input on the `parameter a`. The input in filter is the `x` provided.
+
+
+## Lambdas
+People who are not well acquainted with how currying and partial application works often use lambdas where they don't need to. For instance, the expressions map (+3) [1,6,3,2] and map (\x -> x + 3) [1,6,3,2] are equivalent since both (+3) and (\x -> x + 3) are functions that take a number and add 3 to it. Needless to say, making a lambda in this case is stupid since using partial application is much more readable.
+```haskell
+ghci> map (\(a,b) -> a + b) [(1,2),(3,5),(6,3),(2,6),(2,5)]  
+[3,8,9,8,7]  
+```
+
+### folds
+```haskell
+sum' :: (Num a) => [a] -> a  
+sum' xs = foldl (\acc x -> acc + x) 0 xs  
+```
+starts from the left of a list and accumulates to give a number out
+
+```haskell
+elem' :: (Eq a) => a -> [a] -> Bool  
+elem' y ys = foldl (\acc x -> if x == y then True else acc) False ys 
+```
+Well, well, well, what do we have here? The starting value and accumulator here is a boolean value. The type of the accumulator value and the end result is always the same when dealing with folds. Remember that if you ever don't know what to use as a starting value, it'll give you some idea. We start off with False. It makes sense to use False as a starting value. We assume it isn't there. Also, if we call a fold on an empty list, the result will just be the starting value. Then we check the current element is the element we're looking for. If it is, we set the accumulator to True. If it's not, we just leave the accumulator unchanged. If it was False before, it stays that way because this current element is not it. If it was True, we leave it at that.
+
+
+# Data types, making our own
+[link to page](http://learnyouahaskell.com/making-our-own-types-and-typeclasses#algebraic-data-types)
+

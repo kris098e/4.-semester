@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md"
+                "file": "programmeringssprog/Haskell/Remember.md"
               }
             }
           }
@@ -162,6 +162,9 @@
   },
   "active": "58c3e6b5835f213d",
   "lastOpenFiles": [
+    "Pasted image 20230309102218.png",
+    "programmeringssprog/8. Subprograms.md",
+    "Data mining and machine learning/5. Learning with Distributions.md",
     "operativstystemer/assignment 1/sources/testsyscall.c",
     "operativstystemer/6. Synchronization tools.md",
     "programmeringssprog/Theory problems/problems 5th chapter.md",
@@ -182,7 +185,6 @@
     "programmeringssprog/Theory problems",
     "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
     "programmeringssprog/Haskell/Function syntax.md",
-    "programmeringssprog/8. Subprograms.md",
     "programmeringssprog/7. Flow control, expressions, commands.md",
     "programmeringssprog/6. Implement scope rules.md",
     "programmeringssprog/5. Memory Management.md",
@@ -193,7 +195,6 @@
     "operativstystemer/assignment 1/video",
     "operativstystemer/assignment 1/sources/unistd_64.h",
     "operativstystemer/assignment 1/sources/syscall_64.tbl",
-    "operativstystemer/assignment 1/sources/dm510_msgbox.h",
     "operativstystemer/Problems/problems 4 and 5.md",
     "operativstystemer/Problems/problems 3 and 4.md",
     "operativstystemer/Problems/problems 2 and 3.md",
@@ -206,7 +207,6 @@
     "Pasted image 20230302162704.png",
     "Data mining and machine learning/Problems/Problems frequent pattern mining, Set-rules.md",
     "Data mining and machine learning/Problems/Problems Set-rules.md",
-    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
-    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md"
+    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md"
   ]
 }
