@@ -41,7 +41,7 @@ A:{int X = 1;
 
   void foo() { x=3 }
   void bar() { int x = 5; foo() }
-  bar(); // put bars activation record on the stack below A
+  bar(); // put bars activation record on the stack below A, which will put foo() on top of bar() aswel
   
   B:{X=3;
 	  ....

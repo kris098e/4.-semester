@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/7. Synchronization tools examples.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/7. Synchronization tools examples.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/7. Synchronization tools examples.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/7. Synchronization tools examples.md"
+                "file": "Data mining and machine learning/5. Learning with Distributions.md"
               }
             }
           }
@@ -162,7 +162,12 @@
   },
   "active": "58c3e6b5835f213d",
   "lastOpenFiles": [
+    "operativstystemer/assignment 1/sources/testsyscall.c",
     "operativstystemer/6. Synchronization tools.md",
+    "programmeringssprog/Theory problems/problems 5th chapter.md",
+    "programmeringssprog/Theory problems/Problems 1.md",
+    "programmeringssprog/Theory problems/Problems 4th chapter.md",
+    "programmeringssprog/Haskell/Remember.md",
     "operativstystemer/7. Synchronization tools examples.md",
     "ch07-2023.pdf",
     "operativstystemer/5. Schedualing.md",
@@ -173,11 +178,7 @@
     "Pasted image 20230308123658.png",
     "Pasted image 20230308123656.png",
     "Pasted image 20230308123652.png",
-    "programmeringssprog/Haskell/Remember.md",
     "solution02.pdf",
-    "programmeringssprog/Theory problems/problems 5th chapter.md",
-    "programmeringssprog/Theory problems/Problems 4th chapter.md",
-    "programmeringssprog/Theory problems/Problems 1.md",
     "programmeringssprog/Theory problems",
     "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
     "programmeringssprog/Haskell/Function syntax.md",
