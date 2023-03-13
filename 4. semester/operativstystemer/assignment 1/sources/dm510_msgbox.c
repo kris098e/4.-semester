@@ -77,8 +77,10 @@ int sys_dm510_msgbox_get( char* buffer ) {
     int numberOfBytesNotCopied;
     
     msg_t* msg = top;
-    int mlength = msg->length;
     top = msg->previous;
+    local_irq_restore(flags);
+    int mlength = msg->length;
+    
     if(access_ok(buffer, mlength) == 0) return -EFAULT; // error code for bad address
 
     /* copy message */
@@ -98,7 +100,6 @@ int sys_dm510_msgbox_get( char* buffer ) {
 
     return mlength; // return how many bytes copied
   }
-  local_irq_restore(flags);
   
   return -1;
 }

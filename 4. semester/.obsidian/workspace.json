@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "a41ae10000b30407",
+        "id": "0ad96ea9ca093bf9",
         "type": "tabs",
         "children": [
           {
-            "id": "27249b9976868b74",
+            "id": "683a9dcdee219ecf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "programmeringssprog/8. Subprograms.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "58c3e6b5835f213d",
+            "id": "5d3c4457f470f922",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Haskell/Remember.md",
+                "file": "programmeringssprog/9. Exceptions.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Haskell/Remember.md",
+                "file": "programmeringssprog/9. Exceptions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Haskell/Remember.md",
+                "file": "programmeringssprog/9. Exceptions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Haskell/Remember.md"
+                "file": "programmeringssprog/9. Exceptions.md"
               }
             }
           }
@@ -160,23 +160,43 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "58c3e6b5835f213d",
+  "active": "5d3c4457f470f922",
   "lastOpenFiles": [
-    "Pasted image 20230309102218.png",
     "programmeringssprog/8. Subprograms.md",
+    "programmeringssprog/9. Exceptions.md",
+    "programmeringssprog/7. Flow control, expressions, commands.md",
+    "programmeringssprog/5. Memory Management.md",
+    "_exercise05.pdf",
+    "Untitled.canvas",
+    "programmeringssprog/6. Implement scope rules.md",
+    "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
+    "Pasted image 20230310090941.png",
+    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
+    "Data mining and machine learning/4. Bayesian Learning.md",
+    "Data mining and machine learning/3. Classification.md",
+    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
+    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
     "Data mining and machine learning/5. Learning with Distributions.md",
+    "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/Problems/Problems frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/Problems/1. Problems Set-rules.md",
+    "Data mining and machine learning/Problems/Problems Set-rules.md",
+    "programmeringssprog/Haskell/Remember.md",
+    "_solution04.pdf",
+    "operativstystemer/Problems/problems 5 and 6.md",
+    "Pasted image 20230309135509.png",
+    "Pasted image 20230309102218.png",
     "operativstystemer/assignment 1/sources/testsyscall.c",
     "operativstystemer/6. Synchronization tools.md",
     "programmeringssprog/Theory problems/problems 5th chapter.md",
     "programmeringssprog/Theory problems/Problems 1.md",
     "programmeringssprog/Theory problems/Problems 4th chapter.md",
-    "programmeringssprog/Haskell/Remember.md",
     "operativstystemer/7. Synchronization tools examples.md",
     "ch07-2023.pdf",
     "operativstystemer/5. Schedualing.md",
     "ch05-new.pdf",
     "ch06-2023.pdf",
-    "operativstystemer/Problems/problems 5 and 6.md",
     "Pasted image 20230308124129.png",
     "Pasted image 20230308123658.png",
     "Pasted image 20230308123656.png",
@@ -184,29 +204,10 @@
     "solution02.pdf",
     "programmeringssprog/Theory problems",
     "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
-    "programmeringssprog/Haskell/Function syntax.md",
-    "programmeringssprog/7. Flow control, expressions, commands.md",
-    "programmeringssprog/6. Implement scope rules.md",
-    "programmeringssprog/5. Memory Management.md",
-    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
-    "programmeringssprog/3. undecidability.md",
-    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
     "operativstystemer/assignment 1/video/video1118553402.mp4",
     "operativstystemer/assignment 1/video",
-    "operativstystemer/assignment 1/sources/unistd_64.h",
-    "operativstystemer/assignment 1/sources/syscall_64.tbl",
-    "operativstystemer/Problems/problems 4 and 5.md",
-    "operativstystemer/Problems/problems 3 and 4.md",
-    "operativstystemer/Problems/problems 2 and 3.md",
-    "operativstystemer/0. Intro.md",
     "Pasted image 20230307153550.png",
     "Pasted image 20230307153432.png",
-    "Pasted image 20230307105046.png",
-    "Pasted image 20230307103720.png",
-    "Pasted image 20230303115216.png",
-    "Pasted image 20230302162704.png",
-    "Data mining and machine learning/Problems/Problems frequent pattern mining, Set-rules.md",
-    "Data mining and machine learning/Problems/Problems Set-rules.md",
-    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md"
+    "Pasted image 20230307105046.png"
   ]
 }
