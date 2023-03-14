@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/9. Exceptions.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/9. Exceptions.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/9. Exceptions.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/9. Exceptions.md"
+                "file": "Data mining and machine learning/5. Learning with Distributions.md"
               }
             }
           }
@@ -162,8 +162,9 @@
   },
   "active": "5d3c4457f470f922",
   "lastOpenFiles": [
-    "programmeringssprog/8. Subprograms.md",
+    "Pasted image 20230314100354.png",
     "programmeringssprog/9. Exceptions.md",
+    "programmeringssprog/8. Subprograms.md",
     "programmeringssprog/7. Flow control, expressions, commands.md",
     "programmeringssprog/5. Memory Management.md",
     "_exercise05.pdf",
@@ -203,7 +204,6 @@
     "Pasted image 20230308123652.png",
     "solution02.pdf",
     "programmeringssprog/Theory problems",
-    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
     "operativstystemer/assignment 1/video/video1118553402.mp4",
     "operativstystemer/assignment 1/video",
     "Pasted image 20230307153550.png",
