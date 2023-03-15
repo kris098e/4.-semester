@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Haskell/Remember.md",
+                "file": "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Haskell/Remember.md",
+                "file": "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Haskell/Remember.md",
+                "file": "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Haskell/Remember.md"
+                "file": "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md"
               }
             }
           }
@@ -174,6 +174,8 @@
   },
   "active": "d6c52a85c3e8ca36",
   "lastOpenFiles": [
+    "operativstystemer/Problems/problems 5 and 6.md",
+    "programmeringssprog/Haskell/Remember.md",
     "programmeringssprog/Theory problems/problems 6th chapter.md",
     "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
     "ch02_linux_modules.pdf",
@@ -211,7 +213,6 @@
     "Data mining and machine learning/3. Classification.md",
     "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
     "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
-    "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
     "Pasted image 20230309135509.png",
     "Pasted image 20230309102218.png",
     "Pasted image 20230308124129.png",

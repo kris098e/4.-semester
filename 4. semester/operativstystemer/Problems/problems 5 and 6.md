@@ -166,43 +166,54 @@ CPU-bound will not volunetarily interrupt themselves as much as I/O bound, so th
 15.  The following processes are being scheduled using a preemptive, priority-based, round-robin scheduling algorithm.
     ![[Pasted image 20230309135509.png]]
     
-    Each process is assigned a numerical priority, with a higher number indicating a higher relative priority. The scheduler will execute the highestpriority process. For processes with the same priority, a round-robin scheduler will be used with a time quantum of 10 units. If a process is preempted by a higher-priority process, the preempted process is placed at the end of the queue.
-    
-    -   Show the scheduling order of the processes using a Gantt chart.
+	    Each process is assigned a numerical priority, with a higher number indicating a higher relative priority. The scheduler will execute the highestpriority process. For processes with the same priority, a round-robin scheduler will be used with a time quantum of 10 units. If a process is preempted by a higher-priority process, the preempted process is placed at the end of the queue.
+	    
+	    -   Show the scheduling order of the processes using a Gantt chart.
 
         
-    -   What is the turnaround time for each process?
-        
-    -   What is the waiting time for each process?
+	    -   What is the turnaround time for each process?
+	        
+	    -   What is the waiting time for each process?
         
 16.  Which of the following scheduling algorithms could result in starvation?
     
-    -   First-come, first-served
-        
-    -   Shortest job first
-        
-    -   Round robin
-        
-    -   Priority
-        
+	    -   First-come, first-served
+	    Will not, since each process will get time on the CPU eventually, as it is just a que that takes 1 by 1 without ordering elements
+	    -   Shortest job first
+	    Can lead to starvation if processes with less CPU-burst keep coming than a specific process
+	    -   Round robin
+	    If it is priority based, and processes with higher priority than a specific task, a process can be starved if it has low priority. Else if it is **first-come first-served**-fashion then there cannot be starvation
+	    -   Priority
+			yes, look answer to round robin
+	        
 17.  Consider a system running ten I/O-bound tasks and one CPU-bound task. Assume that the I/O-bound tasks issue an I/O operation once for every millisecond of CPU computing and that each I/O operation takes 10 milliseconds to complete. Also assume that the context-switching overhead is 0.1 millisecond and that all processes are long-running tasks. Describe the CPU utilization for a round-robin scheduler when:
-    
-    -   The time quantum is 1 millisecond
-        
-    -   The time quantum is 10 milliseconds
-        
+	    -   The time quantum is 1 millisecond
+	    start of with I/O bound tasks and then CPU-bound task. 
+			1. use 10 miliseconds for all to get through, but spend a total of $0.1\cdot 10=1$ milisecond on context switching.
+			2. use 1 milisecond on cpu task + a context switch.
+			this means we use the CPU for $11 ms$ and a context switch-overhead of $1.1ms$ which leads to a **CPU-utilization** of$\frac{11ms}{11ms+1.1ms}=91\%$
+	    -   The time quantum is 10 milliseconds
+		1. use 10 miliseconds for all to get through, but spend a total of $0.1\cdot 10=1$ milisecond on context switching.
+		2. use 10 miliseconds on the cpu task + a contex switch
+			this means we use the CPU for $10ms+10ms=20ms$ with a context-switch overhead of $1.1ms$, this leads to a **CPU-utilization** of $\frac{20ms}{20ms+1.1ms}=94.7\%$
+
+
 18.  Explain the how the following scheduling algorithms discriminate either in favor of or against short processes:
-    
-    -   FCFS
-        
-    -   RR
-        
-    -   Multilevel feedback queues
+	    -   FCFS
+	    **discriminates** since short processes may come last in the que, which means they finish last aswel. 
+	    -   RR
+	    **favor** since if a short process comes last in the que, it will still get to be schedualed in the same round as the other processes, and since this process has a short CPU-burst, it can finish earlier, than if it were fx _FCFS_
+	    -   Multilevel feedback queues
+	    If we give short processes higher priority then this will favor short processes.
         
 19.  Assume that an SMP system has private, per-processor run queues. When a new process is created, it can be placed in either the same queue as the parent process or a separate queue.
-    
-    -   What are the benefits of placing the new process in the same queue as its parent?
-        
-    -   What are the benefits of placing the new process in a different queue?
-        
-20.  Explain why interrupt and dispatch latency times must be bounded in a hard real-time system.
+	    -   What are the benefits of placing the new process in the same queue as its parent?
+	    If the new process does not do anything important, then the importance of this process being finished is just as big a priority as the parent process. Therefore when inheriting the priority, the overall process priority stays the same. This is a benefit, since we want the overall task to be finished just as much as we want the parent process to be finished.
+	    -   What are the benefits of placing the new process in a different queue?
+		if the child process is fx some error handling that needs to be done quickly, then we want the child process to have a higher priority. If some event happened that the child process was created for, has a low priority of executing, then we want it to have a lower priority
+
+
+20.  Explain why interrupt and dispatch latency times must be bounded in a hard real-time system
+			interrupts and dispatch latency plays a role each a new process has to be put on the CPU. Therefore we want these times to be bounded, such that we can estimate how long the total task will maximally take, when we expect hard real-time scheduling. This is such that we can guarantee that the task will be finished inside a specific time-frame.
+
+	
