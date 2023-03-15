@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/8. Subprograms.md",
+                "file": "programmeringssprog/7. Subprograms.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
+                "file": "operativstystemer/7. Synchronization tools examples.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d6c52a85c3e8ca36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md"
+                "file": "programmeringssprog/Haskell/Remember.md"
               }
             }
           }
@@ -160,16 +172,37 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "5d3c4457f470f922",
+  "active": "d6c52a85c3e8ca36",
   "lastOpenFiles": [
-    "Pasted image 20230314100354.png",
-    "programmeringssprog/9. Exceptions.md",
-    "programmeringssprog/8. Subprograms.md",
-    "programmeringssprog/7. Flow control, expressions, commands.md",
+    "programmeringssprog/Theory problems/problems 6th chapter.md",
+    "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
+    "ch02_linux_modules.pdf",
+    "operativstystemer/7. Synchronization tools examples.md",
+    "ch_02_linux_modules.pdf.md",
+    "Unconfirmed 256026.crdownload",
+    "operativstystemer/Assignment 2/Notes",
+    "operativstystemer/Assignment 2",
+    "operativstystemer/Deadlocks.md",
+    "ch08-2023.pdf",
+    "Unconfirmed 690396.crdownload",
+    "programmeringssprog/6. Flow control, expressions, commands.md",
+    "_DM566-2023-part5.pdf",
+    "Data mining and machine learning/5. Learning with Distributions.md",
+    "programmeringssprog/7. Subprograms.md",
+    "programmeringssprog/7b. Exceptions.md",
+    "programmeringssprog/13. Historical Perspective.md",
+    "_07b_exceptions.pdf",
+    "_06_control_flow.pdf",
+    "programmeringssprog/5a. Implement scope rules.md",
     "programmeringssprog/5. Memory Management.md",
+    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
+    "programmeringssprog/3. undecidability.md",
+    "programmeringssprog/2. bnf-semantics.md",
+    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
+    "programmeringssprog/Theory problems/problems 5th chapter.md",
+    "Pasted image 20230314100354.png",
     "_exercise05.pdf",
     "Untitled.canvas",
-    "programmeringssprog/6. Implement scope rules.md",
     "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
     "Pasted image 20230310090941.png",
     "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
@@ -178,36 +211,14 @@
     "Data mining and machine learning/3. Classification.md",
     "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
     "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
-    "Data mining and machine learning/5. Learning with Distributions.md",
     "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
-    "Data mining and machine learning/Problems/Problems frequent pattern mining, Set-rules.md",
-    "Data mining and machine learning/Problems/1. Problems Set-rules.md",
-    "Data mining and machine learning/Problems/Problems Set-rules.md",
-    "programmeringssprog/Haskell/Remember.md",
-    "_solution04.pdf",
-    "operativstystemer/Problems/problems 5 and 6.md",
     "Pasted image 20230309135509.png",
     "Pasted image 20230309102218.png",
-    "operativstystemer/assignment 1/sources/testsyscall.c",
-    "operativstystemer/6. Synchronization tools.md",
-    "programmeringssprog/Theory problems/problems 5th chapter.md",
-    "programmeringssprog/Theory problems/Problems 1.md",
-    "programmeringssprog/Theory problems/Problems 4th chapter.md",
-    "operativstystemer/7. Synchronization tools examples.md",
-    "ch07-2023.pdf",
-    "operativstystemer/5. Schedualing.md",
-    "ch05-new.pdf",
-    "ch06-2023.pdf",
     "Pasted image 20230308124129.png",
     "Pasted image 20230308123658.png",
     "Pasted image 20230308123656.png",
     "Pasted image 20230308123652.png",
-    "solution02.pdf",
-    "programmeringssprog/Theory problems",
-    "operativstystemer/assignment 1/video/video1118553402.mp4",
-    "operativstystemer/assignment 1/video",
     "Pasted image 20230307153550.png",
-    "Pasted image 20230307153432.png",
-    "Pasted image 20230307105046.png"
+    "Pasted image 20230307153432.png"
   ]
 }
