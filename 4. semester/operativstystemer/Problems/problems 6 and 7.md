@@ -131,6 +131,24 @@ Prove that the algorithm satisfies all three requirements for the critical-secti
 
 Just follows the same principal as **Petersons solution**
 
+
+11. Consider how to implement a mutex lock using the compare_and_swap() instruction. Assume that the following structure defining the mutex lock is available:
+```c
+ typedef struct {
+     int available;
+ } lock;
+```
+
+The value (`available == 0`) indicates that the lock is available, and a value of 1 indicates that the lock is unavailable. Using this struct, illustrate how the following functions can be implemented using the `compare_and_swap()` instruction:
+
+-   void acquire(lock *mutex)
+    
+-   void release(lock *mutex)
+    
+Be sure to include any initialization that may be necessary.
+
+There is an example in the slides for synchronization tools, but we implement it with `compare_and_swap()` given the lock, and we wait for it to become available.
+
 12. Assume that a system has multiple processing cores. For each of the following scenarios, describe which is a better locking mechanism—a spinlock or a mutex lock where waiting processes sleep while waiting for the lock to become available:
 
 * The lock is to be held for a short duration.

@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/Problems/problems 6 and 7.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/Problems/problems 6 and 7.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/Problems/problems 6 and 7.md",
+                "file": "Data mining and machine learning/5. Learning with Distributions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/Problems/problems 6 and 7.md"
+                "file": "Data mining and machine learning/5. Learning with Distributions.md"
               }
             }
           }
@@ -198,12 +198,22 @@
   },
   "active": "4fbe5d21236b177e",
   "lastOpenFiles": [
+    "programmeringssprog/Haskell/Remember.md",
+    "Pasted image 20230316113044.png",
+    "Pasted image 20230316112525.png",
+    "Pasted image 20230316112146.png",
+    "Pasted image 20230316112134.png",
+    "Pasted image 20230316110609.png",
+    "Pasted image 20230316110501.png",
+    "Pasted image 20230316105735.png",
+    "Pasted image 20230316103308.png",
+    "Pasted image 20230316103030.png",
+    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
+    "operativstystemer/Problems/problems 6 and 7.md",
     "operativstystemer/Problems/problems 5 and 6.md",
     "operativstystemer/Remember.md",
-    "operativstystemer/Problems/problems 6 and 7.md",
     "Pasted image 20230316090248.png",
     "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
-    "programmeringssprog/Haskell/Remember.md",
     "programmeringssprog/Theory problems/problems 6th chapter.md",
     "ch02_linux_modules.pdf",
     "operativstystemer/7. Synchronization tools examples.md",
@@ -229,21 +239,10 @@
     "programmeringssprog/2. bnf-semantics.md",
     "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
     "programmeringssprog/Theory problems/problems 5th chapter.md",
-    "Pasted image 20230314100354.png",
     "_exercise05.pdf",
     "Untitled.canvas",
     "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
-    "Pasted image 20230310090941.png",
     "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
-    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
-    "Data mining and machine learning/4. Bayesian Learning.md",
-    "Data mining and machine learning/3. Classification.md",
-    "Pasted image 20230309135509.png",
-    "Pasted image 20230309102218.png",
-    "Pasted image 20230308124129.png",
-    "Pasted image 20230308123658.png",
-    "Pasted image 20230308123656.png",
-    "Pasted image 20230308123652.png",
-    "Pasted image 20230307153550.png"
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md"
   ]
 }

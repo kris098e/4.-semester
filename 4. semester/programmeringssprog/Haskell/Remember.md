@@ -281,3 +281,65 @@ Well, well, well, what do we have here? The starting value and accumulator here 
 # Data types, making our own
 [link to page](http://learnyouahaskell.com/making-our-own-types-and-typeclasses#algebraic-data-types)
 
+# Functor, Applicatives and monads 
+Each has its own `Interface` that needs an implementation for the functions.
+## Functor
+https://www.youtube.com/watch?v=xCut-QT2cpI
+baisicly an interface, where we define what to do with a wrapped value. A _wrapped value_ is something that is already in a class. I.e `Just a` here a is wrapped in the `Just`. Also items in a `list` are wrapped in the list.
+
+Look at the fact that a `Branch` is a `Tree`, but kind of like a **subclass** to it.
+![[Pasted image 20230316103030.png]]
+where `x = Branch (Tip a)(Branch(Tip 5)(Tip 6))`
+![[Pasted image 20230316103308.png]]
+In this, Branch has two trees, so we recurse over them
+
+the `fmap f right = f <$> right$` means that if we want to recurse, i.e use the `func` again, we can just that notation. 
+
+## applicatives
+![[Pasted image 20230316105735.png]]
+Wrap a function, such that can make the function fx. `Just (+3)`, We can then apply it to some other `Just` value.
+
+A wrapped function applied to a wrapped value.
+![[Pasted image 20230316110501.png]]
+`pure` expects `a` as input and returns `f a`, while Tip takes in an input `a` and returns `f a`. Therefore we can simply say `pure = Tip`.
+
+
+![[Pasted image 20230316110609.png]]
+In **functor** the function lives outside the space of the wrapping. In applicatives, the function lives inside the same wrapping.
+
+So when we do a `Just f <*> j` we have a function `f` wrapped in `Just` and a `J` wrapped in `Just` and we can simply call `fmap f j`, since the function `f` is the regular function, and `J` is a wrapped value, but the 
+`fmap f (Just a) = Just (f a)`.  If then we have `Nothing` which does not contain anything, we can then simply just return `Noting` without having to do the `Functor` implementation for this `data Maybe`
+
+## Monads
+![[Pasted image 20230316112525.png]]
+![[Pasted image 20230316112134.png]]
+We see that it indeed applies the regular function `half` and then returns a wrapped value. It evaluates what is inside the wrapped function and uses this as the input
+
+Monads need to already have defined `Applicative` and a `Functor` to be used.
+![[Pasted image 20230316113044.png]]
+The `f val` under the `Monad` for `Just2 val` does not need to be wrapped with `Just2` as the function f returns a `Monad b`, which can be seen in the _green comment_.  
+
+
+# Input output
+http://learnyouahaskell.com/input-and-output#hello-world
+The last line i main has to not be assigned to anything.
+```haskell
+main = do  
+    putStrLn "Hello, what's your name?"  
+    name <- getLine  
+    putStrLn ("Hey " ++ name ++ ", you rock!")  
+```
+
+
+THis isnt valid
+```haskell
+nameTag = "Hello, my name is " ++ getLine  
+```
+Since we have to unpack the `getLine :: IO String` to a `String`. This is done via un-tainting it with fx.
+`hello <- getLine`.
+
+DOing like so 
+`foo <- putStrLn "Hello, what's your name?"  ` will give the type of `foo` to be `foo :: ()` since 
+`putStrLn :: IO ()`  so untainting will just give `()`.
+
+# kommet hertil http://learnyouahaskell.com/input-and-output#hello-world:~:text=the%20do%20block%20are%20lined
