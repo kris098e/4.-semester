@@ -72,7 +72,7 @@ alternate xs = f xs
 
 
 partial :: Num a => a -> a
-partial x = (+)42 x
+partial = (+)42
 
 -- suggest type for apply f x = f x.        apply :: (a->b) -> a -> b. 2nd argument has same type as what the f function takes in. 
 -- compose f g x = f (g x).                 compose :: (c -> d) -> (a->c) -> a -> d. g input type is same as input. f input has to have the same

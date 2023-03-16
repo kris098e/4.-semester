@@ -37,8 +37,8 @@ we will then execute p3 , then p2 and then p1
 4.  Consider the following set of processes, with the length of the CPU burst time given in milliseconds:
 ![[Pasted image 20230307153432.png]]
     
-    The processes are assumed to have arrived in the order p1, p2, p3, p4, p5 all at time 0.
-    -   Draw four Gantt charts that illustrate the execution of these processes using the following scheduling algorithms: FCFS, SJF, nonpreemptive priority (a larger priority number implies a higher priority), and RR (quantum = 2).
+The processes are assumed to have arrived in the order p1, p2, p3, p4, p5 all at time 0.
+-   Draw four Gantt charts that illustrate the execution of these processes using the following scheduling algorithms: FCFS, SJF, nonpreemptive priority (a larger priority number implies a higher priority), and RR (quantum = 2).
 **FCFS**: p1->p2->p3->p4->p5
 **SJF**: p2->p1->p4->p5->p3
 **nonpreemptive priority**: p3->p5->(p1,p4)->p2
@@ -165,24 +165,23 @@ CPU-bound will not volunetarily interrupt themselves as much as I/O bound, so th
 
 15.  The following processes are being scheduled using a preemptive, priority-based, round-robin scheduling algorithm.
     ![[Pasted image 20230309135509.png]]
-    
-	    Each process is assigned a numerical priority, with a higher number indicating a higher relative priority. The scheduler will execute the highestpriority process. For processes with the same priority, a round-robin scheduler will be used with a time quantum of 10 units. If a process is preempted by a higher-priority process, the preempted process is placed at the end of the queue.
+    	    Each process is assigned a numerical priority, with a higher number indicating a higher relative priority. The scheduler will execute the highest priority process. For processes with the same priority, a round-robin scheduler will be used with a time quantum of 10 units. If a process is preempted by a higher-priority process, the preempted process is placed at the end of the queue.
 	    
 	    -   Show the scheduling order of the processes using a Gantt chart.
+			p1(done)->p2(5, 15 left) ->p3(10, 10 left, overall time is 30)->p4(10, 10 left, overall time is 40) -> p3(5, 5 left, overall time is 45)->p5(5, done, overall time is 50) ->p4(5, 5 left, overall time is 55)->p6(15, done, overall time is 70)->p3(5, done, overall time is 75)->p4(5, done, overall time is 80)->p2(15, done, overall time is 95)
 
-        
 	    -   What is the turnaround time for each process?
-	        
+	    take all processes, when it has arrived and when it finished.
+	    
 	    -   What is the waiting time for each process?
         
 16.  Which of the following scheduling algorithms could result in starvation?
-    
 	    -   First-come, first-served
 	    Will not, since each process will get time on the CPU eventually, as it is just a que that takes 1 by 1 without ordering elements
 	    -   Shortest job first
 	    Can lead to starvation if processes with less CPU-burst keep coming than a specific process
 	    -   Round robin
-	    If it is priority based, and processes with higher priority than a specific task, a process can be starved if it has low priority. Else if it is **first-come first-served**-fashion then there cannot be starvation
+	    If it is priority based, and processes with higher priority than a specific task, a process can be starved if it has low priority. Else if it is **first-come first-served**-fashion then there cannot occur starvation
 	    -   Priority
 			yes, look answer to round robin
 	        
@@ -202,18 +201,16 @@ CPU-bound will not volunetarily interrupt themselves as much as I/O bound, so th
 	    -   FCFS
 	    **discriminates** since short processes may come last in the que, which means they finish last aswel. 
 	    -   RR
-	    **favor** since if a short process comes last in the que, it will still get to be schedualed in the same round as the other processes, and since this process has a short CPU-burst, it can finish earlier, than if it were fx _FCFS_
+	    **favor** since if a short process comes last in the que, it will still get to be schedualed in the same round as the other processes, and since this process has a short CPU-burst, it can finish earlier, than if it were fx _FCFS_. Shorter processes will get higher percentage of their total CPU time done in the time quantum compared to the longer processes
 	    -   Multilevel feedback queues
-	    If we give short processes higher priority then this will favor short processes.
+	    If we give short processes higher priority then this will favor short processes. I.e move the shorter processes to a higher priority que.
         
 19.  Assume that an SMP system has private, per-processor run queues. When a new process is created, it can be placed in either the same queue as the parent process or a separate queue.
-	    -   What are the benefits of placing the new process in the same queue as its parent?
-	    If the new process does not do anything important, then the importance of this process being finished is just as big a priority as the parent process. Therefore when inheriting the priority, the overall process priority stays the same. This is a benefit, since we want the overall task to be finished just as much as we want the parent process to be finished.
+	    -   Get the same memory if it wants to use the same memory. Caches are also local, so they may also want to use this. think about NUMA
+			
 	    -   What are the benefits of placing the new process in a different queue?
-		if the child process is fx some error handling that needs to be done quickly, then we want the child process to have a higher priority. If some event happened that the child process was created for, has a low priority of executing, then we want it to have a lower priority
+		If the other CPU is not used, then you can utilize more of the total CPU. 
 
 
 20.  Explain why interrupt and dispatch latency times must be bounded in a hard real-time system
 			interrupts and dispatch latency plays a role each a new process has to be put on the CPU. Therefore we want these times to be bounded, such that we can estimate how long the total task will maximally take, when we expect hard real-time scheduling. This is such that we can guarantee that the task will be finished inside a specific time-frame.
-
-	

@@ -7,14 +7,14 @@
 code for hello world kernel: [[ch02_linux_modules.pdf#page=2]]
 * Module_init
 * Module_exit
-* MODULE_LICENSE has to be included, as this says it is free
+* MODULE_LICENSE has to be included, as this says it is free. Kernel wont compile if not there?
 
  make: [[ch02_linux_modules.pdf#page=3]]
 
 make kernel files: [[ch02_linux_modules.pdf#page=9]]
 
 * Modules are loaded via commands and unloaded via commands. When loaded the `Module_init()` is invoked. When unloaded the `Module_exit()` is invoked, which has to do all the cleanup, such we dont have reboot the system to get rid of what the module has done altogether.
-* Only source code from the kernel may be imported to kernel-modules, only special cases they should not be
+* Only source code from the kernel may be imported to kernel-modules, only special cases they should not be only these.
 * seg-faults may take down the entire system or the process, as there are no debugger such as in applications
 * kernel can have several levels of security, where kernel has highest priority and can do what it want (privileged) and user-mode is of course then lower than this
 * user-space and kernel-space may have different memory mappings, i.e what we did with `acess_ok()` was mapping userspace address to kernel-space
@@ -22,9 +22,9 @@ make kernel files: [[ch02_linux_modules.pdf#page=9]]
 
 * A specific process is called when loading the new module into the kernel, which will invoke the `Module_init()`.
 
-* Have to build the module for the specific kernel version. When the kernel module is being maked i.e to the `$MODULENAME.o` , it is linked against `vermagic.o` if this fails, some versioning of the module is wrong for the kernel-version. Errors are printed to the `/var/log/messages` to see what went wrong. This can usually be solved by updating the `KERNELDIR`.
+* Have to build the module for the specific kernel version. When the kernel module is being maked i.e to the `$MODULENAME.o` , it is linked against `vermagic.o` if this fails, some versioning of the module is wrong for the kernel-version. Errors are printed to the `/var/log/messages` to see what went wrong. This can usually be solved by updating the `KERNELDIR` in the makefile.
 * in the `linux/module.h`-file versions for this linux is displayed and can be used, if imported in the module
-* `Kernel-modules` are also platform dependant, i.e the module may only be compatible with a specific distro. But the license can changed such that we say that the distro is for the **mainline-linux**
+* `Kernel-modules` are also platform dependant, i.e the module may only be compatible with a specific distro. But the license can  be changed such that we say that the distro is for the **mainline-linux**
 * Module-stacking, other modules may use something from other modules. I.e they are dependent on eachother.
 * using `modprobe` as commandline arugment instead of `ìnsmod` will also load all the modules that the module is dependant on
 	* `modprobe` only looks in the _standard installed module directories_

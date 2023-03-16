@@ -1,0 +1,1 @@
+`compare_and_swap()` is done atomicly, so it also ensured parallelism. Since it is done in 1 CPU cycle.

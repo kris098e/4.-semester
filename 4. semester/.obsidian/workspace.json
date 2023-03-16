@@ -37,14 +37,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
+                "file": "operativstystemer/Problems/problems 5 and 6.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "66c6a227e5fe94e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "operativstystemer/Problems/problems 6 and 7.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4fbe5d21236b177e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "operativstystemer/Problems/problems 6 and 7.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
+                "file": "operativstystemer/Problems/problems 6 and 7.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
+                "file": "operativstystemer/Problems/problems 6 and 7.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md"
+                "file": "operativstystemer/Problems/problems 6 and 7.md"
               }
             }
           }
@@ -172,12 +196,15 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "d6c52a85c3e8ca36",
+  "active": "4fbe5d21236b177e",
   "lastOpenFiles": [
     "operativstystemer/Problems/problems 5 and 6.md",
+    "operativstystemer/Remember.md",
+    "operativstystemer/Problems/problems 6 and 7.md",
+    "Pasted image 20230316090248.png",
+    "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
     "programmeringssprog/Haskell/Remember.md",
     "programmeringssprog/Theory problems/problems 6th chapter.md",
-    "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
     "ch02_linux_modules.pdf",
     "operativstystemer/7. Synchronization tools examples.md",
     "ch_02_linux_modules.pdf.md",
@@ -211,15 +238,12 @@
     "Data mining and machine learning/2. Feature Spaces and Clustering.md",
     "Data mining and machine learning/4. Bayesian Learning.md",
     "Data mining and machine learning/3. Classification.md",
-    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
-    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
     "Pasted image 20230309135509.png",
     "Pasted image 20230309102218.png",
     "Pasted image 20230308124129.png",
     "Pasted image 20230308123658.png",
     "Pasted image 20230308123656.png",
     "Pasted image 20230308123652.png",
-    "Pasted image 20230307153550.png",
-    "Pasted image 20230307153432.png"
+    "Pasted image 20230307153550.png"
   ]
 }
