@@ -4,95 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "0ad96ea9ca093bf9",
+        "id": "849a1474f4e65c51",
         "type": "tabs",
         "children": [
           {
-            "id": "683a9dcdee219ecf",
+            "id": "0b2a58d0f486e1d6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/7. Subprograms.md",
+                "file": "programmeringssprog/Haskell/Remember.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5d3c4457f470f922",
+            "id": "0a7439ee6e90d9a4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/7. Synchronization tools examples.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6c52a85c3e8ca36",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Problems/problems 5 and 6.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "66c6a227e5fe94e0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Problems/problems 6 and 7.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4fbe5d21236b177e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/5. Learning with Distributions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fcff14f1baac1771",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3e8817e86e5ec7f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
+                "file": "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
+                "file": "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
+                "file": "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md"
+                "file": "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md"
               }
             }
           }
@@ -220,13 +160,33 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "3e8817e86e5ec7f8",
+  "active": "0a7439ee6e90d9a4",
   "lastOpenFiles": [
-    "d.md",
-    "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
-    "_exercise06.pdf",
-    "Data mining and machine learning/5. Learning with Distributions.md",
+    "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
+    "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
+    "ch03_linux_modules.pdf",
+    "operativstystemer/Assignment 2/Notes/1. Overall.md",
+    "operativstystemer/2. operating system structures.md",
+    "operativstystemer/Problems/Problems 1.md",
+    "operativstystemer/3. processes.md",
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/7. Synchronization tools examples.md",
+    "operativstystemer/Deadlocks.md",
     "programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
+    "Data mining and machine learning/3. Classification.md",
+    "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
+    "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
+    "Data mining and machine learning/4. Bayesian Learning.md",
+    "programmeringssprog/7. Subprograms.md",
+    "operativstystemer/Problems/problems 5 and 6.md",
+    "operativstystemer/Problems/problems 6 and 7.md",
+    "Data mining and machine learning/5. Learning with Distributions.md",
+    "programmeringssprog/Theory problems/problems 6th chapter.md",
+    "_solution05.pdf",
+    "d.md",
+    "_exercise06.pdf",
     "Pasted image 20230316113044.png",
     "Pasted image 20230316112525.png",
     "Pasted image 20230316112146.png",
@@ -236,38 +196,17 @@
     "Pasted image 20230316105735.png",
     "Pasted image 20230316103308.png",
     "Pasted image 20230316103030.png",
-    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
-    "operativstystemer/Problems/problems 6 and 7.md",
-    "operativstystemer/Problems/problems 5 and 6.md",
     "operativstystemer/Remember.md",
     "Pasted image 20230316090248.png",
-    "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
-    "programmeringssprog/Theory problems/problems 6th chapter.md",
     "ch02_linux_modules.pdf",
-    "operativstystemer/7. Synchronization tools examples.md",
     "ch_02_linux_modules.pdf.md",
     "Unconfirmed 256026.crdownload",
     "operativstystemer/Assignment 2/Notes",
     "operativstystemer/Assignment 2",
-    "operativstystemer/Deadlocks.md",
     "ch08-2023.pdf",
     "Unconfirmed 690396.crdownload",
     "programmeringssprog/6. Flow control, expressions, commands.md",
     "_DM566-2023-part5.pdf",
-    "programmeringssprog/7. Subprograms.md",
-    "programmeringssprog/7b. Exceptions.md",
-    "programmeringssprog/13. Historical Perspective.md",
-    "_07b_exceptions.pdf",
-    "_06_control_flow.pdf",
-    "programmeringssprog/5a. Implement scope rules.md",
-    "programmeringssprog/5. Memory Management.md",
-    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
-    "programmeringssprog/3. undecidability.md",
-    "programmeringssprog/2. bnf-semantics.md",
-    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
-    "programmeringssprog/Theory problems/problems 5th chapter.md",
-    "Untitled.canvas",
-    "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
-    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md"
+    "Untitled.canvas"
   ]
 }
