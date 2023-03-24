@@ -144,5 +144,32 @@ The role of the release method is the reverse of open. Sometimes you’ll find t
 
 [[ch03_linux_modules.pdf#page=18]]
 
+# Memory
+uses paging.
+![[Pasted image 20230323155714.png]]
+The chosen numbers are such that writing a single byte in scull consumes 8000 or
+12,000 thousand bytes of memory: 4000 for the quantum and 4000 or 8000 for the
+quantum set (according to whether a pointer is represented in 32 bits or 64 bits on
+the target platform). If, instead, you write a huge amount of data, the overhead of the
+linked list is not too bad. There is only one list element for every four megabytes of
+data, and the maximum size of the device is limited by the computer’s memory size.
 
-# kommet til [[ch03_linux_modules.pdf#page=22]]
+**see** the code for trim at [[ch03_linux_modules.pdf#page=21]] which will free all quantums and qsets
+
+
+# Write and read
+[[ch03_linux_modules.pdf#page=22]]
+dont ever access memory from user-space directly, as this is paged. If we try to access it, we will generate a page fault, as this does not share the same page table. This will then bring down the calling process.
+
+```c
+unsigned long copy_to_user(void __user *to,
+const void *from,
+unsigned long count);
+
+unsigned long copy_from_user(void *to,
+const void __user *from,
+unsigned long count);
+```
+When reading and writing to the `filp` we can then also choose to update the offset and other attributes in the structure of `struct file` , to match what we have written and read
+
+read code is here [[ch03_linux_modules.pdf#page=26]]
