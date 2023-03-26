@@ -173,3 +173,18 @@ unsigned long count);
 When reading and writing to the `filp` we can then also choose to update the offset and other attributes in the structure of `struct file` , to match what we have written and read
 
 read code is here [[ch03_linux_modules.pdf#page=26]]
+write code is here [[ch03_linux_modules.pdf#page=27]]
+
+# RECAP
+[[ch03_linux_modules.pdf#page=29]] at the bottom
+The PDF file titled "Chapter 3: Char Drivers" is a chapter from the book "Linux Device Drivers, Third Edition" written by Jonathan Corbet, Alessandro Rubini, and Greg Kroah-Hartman.
+
+The chapter begins by introducing the concept of character devices, which are one of the three types of devices in Linux, and explains how to create a character device driver. It then discusses the different data structures that are used to manage character devices, including file operations, inode operations, and file structures.
+
+Next, the chapter goes into detail about the functions that are required to implement the file operations and inode operations for a character device driver. It covers the open, release, read, write, ioctl, and poll functions, explaining their purpose and how they are implemented.
+
+The chapter also provides information about how to handle errors that may occur during operation and how to debug a character device driver using printk statements.
+
+Finally, the chapter explains how to register a character device driver with the kernel and provides an example of a simple character device driver.
+
+Overall, this chapter provides a comprehensive introduction to writing a character device driver in Linux, covering the necessary data structures, functions, and techniques needed for implementation.

@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "73d5a3565cb440ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "249ad465e9f656dd",
             "type": "leaf",
             "state": {
@@ -64,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -130,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
+                "file": "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
+                "file": "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md"
+                "file": "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md"
               }
             }
           }
@@ -192,8 +204,14 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "04188d592a2e6688",
+  "active": "73d5a3565cb440ea",
   "lastOpenFiles": [
+    "Pasted image 20230326110234.png",
+    "ch05_linux_modules.pdf",
+    "Unconfirmed 96262.crdownload",
+    "ch05-new.pdf",
+    "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
+    "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
     "Pasted image 20230323155714.png",
     "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
     "Data mining and machine learning/Problems/uge12.mw.sav",
@@ -215,22 +233,17 @@
     "operativstystemer/Remember.md",
     "operativstystemer/Assignment 2/Notes introduction.md",
     "operativstystemer/Problems/problems 6 and 7.md",
-    "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
     "Pasted image 20230322145634.png",
     "operativstystemer/8. Deadlocks.md",
     "ch08-2023.pdf",
     "programmeringssprog/Theory problems/Problems 7th chapter.md",
     "ch08.pdf.md",
-    "programmeringssprog/Haskell/Assignment/fdl/scripts/mac.sh",
-    "programmeringssprog/Haskell/Assignment/fdl/scripts/linux.sh",
-    "programmeringssprog/Haskell/Assignment/fdl/scripts",
     "programmeringssprog/Haskell/Assignment/fdl/README.md",
     "programmeringssprog/Theory problems/problems 6th chapter.md",
     "programmeringssprog/7. Subprograms.md",
     "programmeringssprog/6. Flow control, expressions, commands.md",
     "operativstystemer/assignment 1/Feedback.md",
     "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
-    "operativstystemer/Assignment 2/Notes/1. Overall.md",
     "Pasted image 20230316113044.png",
     "Pasted image 20230316112525.png",
     "Pasted image 20230316112146.png",
@@ -239,7 +252,6 @@
     "Pasted image 20230316110501.png",
     "Pasted image 20230316105735.png",
     "Pasted image 20230316103308.png",
-    "Pasted image 20230316103030.png",
     "Untitled.canvas"
   ]
 }
