@@ -17,3 +17,20 @@ Compiler can infer the type. fx. if a function expects a float, but you give an 
 Type casting
 
 # Type inference
+
+# Polymorphism
+ad hoc polymorphism: overloeading
+
+Parametric polymorphism
+
+generics
+
+implicit parametric
+
+subtype polymorphism
+
+# Type-safe languages
+languages where explicit deallocation cannot be type-safe
+
+why do we want type-safe languages? Because if we have a type-safe language and it can be compiled, then it can be run. This may not be the case of non-type-safe.
+

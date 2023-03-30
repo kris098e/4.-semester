@@ -4,23 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "d318213c4d8cba27",
+        "id": "6ff94bcb7c5a442f",
         "type": "tabs",
         "children": [
           {
-            "id": "c1a1240a9c2aaa1e",
+            "id": "9050fd4d7eb7b346",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/9. Main Memory.md",
+                "file": "operativstystemer/Problems/problems 7 and 8.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5745cd2073ac681b",
+            "id": "103fee35de0bc2a4",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,51 +32,19 @@
             }
           },
           {
-            "id": "04188d592a2e6688",
+            "id": "6437ca740ca3e2c0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
+                "file": "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "73d5a3565cb440ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "249ad465e9f656dd",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "_DM566-2023-part5.pdf"
-              }
-            }
-          },
-          {
-            "id": "6207ec62b7f90f25",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "_DM566-2023-part4.pdf"
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -142,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
+                "file": "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
+                "file": "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md"
+                "file": "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md"
               }
             }
           }
@@ -204,54 +172,53 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "73d5a3565cb440ea",
+  "active": "6437ca740ca3e2c0",
   "lastOpenFiles": [
-    "Pasted image 20230326110234.png",
-    "ch05_linux_modules.pdf",
-    "Unconfirmed 96262.crdownload",
-    "ch05-new.pdf",
-    "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
-    "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
-    "Pasted image 20230323155714.png",
+    "Data mining and machine learning/6. Supervised Learning.md",
+    "_DM566-2023-part6.pdf",
+    "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
+    "_DM566-2023-part7.pdf",
     "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
-    "Data mining and machine learning/Problems/uge12.mw.sav",
+    "operativstystemer/Problems/problems 9 and 10.md",
+    "Pasted image 20230330084831.png",
+    "operativstystemer/Assignment 2/Notes introduction.md",
+    "operativstystemer/9. Main Memory.md",
+    "operativstystemer/Problems/problems 7 and 8.md",
+    "programmeringssprog/Theory problems/problems 9th chapter.md",
+    "_09_objects_intro.pdf",
+    "programmeringssprog/8a type equivalence.md",
+    "programmeringssprog/9 Object oriented intro.md",
+    "programmeringssprog/8c garbage collection.md",
+    "programmeringssprog/Theory problems/Problems 7th chapter.md",
+    "operativstystemer/8. Deadlocks.md",
+    "programmeringssprog/8b polymorphism.md",
+    "programmeringssprog/7b. Exceptions.md",
+    "programmeringssprog/8. Data types.md",
+    "ch06_linux_modules.pdf",
+    "operativstystemer/Assignment 2/Notes/chapter 6.md",
+    "_08b_polymorphism.pdf",
+    "_08c_garbage_collector.pdf",
+    "programmeringssprog/7. Subprograms.md",
+    "programmeringssprog/10. Object orientation.md",
+    "_10_objects_concepts.pdf",
+    "programmeringssprog/13. Historical Perspective.md",
+    "Unconfirmed 913826.crdownload",
+    "_DM566-2023-part4.pdf",
+    "_DM566-2023-part5.pdf",
+    "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
+    "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
+    "Pasted image 20230326110234.png",
+    "Pasted image 20230323155714.png",
     "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
     "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
-    "Data mining and machine learning/Problems/uge12.mw",
-    "_DM566-2023-part5.pdf",
-    "_DM566-2023-part6.pdf",
     "Data mining and machine learning/5. Learning with Distributions.md",
-    "_DM566-2023-part4.pdf",
-    "Data mining and machine learning/4. Bayesian Learning.md",
-    "Data mining and machine learning/3. Classification.md",
-    "_exercise07.pdf",
-    "Data mining and machine learning/6. Supervised Learning.md",
-    "programmeringssprog/Haskell/Remember.md",
-    "operativstystemer/Problems/problems 7 and 8.md",
-    "operativstystemer/9. Main Memory.md",
-    "operativstystemer/Look at.md",
-    "operativstystemer/Remember.md",
-    "operativstystemer/Assignment 2/Notes introduction.md",
-    "operativstystemer/Problems/problems 6 and 7.md",
     "Pasted image 20230322145634.png",
-    "operativstystemer/8. Deadlocks.md",
-    "ch08-2023.pdf",
-    "programmeringssprog/Theory problems/Problems 7th chapter.md",
-    "ch08.pdf.md",
-    "programmeringssprog/Haskell/Assignment/fdl/README.md",
-    "programmeringssprog/Theory problems/problems 6th chapter.md",
-    "programmeringssprog/7. Subprograms.md",
-    "programmeringssprog/6. Flow control, expressions, commands.md",
-    "operativstystemer/assignment 1/Feedback.md",
-    "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
     "Pasted image 20230316113044.png",
     "Pasted image 20230316112525.png",
     "Pasted image 20230316112146.png",
     "Pasted image 20230316112134.png",
     "Pasted image 20230316110609.png",
     "Pasted image 20230316110501.png",
-    "Pasted image 20230316105735.png",
-    "Pasted image 20230316103308.png",
     "Untitled.canvas"
   ]
 }

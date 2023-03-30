@@ -135,7 +135,6 @@ myTakeWhile p (x : xs)
     | otherwise = []
 
 
--- start with an element, call aux method that will put element into same list if consecutive duplicates. 
 pack :: (Eq a) => [a] -> [[a]]
 pack [] = []
 pack (x : xs) = (x : takeWhile ((==) x) xs) : pack (dropWhile ((==) x) xs)

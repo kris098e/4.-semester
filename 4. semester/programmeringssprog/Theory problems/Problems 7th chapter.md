@@ -9,6 +9,8 @@
 6. Based on the discussion of the implementation of deep binding using closures, describe in detail the case of a language with dynamic scope.
    
    In a language with dynamic scope, the scope of a variable is determined based on the call stack at runtime. To implement deep binding using closures in such a language, closures need to capture not only the values of their free variables but also the entire call stack at the point of their creation. This is because the values of free variables in dynamic scope languages can change based on the call stack. The closure uses the value of the free variable that was in effect when it was created, rather than the current value of the variable.
+
+if using association list, we can just have a pointer to where we need the variables from. Alternatively we can just use CRC and??? 
    
 7. Consider the following fragment in a language with exceptions and call by value-result and call by reference:
 
@@ -25,7 +27,7 @@ write(y);
 ```
 
 State what is printed by the program when parameters are passed: 
-(i) by value-result: Write 0
+(i) by value-result: Write 0 (since noting is returned from the function. We first copy the whatever is in the actual parameter and use this. The "return value" is then what is assigned to y. When using `result-based passing` it is first at the last statement of the function, that we will update the value to the actual parameter)
 (ii) by reference: Write 1
 
 8. In a pseudo-language with exceptions, consider the following block of code:
@@ -59,7 +61,7 @@ int f(int x){
 ```
 
 What is the value that is returned by f(4)?
-Write: 4
+4 (This is because the call when x=3 is the one that is in a try-catch block. If 3 was not in this, then x=4 would have to catch it.)
 
 ##### Chapter 7
 1. On page 166, commenting on Fig. 7.1, it can be seen that the environment of the function foo includes (as a nonlocal) the name foo. What purpose does the presence of this name serve inside the block?
@@ -163,10 +165,8 @@ int P(name int m){
 write(P(x++) + x); // 7 + 6 = 13
 }
 ```
-paste x++ into the expression.
+paste x++ into the expression. As it uses deep binding, or static binding, it uses the x that is in the scope of the caller, when passing `x++`.
 
-
-Write: 10
 
 ##### Chapter 5
 7. Consider the following piece of code written in a pseudo-language using static scope and call by reference (see Sect. 7.1.2):
@@ -232,7 +232,7 @@ write(x);
 }
 ```
 
-1. Write: 5 (write in the scope where x was defined)
+1. Write: 6 (write in the scope where x was defined)
 2. Write: 7 (fie changes the outer x)
 
 9. State what will be printed by the following code fragment written in a pseudolanguage which uses static scope and passes its parameters by value (a command of the form foo(w++) passes the current value of w to foo and then increments it by one).
@@ -276,11 +276,12 @@ write(x);
 int y = 1;
 void fie(reference int z){
 	z = x + y + z; // z and y is referenced to the same value
+	// y = 3 is used.
 }
 {int y = 3;
 	{int x = 3 // comes out of scope right after we exit the block
 	}
-	 fie(y);
+	 fie(y); // y = 3 is used
 	 write(y);
 }
 write(y);

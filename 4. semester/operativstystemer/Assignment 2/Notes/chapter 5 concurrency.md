@@ -225,4 +225,9 @@ can be performed by one machine instruction
 `#include <asm/bitops.h>`
 
 
-# KOMMET TIL SIDE 22
+## Seqlocks
+`#include <linux/seqlock.h>`
+[[ch05_linux_modules.pdf#page=23]]
+Used when no pointers are used, and the shared resource is small and dont have frequent writing but frequent reading.
+
+## Read-copy-update
