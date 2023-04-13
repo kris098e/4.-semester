@@ -99,11 +99,11 @@ module_param(whom, charp, S_IRUGO);
 ```
 Many types can be used. See the page for this chapter
 
-_The final module_param field is a permission value; you should use the definitions
+The final module_param field is a permission value; you should use the definitions
 found in <linux/stat.h>. This value controls who can access the representation of the
 module parameter in sysfs. If perm is set to 0, there is no sysfs entry at all; otherwise,
 it appears under /sys/module* with the given set of permissions. Use S_IRUGO for a
 parameter that can be read by the world but cannot be changed; S_IRUGO|S_IWUSR
 allows root to change the parameter. Note that if a parameter is changed by sysfs, the
 value of that parameter as seen by your module changes, but your module is not
-notified in any other way. You should probably not make module parameters writable, unless you are prepared to detect the change and react accordingly._
+notified in any other way. You should probably not make module parameters writable, unless you are prepared to detect the change and react accordingly.

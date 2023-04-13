@@ -4,59 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "6ff94bcb7c5a442f",
+        "id": "068a0e3da4b05301",
         "type": "tabs",
         "children": [
           {
-            "id": "9050fd4d7eb7b346",
+            "id": "0b8407a84a21606f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Problems/problems 7 and 8.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "103fee35de0bc2a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/6. Supervised Learning.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6437ca740ca3e2c0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0462c39d797a1090",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -184,54 +139,54 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "0462c39d797a1090",
+  "active": "0b8407a84a21606f",
   "lastOpenFiles": [
-    "Pasted image 20230331093147.png",
-    "_DM566-2023-part5.pdf",
-    "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
-    "Data mining and machine learning/4. Bayesian Learning.md",
-    "Data mining and machine learning/5. Learning with Distributions.md",
-    "Pasted image 20230331084403.png",
+    "operativstystemer/Problems/problems 7 and 8.md",
     "Data mining and machine learning/6. Supervised Learning.md",
     "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
-    "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
-    "_exercise08.pdf",
-    "Data mining and machine learning/Problems/solution07.pdf",
-    "Data mining and machine learning/Problems/solution06.pdf",
-    "Data mining and machine learning/Problems/solution05.pdf",
-    "Data mining and machine learning/Problems/solution04.pdf",
-    "Data mining and machine learning/Problems/solution03.pdf",
-    "Data mining and machine learning/Problems/solution02.pdf",
-    "Data mining and machine learning/Problems/solution01.pdf",
-    "_DM566-2023-part6.pdf",
-    "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
-    "operativstystemer/Problems/problems 9 and 10.md",
-    "Pasted image 20230330084831.png",
-    "operativstystemer/Assignment 2/Notes introduction.md",
     "operativstystemer/9. Main Memory.md",
-    "operativstystemer/Problems/problems 7 and 8.md",
-    "programmeringssprog/Theory problems/problems 9th chapter.md",
-    "programmeringssprog/8a type equivalence.md",
-    "programmeringssprog/9 Object oriented intro.md",
-    "programmeringssprog/8c garbage collection.md",
     "programmeringssprog/Theory problems/Problems 7th chapter.md",
-    "operativstystemer/8. Deadlocks.md",
-    "programmeringssprog/8b polymorphism.md",
-    "programmeringssprog/7b. Exceptions.md",
-    "programmeringssprog/8. Data types.md",
-    "operativstystemer/Assignment 2/Notes/chapter 6.md",
-    "programmeringssprog/7. Subprograms.md",
-    "programmeringssprog/10. Object orientation.md",
-    "programmeringssprog/13. Historical Perspective.md",
+    "operativstystemer/Problems/problems 9 and 10.md",
+    "operativstystemer/Problems/Untitled.md",
+    "Data mining and machine learning/8. Ensemble Learning.md",
+    "programmeringssprog/Theory problems/problems 8th chapter.md",
+    "_DM566-2023-part7.pdf",
+    "Pasted image 20230413080031.png",
+    "Pasted image 20230411141434.png",
+    "Pasted image 20230411141417.png",
+    "Pasted image 20230411141355.png",
+    "Pasted image 20230411141346.png",
+    "Pasted image 20230411141313.png",
+    "programmeringssprog/Theory problems/problems 8.md",
+    "operativstystemer/13. File-System Interface.md",
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/4. threads.md",
+    "operativstystemer/Problems/problems 2 and 3.md",
+    "operativstystemer/Assignment 2/Notes/1. Overall.md",
+    "operativstystemer/ziqnwAsl",
+    "operativstystemer/assignment2.zip",
+    "operativstystemer/Assignment 2/SKRIV OM I RAPPORT.md",
+    "operativstystemer/assignment2/sources/dm510_ioctl_numbers.h",
+    "operativstystemer/assignment2/sources/dm510_unload",
+    "operativstystemer/assignment2/sources/dm510_load",
+    "operativstystemer/assignment2/sources/Makefile",
+    "operativstystemer/assignment2/sources/moduletest.c",
+    "operativstystemer/assignment2/sources/dm510_dev.c",
+    "operativstystemer/assignment2/sources/ioct-numbers.rst",
+    "operativstystemer/Assignment 2/Notes introduction.md",
+    "operativstystemer/Assignment 2/TESTS.md",
+    "operativstystemer/Assignment 2/FÅ KIGGET PÅ.md",
+    "operativstystemer/Assignment 2/Notes/thoguhts implementation.md",
     "operativstystemer/Assignment 2/Notes/Chapter 3 Char Drivers.md",
+    "operativstystemer/Assignment 2/Notes/chapter 5 concurrency.md",
+    "operativstystemer/Assignment 2/Notes/chapter 6.md",
+    "operativstystemer/Assignment 2/Notes/Untitled.md",
+    "operativstystemer/Assignment 2/Notes/chapter 2 Building and Running modules.md",
+    "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
+    "Pasted image 20230331093147.png",
+    "Pasted image 20230331084403.png",
+    "Pasted image 20230330084831.png",
     "Pasted image 20230326110234.png",
-    "Pasted image 20230323155714.png",
-    "Pasted image 20230322145634.png",
-    "Pasted image 20230316113044.png",
-    "Pasted image 20230316112525.png",
-    "Pasted image 20230316112146.png",
-    "Pasted image 20230316112134.png",
-    "Pasted image 20230316110609.png",
     "Untitled.canvas"
   ]
 }

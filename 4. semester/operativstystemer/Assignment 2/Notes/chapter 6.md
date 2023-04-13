@@ -131,4 +131,101 @@ little more complicated than that, as we will see later). The other form (wake_u
 interruptible) restricts itself to processes performing an interruptible sleep. In general, the two are indistinguishable (if you are using interruptible sleeps); in practice,
 the convention is to use wake_up if you are using wait_event and wake_up_interruptible if you use wait_event_interruptible
 
-# KOMMET TIL SIDE 16 EKSEMPEL
+
+```c
+static DECLARE_WAIT_QUEUE_HEAD(wq);
+static int flag = 0;
+ssize_t sleepy_read (struct file *filp, char __user *buf, size_t count, loff_t *pos)
+{
+printk(KERN_DEBUG "process %i (%s) going to sleep\n",
+current->pid, current->comm);
+wait_event_interruptible(wq, flag != 0);
+flag = 0;
+printk(KERN_DEBUG "awoken %i (%s)\n", current->pid, current->comm);
+return 0; /* EOF */
+}
+ssize_t sleepy_write (struct file *filp, const char __user *buf, size_t count,
+loff_t *pos)
+{
+printk(KERN_DEBUG "process %i (%s) awakening the readers...\n",
+current->pid, current->comm);
+flag = 1;
+wake_up_interruptible(&wq);
+return count; /* succeed, to avoid retrial */
+}
+```
+
+The flag is put to 1, such that when the `wait_event_interruptible()` is called, it can actually wake up since the condition becomes true
+
+Explicitly nonblocking I/O
+is indicated by the O_NONBLOCK flag in filp->f_flags . The flag is defined in `<linux/fcntl.h>`
+
+• If a process calls read but no data is (yet) available, the process must block. The
+process is awakened as soon as some data arrives, and that data is returned to
+the caller, even if there is less than the amount requested in the count argument
+to the method.
+• If a process calls write and there is no space in the buffer, the process must
+block, and it must be on a different wait queue from the one used for reading.
+When some data has been written to the hardware device, and space becomes
+free in the output buffer, the process is awakened and the write call succeeds,
+although the data may be only partially written if there isn’t room in the buffer
+for the count bytes that were requested.
+
+
+## Important to have a kernel-space buffer for the data
+since if we are to just copy from a file into user-space buffer, it takes extra time, instead we just use a buffer inside the kernel-space device.
+
+We don’t use an input buffer in scull, because data is already available when read is
+issued. Similarly, no output buffer is used, because data is simply copied to the mem-
+ory area associated with the device. Essentially, the device is a buffer, so the imple-
+mentation of additional buffers would be superfluous. We’ll see the use of buffers in
+Chapter 10.
+
+## Blocking example
+see  [[ch06_linux_modules.pdf#page=19]]
+Let us look carefully at how scull_p_read handles waiting for data. The while loop
+tests the buffer with the device semaphore held. If there is data there, we know we
+can return it to the user immediately without sleeping, so the entire body of the loop
+is skipped. If, instead, the buffer is empty, we must sleep. Before we can do that,
+however, we must drop the device semaphore; if we were to sleep holding it, no
+writer would ever have the opportunity to wake us up. Once the semaphore has been
+dropped, we make a quick check to see if the user has requested non-blocking I/O,
+and return if so. Otherwise, it is time to call wait_event_interruptible.
+
+Once we get past that call, something has woken us up, but we do not know what.
+One possibility is that the process received a signal. The if statement that contains
+the wait_event_interruptible call checks for this case. This statement ensures the
+proper and expected reaction to signals, which could have been responsible for wak-
+ing up the process (since we were in an interruptible sleep). If a signal has arrived
+and it has not been blocked by the process, the proper behavior is to let upper layers
+of the kernel handle the event. To this end, the driver returns -ERESTARTSYS to the
+caller; this value is used internally by the virtual filesystem (VFS) layer, which either
+restarts the system call or returns -EINTR to user space. We use the same type of
+check to deal with signal handling for every read and write implementation.
+
+Just for completeness, let us note that scull_p_read can sleep in another spot after we
+take the device semaphore: the call to copy_to_user. If scull sleeps while copying data
+between kernel and user space, it sleeps with the device semaphore held. Holding the
+semaphore in this case is justified since it does not deadlock the system (we know
+that the kernel will perform the copy to user space and wakes us up without trying to
+lock the same semaphore in the process), and since it is important that the device
+memory array not change while the driver sleeps.
+
+define the `wait_que_head` with
+```c
+DEFINE_WAIT(my_wait);
+
+// or
+wait_queue_t my_wait;
+init_wait(&my_wait);
+```
+
+# Poll & select
+used to query if we can write/read to a file descriptor without being blocked
+```c
+unsigned int (*poll) (struct file *filp, poll_table *wait);
+```
+
+examples at [[ch06_linux_modules.pdf#page=32]]
+
+# Access control on a device file

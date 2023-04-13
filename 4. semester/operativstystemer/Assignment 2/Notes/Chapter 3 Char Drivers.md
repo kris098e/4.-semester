@@ -7,7 +7,7 @@
 * The driver should get major and minor numbers from
 	* `MAJOR(dev_t dev);
 	* `MINOR(dev_t dev);`
-		* defined in `<linux/kdev_t.h`
+		* defined in `<linux/kdev_t.h>`
 	* These methods are used since we cannot just assume which minor and major number the driver should get
 * The driver needs to get device numbers such that we can use that many devices for the driver. this is done via
 	* `int register_chrdev_region(dev_t first, unsigned int count, char *name);`
