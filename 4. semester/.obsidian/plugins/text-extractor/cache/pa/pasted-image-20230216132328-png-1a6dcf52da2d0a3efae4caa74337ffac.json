@@ -1,0 +1,1 @@
+{"path":".obsidian/plugins/text-extractor/cache/pa/pasted-image-20230216132328-png-1a6dcf52da2d0a3efae4caa74337ffac.json","text":"Nl iiuue~- - L I'IUP map :: (a -> b) -> [a] -> [b] Prelude> map (\\x -> x*x*x) [1..10] [1,8,27,63,125,216,343,512,729,1000] s P B","libVersion":"0.0.0","langs":"eng","hash":"","size":0}

@@ -1,0 +1,1 @@
+{"path":".obsidian/plugins/text-extractor/cache/pa/pasted-image-20230411141434-png-6b922e07cc296c4bc43e7633cf2a65d6.json","text":"6. Which type is assigned to each of the following functions using polymorphic type inference? fun G(f,x){return f£(£f(x));} fun H(t,x,y){if (t(x)) return x; else return y;} fun K(x,y) {return x;}","libVersion":"0.0.0","langs":"eng","hash":"","size":0}

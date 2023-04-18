@@ -66,7 +66,7 @@ static struct file_operations dm510_fops = {
 static struct dm510_dev *devices;
 static struct dm510_buffer *buffers; // The buffers
 /* parameters */
-int dm510_buffer_size = 4; // defaults to 1022
+int dm510_buffer_size = 1000; // defaults to 1000
 int dm510_nreaders = 2;
 
 module_param(dm510_buffer_size, int, 0);
@@ -156,8 +156,7 @@ void dm510_cleanup_module(void)
     }
     kfree(buffers);
     kfree(devices);
-    /* clean up code belongs here */
-
+    
     unregister_chrdev_region(MKDEV (MAJOR_NUMBER, 0), DEVICE_COUNT);
     devices = NULL;
 
@@ -213,10 +212,6 @@ static int dm510_release(struct inode *inode, struct file *filp)
 	if (filp->f_mode & FMODE_WRITE)
 		dev->nwriters--;
 
-    /**
-    printk("closed minor number %d\n", dev->minor_number);
-    printk("there are currently %d readers and %d writers \n", dev->nreaders, dev->nwriters);
-    */
     wake_up_interruptible(&dev->open_q);
 	mutex_unlock(&dev->mutex);
     return 0;
@@ -256,10 +251,8 @@ static ssize_t dm510_read(struct file *filp,
 			return -ERESTARTSYS;
     }
     // Data is there, begin read
-    if (devices[opposite_minor_number].wp > dev->rp) {
+    if (devices[opposite_minor_number].wp > dev->rp)
         count = min(count, (size_t)(devices[opposite_minor_number].wp - dev->rp));
-        printk("count is: %ld\n", count);
-    }
 	else /* the write pointer has wrapped, return data up to dev->end */
 		count = min(count, (size_t)(read_buffer->end - dev->rp));
 
@@ -295,10 +288,8 @@ static int spacefree(struct dm510_dev *dev)
         opposite_minor_number = 1;
     }
 
-    if (dev->wp == devices[opposite_minor_number].rp) {
-		// printk("write pointer equal read pointer\n");
+    if (dev->wp == devices[opposite_minor_number].rp)
         return write_buffer->size - 1;
-    }
 	return ((devices[opposite_minor_number].rp + write_buffer->size - dev->wp) % write_buffer->size) - 1;
 }
 
@@ -368,14 +359,11 @@ static ssize_t dm510_write(struct file *filp,
 	}
 
 	dev->wp += count;
-	if (dev->wp == write_buffer->end) {
+	if (dev->wp == write_buffer->end)
 		dev->wp = write_buffer->head; /* wrapped */
-        printk("did update the write pointer\n");
-    }
 	mutex_unlock(&write_buffer->mutex);
 
 	/* finally, awake any reader */
-    printk("waking up readers\n");
 	wake_up_interruptible(&devices[opposite_minor_number].read_q);  /* blocked in read() */
 
 	printk("\"%s\" did write %li bytes\n",current->comm, (long)count);

@@ -17,7 +17,6 @@ to import these
 
 # Data forms and abstraction
 
-![[_09_objects_intro.pdf#page=12]]
 # Objects and classes
 
 # Seen as

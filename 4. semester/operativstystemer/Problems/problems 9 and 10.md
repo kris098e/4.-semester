@@ -163,7 +163,10 @@ distadvantages
 May not be implemented by all manufacturers, since it has disadvantages and advantages.
 
 # 10
-1.  (**very important**) Under what circumstances do page faults occur? Describe the actions taken by the operating system when a page fault occurs.
+## 1.  (**very important**) Under what circumstances do page faults occur? Describe the actions taken by the operating system when a page fault occurs.
+When you try to use a page, but the corresponding frame is not in main memory.
+**look at figure 10.5**
+
 
 Page faults occur when a process attempts to access a page of virtual memory that is not currently in physical memory (RAM). This can happen due to a variety of reasons such as a page being swapped out to disk or being allocated for the first time. When a page fault occurs, the operating system takes the following actions:
 
@@ -177,65 +180,124 @@ Page faults occur when a process attempts to access a page of virtual memory tha
 
 Overall, page faults are a common occurrence in modern operating systems and the operating system's ability to handle them efficiently is critical to the performance and stability of the system.
 
-2.  Assume that you have a page-reference string for a process with m frames (initially all empty). The page-reference string has length p, and n distinct page numbers occur in it. Answer these questions for any page-replacement algorithms:
-    -   What is a lower bound on the number of page faults?
-    -   What is an upper bound on the number of page faults?
+## 2.  Assume that you have a page-reference string for a process with m frames (initially all empty). The page-reference string has length p, and n distinct page numbers occur in it. Answer these questions for any page-replacement algorithms:
+-   What is a lower bound on the number of page faults?
+1 page fault per page, so n. Because when each page has to occur atleaset once, and we havent seen the page the first time it was seen, it cannot be loaded as a frame. Therefore **n**
+-   What is an upper bound on the number of page faults?
+Upper bound of p, if we have a page fault every reference in the page-reference string
+
+## 3. (**important**) Consider the following page-replacement algorithms. Rank these algorithms on a five-point scale from “bad” to “perfect” according to their page-fault rate. Separate those algorithms that suffer from Belady’s anomaly from those that do not.
+-   LRU replacement
+-   FIFO replacement
+-   Optimal replacement
+-   Second-chance replacement
 
 
-3. (**important**) Consider the following page-replacement algorithms. Rank these algorithms on a five-point scale from “bad” to “perfect” according to their page-fault rate. Separate those algorithms that suffer from Belady’s anomaly from those that do not.
-    -   LRU replacement
-    -   FIFO replacement
-    -   Optimal replacement
-    -   Second-chance replacement
+Hard to tell, since some reference-strings are better for some, while not for others.
+1. optimal replacement
+2. LRU (Still has some logic holding the frames that are used)
+3. Second-chance (still has logic for which to hold)
+4. FIFO (no logic around which to hold onto)
 
+FIFO suffers from Belady and also Second-chance (can make example where Second-chance would act like FIFO)
 
-4.  An operating system supports a paged virtual memory. The central processor has a cycle time of 1 microsecond. It costs an additional 1 microsecond to access a page other than the current one. Pages have 1,000 words, and the paging device is a drum that rotates at 3,000 revolutions per minute and transfers 1 million words per second. The following statistical measurements were obtained from the system:
-    -   One percent of all instructions executed accessed a page other than the current page.
-    -   Of the instructions that accessed another page, 80 percent accessed a page already in memory.
-    -   When a new page was required, the replaced page was modified 50 percent of the time.
+## 4.  An operating system supports a paged virtual memory. The central processor has a cycle time of 1 microsecond. It costs an additional 1 microsecond to access a page other than the current one. Pages have 1,000 words, and the paging device is a drum that rotates at 3,000 revolutions per minute and transfers 1 million words per second. The following statistical measurements were obtained from the system:
+-   One percent of all instructions executed accessed a page other than the current page.
+-   Of the instructions that accessed another page, 80 percent accessed a page already in memory.
+-   When a new page was required, the replaced page was modified 50 percent of the time.
 Calculate the effective instruction time on this system, assuming that the system is running one process only and that the processor is idle during drum transfers.
 
-1. (**important**) Consider the page table for a system with 12-bit virtual and physical addresses and 256-byte pages.
+99% of all instructions takes only 1 microsecond
+we then have 
+$$0.99*1+0.01(p)$$
+try to decide p 
+$$p=0.8(1+1)+0.2*(L)$$
+
+frequency:$f_{D}=\frac{3000r}{1ms}=\frac{3*10^3r}{60*10^{6}\micro s}=\frac{1}{20000 \micro s}$
+$p_{D}=20000 \micro s \implies \frac{P_{0}}{2}=10000 \micro s$
+speed of disk: $S_{D}=\frac{10^{6}w}{10^{6}\micro s}=\frac{1w}{1 \micro s}\implies \frac{1}{S_{D}*1000} = 1000 \micro s$
+$$L=0.5(10000+1000)+0.5(2*(10000+1000))$$
+
+The entire calculation, i.e the first, will result in 34 microseconds. I.e a 34 factor slowdown, when we go to disk 1% of the time
+
+## 1. (**important**) Consider the page table for a system with 12-bit virtual and physical addresses and 256-byte pages.
 ![[Pasted image 20230413080031.png]]
 The list of free page frames is D, E, F (that is, D is at the head of the list, E is second, and F is last). A dash for a page frame indicates that the page is not in memory. Convert the following virtual addresses to their equivalent physical
 
--   9EF
--   111
--   700
--   0FF
+page is 256 bytes, so we need 8 bits for the offset. This means the first 4 bits is the page.
 
-2.  Discuss the hardware functions required to support demand paging.
-    
-3.  (**important**) Consider the two-dimensional array A: `int A[][] = new int[100][100];` where `A[0][0]` is at location 200 in a paged memory system with pages of size 200. A small process that manipulates the matrix resides in page 0 (locations 0 to 199). Thus, every instruction fetch will be from page 0. For three page frames, how many page faults are generated by the following array-initialization loops? Use LRU replacement, and assume that page frame 1 contains the process and the other two are initially empty.
+-   9EF
+look up 9 and get 0, then the physical is 0EF, since EF is just the offset, and 0 is the frame.
+-   111
+look up the 1, and get 2 as the frame, and the offset is 11, which means the physical address is 211
+-   700
+No physical frame for 7, which means we have to grap a free frame, and D is the first free frame, which us the physical address D00
+-   0FF
+Next thing in free list is E, so the physical address will be 0FF
+
+
+## 2.  Discuss the hardware functions required to support demand paging.
+Valid bit, If check page where not valid, need Trap, backing store (disk), restart an instruction.
+
+Valid bit, need to reference memory to check if the frame is there so we need to be able to translate memory. The process itself should of course not be the one also translating
+
+## 3.  (**important**) Consider the two-dimensional array A: `int A[][] = new int[100][100];` where `A[0][0]` is at location 200 in a paged memory system with pages of size 200. A small process that manipulates the matrix resides in page 0 (locations 0 to 199). Thus, every instruction fetch will be from page 0. For three page frames, how many page faults are generated by the following array-initialization loops? Use LRU replacement, and assume that page frame 1 contains the process and the other two are initially empty.
 ```c
 for (int j = 0; j < 100; j++)
   for (int i = 0; i < 100; i++)
       A[i][j] = 0;
 ```
+$\frac{100}{2}*100=5000$
 
+50 page faults per column, 100 columns
 ```c
 for (int i = 0; i < 100; i++)
   for (int j = 0; j < 100; j++)
       A[i][j] = 0;
 ```
+$\frac{100}{2}=50$ page faults. 
 
-4.  (**important**) Consider the following page reference string: `1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6`. How many page faults would occur for the following replacement algorithms, assuming one, two, three, four, five, six, and seven frames? Remember that all frames are initially empty, so your first unique pages will cost one fault each.
-    -   LRU replacement
-    -   FIFO replacement
-    -   Optimal replacement
-5.  Consider the following page reference string: `7, 2, 3, 1, 2, 5, 3, 4, 6, 7, 7, 1, 0, 5, 4, 6, 2, 3, 0 , 1`. Assuming demand paging with three frames, how many page faults would occur for the following replacement algorithms?
-    -   LRU replacement
-    -   FIFO replacement
-    -   Optimal replacement
-6.  Suppose that you want to use a paging algorithm that requires a reference bit (such as second-chance replacement or working-set model), but the hardware does not provide one. Sketch how you could simulate a reference bit even if one were not provided by the hardware, or explain why it is not possible to do so. If it is possible, calculate what the cost would be.
-    
-7.  (**important**) You have devised a new page-replacement algorithm that you think may be optimal. In some contorted test cases, Belady’s anomaly occurs. Is the new algorithm optimal? Explain your answer.
-    
-8.  Segmentation is similar to paging but uses variable-sized “pages.” Define two segment-replacement algorithms, one based on the FIFO page-replacement scheme and the other on the LRU page-replacement scheme. Remember that since segments are not the same size, the segment that is chosen for replacement may be too small to leave enough consecutive locations for the needed segment. Consider strategies for systems where segments cannot be relocated and strategies for systems where they can.
-    
-9.  (**important**) Consider a demand-paged computer system where the degree of multiprogramming is currently fixed at four. The system was recently measured to determine utilization of the CPU and the paging disk. Three alternative results are shown below. For each case, what is happening? Can the degree of multiprogramming be increased to increase the CPU utilization? Is the paging helping?
-    -   CPU utilization 13 percent; disk utilization 97 percent
-    -   CPU utilization 87 percent; disk utilization 3 percent
-    -   CPU utilization 13 percent; disk utilization 3 percent
 
-10.  We have an operating system for a machine that uses base and limit registers, but we have modified the machine to provide a page table. Can the page table be set up to simulate base and limit registers? How can it be, or why can it not be?
+## 4.  (**important**) Consider the following page reference string: `1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6`. How many page faults would occur for the following replacement algorithms, assuming one, two, three, four, five, six, and seven frames? Remember that all frames are initially empty, so your first unique pages will cost one fault each.
+-   LRU replacement
+-   FIFO replacement
+-   Optimal replacement
+
+
+## 5.  Consider the following page reference string: `7, 2, 3, 1, 2, 5, 3, 4, 6, 7, 7, 1, 0, 5, 4, 6, 2, 3, 0 , 1`. Assuming demand paging with three frames, how many page faults would occur for the following replacement algorithms?
+-   LRU replacement
+-   FIFO replacement
+-   Optimal replacement
+
+
+
+## 6.  Suppose that you want to use a paging algorithm that requires a reference bit (such as second-chance replacement or working-set model), but the hardware does not provide one. Sketch how you could simulate a reference bit even if one were not provided by the hardware, or explain why it is not possible to do so. If it is possible, calculate what the cost would be.
+reference bit: 2nd chance
+
+Use the valid bit, set it 0 as init, and when referenced the hardware will issue a trap every single reference, and we can catch this trap and set the "valid bit" to 1. This is horrible since we use the valid bit for something else, and we generate page faults each time we access memory.
+
+   
+## 7.  (**important**) You have devised a new page-replacement algorithm that you think may be optimal. In some contorted test cases, Belady’s anomaly occurs. Is the new algorithm optimal? Explain your answer.
+No, since if it were better to use less frames, it cannot be optimal.
+
+    
+## 8.  Segmentation is similar to paging but uses variable-sized “pages.” Define two segment-replacement algorithms, one based on the FIFO page-replacement scheme and the other on the LRU page-replacement scheme. Remember that since segments are not the same size, the segment that is chosen for replacement may be too small to leave enough consecutive locations for the needed segment. Consider strategies for systems where segments cannot be relocated and strategies for systems where they can.
+Using data to know when the segments was put in for FIFO, and then for LRU would use som bits to know this. Could use a stack and some IDs for FIFO.
+
+Try to put every segment in consecutively
+   
+## 9.  (**important**) Consider a demand-paged computer system where the degree of multiprogramming is currently fixed at four. The system was recently measured to determine utilization of the CPU and the paging disk. Three alternative results are shown below. For each case, what is happening? Can the degree of multiprogramming be increased to increase the CPU utilization? Is the paging helping?
+-   CPU utilization 13 percent; disk utilization 97 percent
+Could be thrashing happening, since the CPU utilization is so low and disk utilization is so high. 
+
+Paging is causing this problem, so paging is not helping
+-   CPU utilization 87 percent; disk utilization 3 percent
+Running as it should. Paging is helping of course, since it is implemented. 
+COuld increase multiprogramming maybe.
+
+-   CPU utilization 13 percent; disk utilization 3 percent
+Not using all the resources, so it would be beneficial to up the degree of multiprogramming. Not thrashing, so increase CPU.
+
+## 10.  We have an operating system for a machine that uses base and limit registers, but we have modified the machine to provide a page table. Can the page table be set up to simulate base and limit registers? How can it be, or why can it not be?
+Base is where to looking at memory.
+Limit is the maximum memory.

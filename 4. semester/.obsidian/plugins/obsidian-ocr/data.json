@@ -1,0 +1,21 @@
+{
+  "ocrProviderName": "Tesseract",
+  "ocrProviderSettings": {
+    "Tesseract": {
+      "lang": "eng",
+      "additionalArguments": ""
+    }
+  },
+  "fuzzySearch": false,
+  "caseSensitive": false,
+  "ocrImage": false,
+  "ocrPDF": true,
+  "concurrentIndexingProcesses": 10,
+  "additionalSearchPath": "",
+  "density": 300,
+  "quality": 98,
+  "additionalImagemagickArgs": "",
+  "showTips": true,
+  "logToFile": false,
+  "logLevel": "warn"
+}
