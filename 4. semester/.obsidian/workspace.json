@@ -8,18 +8,63 @@
         "type": "tabs",
         "children": [
           {
-            "id": "085e6b42e16e7989",
+            "id": "d81645fe879a78d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/13. File-System Interface.md",
+                "file": "programmeringssprog/Theory problems/past_exams/201906 answers.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "88c6e92fe2ef62bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/Theory problems/past_exams/Questions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea010b2117e4b3e1",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "programmeringssprog/Theory problems/past_exams/201908.pdf"
+              }
+            }
+          },
+          {
+            "id": "fc986193e811e0c7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/Theory problems/past_exams/201908 answers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97b30e678b8c0217",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2023-04-19 08.18.18.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/13. File-System Interface.md",
+                "file": "programmeringssprog/Theory problems/past_exams/201908 answers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/13. File-System Interface.md",
+                "file": "programmeringssprog/Theory problems/past_exams/201908 answers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/13. File-System Interface.md"
+                "file": "programmeringssprog/Theory problems/past_exams/201908 answers.md"
               }
             }
           }
@@ -144,16 +189,45 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-ocr:Search OCR": false
+      "obsidian-ocr:Search OCR": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "085e6b42e16e7989",
+  "active": "fc986193e811e0c7",
   "lastOpenFiles": [
+    "programmeringssprog/Theory problems/past_exams/201908.pdf",
+    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
+    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
+    "programmeringssprog/Theory problems/past_exams/Need practise.md",
+    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
+    "programmeringssprog/Theory problems/past_exams/Questions.md",
+    "programmeringssprog/Theory problems/Problems 1.md",
+    "programmeringssprog/Theory problems/Garbage collections.md",
+    "programmeringssprog/10a. Covariance and implementation.md",
+    "programmeringssprog/Theory problems/past_exams/202208.pdf",
+    "programmeringssprog/Theory problems/past_exams/202206.pdf",
+    "programmeringssprog/7. Subprograms.md",
+    "Pasted image 20230419082905.png",
+    "Excalidraw/Drawing 2023-04-19 08.18.18.excalidraw.md",
+    "Pasted image 20230419082722.png",
+    "Pasted image 20230419082647.png",
+    "Excalidraw/Drawing 2023-04-19 08.17.26.excalidraw.md",
+    "Excalidraw",
+    "programmeringssprog/5a. Implement scope rules.md",
+    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
+    "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
+    "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
+    "programmeringssprog/Theory problems/past_exams/202108.pdf",
+    "programmeringssprog/Theory problems/past_exams/202106.pdf",
+    "programmeringssprog/Theory problems/past_exams/202006.pdf",
+    "programmeringssprog/Theory problems/past_exams/201906.pdf",
+    "Pasted image 20230418142711.png",
+    "programmeringssprog/Theory problems/problems 8th chapter.md",
+    "operativstystemer/13. File-System Interface.md",
+    "operativstystemer/assignment3/Intro.md",
     "operativstystemer/9. Main Memory.md",
     "operativstystemer/Problems/problems 9 and 10.md",
     "programmeringssprog/10. Object orientation.md",
-    "programmeringssprog/10a. Covariance and implementation.md",
-    "_10a_generics_and_implementation.pdf",
     "programmeringssprog/9 Object oriented intro.md",
     "programmeringssprog/8b polymorphism.md",
     "programmeringssprog/8c garbage collection.md",
@@ -163,37 +237,9 @@
     "Pasted image 20230417094857.png",
     "Pasted image 20230307103720.png",
     "Pasted image 20230322145634.png",
-    "Data mining and machine learning/Problems/solution01.pdf",
-    "Data mining and machine learning/Problems/solution07.pdf",
-    "Data mining and machine learning/Problems/solution05.pdf",
-    "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
-    "ch02_linux_modules.pdf",
-    "Data mining and machine learning/Problems/solution02.pdf",
-    "Data mining and machine learning/Problems/solution03.pdf",
-    "Generated/images",
-    "Generated",
-    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
-    "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
-    "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
-    "Data mining and machine learning/8. Ensemble Learning.md",
-    "Data mining and machine learning/Problems/solution06.pdf",
-    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
-    "operativstystemer/Problems/problems 7 and 8.md",
-    "Data mining and machine learning/6. Supervised Learning.md",
-    "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
-    "programmeringssprog/Theory problems/Problems 7th chapter.md",
-    "operativstystemer/Problems/Untitled.md",
-    "programmeringssprog/Theory problems/problems 8th chapter.md",
     "Pasted image 20230413080031.png",
     "Pasted image 20230411141434.png",
     "Pasted image 20230411141417.png",
-    "Pasted image 20230411141355.png",
-    "Pasted image 20230411141346.png",
-    "Pasted image 20230411141313.png",
-    "programmeringssprog/Theory problems/problems 8.md",
-    "operativstystemer/13. File-System Interface.md",
-    "operativstystemer/6. Synchronization tools.md",
-    "Pasted image 20230331093147.png",
     "Untitled.canvas"
   ]
 }

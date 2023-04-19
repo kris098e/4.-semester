@@ -17,7 +17,7 @@
 * Slow
 
 
-# 1.5 What are the advantages in using an intermediate machine for the implementa-tion of a language?
+# 1.5 What are the advantages in using an intermediate machine for the implementation of a language?
 the idea is that we translate a program into another intermidate program. If we want the code to be run on 3 different machines, we need to make 3 compilers (1 for each ). If we use intermidate machines we can then compile the program into an intermediate prorgram, and  then this program can then have compilers for each. We leave the responsibility to the intermediate program to have compilers
 * we need only n+m  compilers, rather than n*n compilers. because we compile down to 1 program and then this program compiles into m other. If we have only the program, we have n programs that has to write compilers for the n other machines that wants to run the code
 
