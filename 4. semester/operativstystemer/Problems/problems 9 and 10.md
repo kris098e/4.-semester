@@ -301,3 +301,151 @@ Not using all the resources, so it would be beneficial to up the degree of multi
 ## 10.  We have an operating system for a machine that uses base and limit registers, but we have modified the machine to provide a page table. Can the page table be set up to simulate base and limit registers? How can it be, or why can it not be?
 Base is where to looking at memory.
 Limit is the maximum memory.
+
+
+## 1.  Assume that a program has just referenced an address in virtual memory. Describe a scenario in which each of the following can occur. (If no such scenario can occur, explain why.)
+-   TLB miss with no page fault 
+If the TLB does not contain the page-to-frame look up, but the page-table does have it. 
+
+-   TLB miss with page fault
+If the TLB does not contain the page-to-frame look up, and the page does not either.  Also can happen if the page-table does the look up, but the frame is marked as invalid.
+
+-   TLB hit with no page fault
+TLB does contain the page-to-frame look up, and the frame is valid.
+
+-   TLB hit with page fault
+NOT POSSIBLE, since this cache should be kept in a valid state, such that there is no invalid frame mappings which fails.
+
+## 2.  **Important** Consider a system that uses pure demand paging.
+-   When a process first starts execution, how would you characterize the page-fault rate?
+The page fault rate is very high, as no pages are loaded into memory for the process yet. This means that the first lookups will lead to page-faults
+
+-   Once the working set for a process is loaded into memory, how would you characterize the page-fault rate?
+The working-set is the set of pages which a process are actively using, therefore the page-fault rate should be low, if it is allowed to bring in all the pages it has used.
+
+-   Assume that a process changes its locality and the size of the new working set is too large to be stored in available free memory. Identify some options system designers could choose from to handle this situation.
+Thrashing would occur in a higher rate, CPU-rate decreases and disk-utilization is increasing.
+1. Keep track of which pages are used the most,  and keep these in the working-set. 
+	1. this would of course lead to many page-fault, as there is a reason the pages are in the working-set to begin with.
+2. Put the process to sleep until memory becomes available, as the likelyhood of more page-faults happening increases, and these are very slow.
+3. kill processes to get more memory
+4. proceed execution.
+
+## 3. repetition The following is a page table for a system with 12-bit virtual and physical addresses and 256-byte pages. Free page frames are to be allocated in the order 9, F, D. A dash for a page frame indicates that the page is not in memory.
+![[Pasted image 20230419121407.png]]
+Convert the following virtual addresses to their equivalent physical addresses in hexadecimal. All numbers are given in hexadecimal. In the case of a page fault, you must use one of the free frames to update the page table and resolve the logical address to its corresponding physical address.
+
+as the pages are 256 bytes, we need 8bits for the offset. Then the page is 4 bits.
+
+## 4. Consider the page table for a system with 16-bit virtual and physical addresses and 4,096-byte pages.
+![[Pasted image 20230419121437.png]]
+The reference bit for a page is set to 1 when the page has been referenced. Periodically, a thread zeroes out all values of the reference bit. A dash for a page frame indicates that the page is not in memory. The page-replacement algorithm is localized LRU, and all numbers are provided in decimal.
+-   Convert the following virtual addresses (in hexadecimal) to the equivalent physical addresses. You may provide answers in either hexadecimal or decimal. Also set the reference bit for the appropriate entry in the page table.
+Since the pages are 4096 Bytes, we need 12 bits for the offset, which then is the first 3 hexadecimals. 
+    -   `0x621C`
+It is just converting the 6 to whatever is at page 6. This is frame 8. The physical address is then `0x821C`
+    -   `0xF0A3`
+Looking in the page table we see, at F the frame 2. The physical address is then `0x20A3`
+    -   `0xBC1A`
+B is 11 in decimal. Answer: `0x4C1A`
+    -   `0x5BAA`
+`0xDBAA`
+    -   `0x0BA1`
+`0x9BA1`
+
+Set all the reference bits to 1 for all of the referenced pages.
+
+-   Using the above addresses as a guide, provide an example of a logical address (in hexadecimal) that results in a page fault.
+`0x1000` As for page 1, the frame is missing. 
+
+-   From what set of page frames will the LRU page-replacement algorithm choose in resolving a page fault?
+The ones where the reference bits is still 0, as these have not been referenced.
+
+
+## 5. (repetition) Apply the (1) FIFO, (2) LRU, and (3) optimal (OPT) replacement algorithms for the following paGe-reference strings:
+-   `2, 6, 9, 2, 4, 2, 1, 7, 3, 0, 5, 2, 1, 2, 9, 5, 7, 3, 8, 5`
+-   `0, 6, 3, 0, 2, 6, 3, 5, 2, 4, 1, 3, 0, 6, 1, 4, 2, 3, 5, 7`
+-   `3, 1, 4, 2, 5, 4, 1, 3, 5, 2, 0, 1, 1, 0, 2, 3, 4, 5, 0, 1`
+-   `4, 2, 1, 7, 9, 8, 3, 5, 2, 6, 8, 1, 0, 7, 2, 4, 1, 3, 5, 8`
+-   `0, 1, 2, 3, 4, 4, 3, 2, 1, 0, 0, 1, 2, 3, 4, 4, 3, 2, 1, 0`
+
+
+## 6.  Discuss situations in which the least frequently used (LFU) page-replacement algorithm generates fewer page faults than the least recently used (LRU) page-replacement algorithm. Also discuss under what circumstances the opposite holds.
+LFU will generate fewer page-faults, when there are pages that are referenced many times, but there then come a short break in this pattern, where other pages are needed, and then will be using the pages that are used more frequently again.
+
+there are circumstances where the LRU algorithm generates fewer page faults than the LFU algorithm. For example, in a system with a large cache, there may be pages that are frequently accessed but only for a brief period. In such a situation, the LFU algorithm may keep these pages in memory, assuming they are still active, and may replace other pages that are not as frequently accessed. However, the LRU algorithm will recognize that these pages have not been accessed recently and will replace them with more active pages, thereby reducing the number of page faults.
+
+LFU bad when switching the working set. I.e a startup working set and to the rest of the code which we are gonna use a lot.
+
+LRU worse: `1,1,2,2,3,4,1,1,2,2` with 3 frames. Better to swap out 3 with 4. 
+
+## 7.  The KHIE (pronounced “k-hi”) operating system uses a FIFO replacement algorithm for resident pages and a free-frame pool of recently used pages. Assume that the free-frame pool is managed using the LRU replacement policy. Answer the following questions:
+
+free-frame pool is when a process has just finished executing, then its frames is still in memory, and can be used.
+![[KHIE.excalidraw]]
+-   If a page fault occurs and the page does not exist in the free-frame pool, how is free space generated for the newly requested page?
+use a free frame, get the correct data into this, and use it. Use the least recently used frame in the free-frame-pool
+
+-   If a page fault occurs and the page exists in the free-frame pool, how are the resident page set and the free-frame pool managed to make space for the requested page?
+Map the page to point to the corresponding frame, and add it to the memory of the process.
+
+-   To what does the system degenerate if the number of resident pages is set to one?
+swap in something from the working set with one from the free-frame pool using LRU, else we have to put something into 2 one of the free-frames. The system then degeneratues to LRU algorithm for paging always.
+
+-   To what does the system degenerate if the number of pages in the free-frame pool is zero?
+We have to go to the disk every time we have a page fault, since the page cannot be in the memory already. We then use FIFO always.
+
+## 8.  Explain why compressed memory is used in operating systems for mobile devices.
+Compressed memory is when an inactive process, which is still in memory, compresses its memory usage, such that  more RAM becomes available for the active processes. This is used in mobile devices, as they may not have as much memory available, and then background processes will compress its memory.
+Have to decompress to use the memory again
+
+A memory compressing algorithm is used, which will also be needing processing power.
+Use this in mobile devices since, we may swap to it again fast, and then we dont want it to be looking like it is "starting up again".
+Have more in memory.
+In mobile devices we cannot swap pages, so we need to kill processes instead to free memory, therefore it is better to compress memory.
+
+
+## 9.  Suppose that your replacement policy (in a paged system) is to examine each page regularly and to discard that page if it has not been used since the last examination. What would you gain and what would you lose by using this policy rather than LRU or second-chance replacement?
+2nd change replacement will only evict something if necessary
+This will just evict them if not used, not when necessary.
+
+pros: 
+* Should have more available memory always compared to using just replacing whenever needed.
+
+cons:
+* Does not consider how frequent a page is used. WIll maybe just throw it out. Maybe, we dont need to reclaim memory.
+* Some occational-used pages may have been used between the passes through the pages, which will end not being cleaned, which is considered worse when comparing to lucky timing with more frequent pages being used, which may get evicted. 
+
+
+Can use this if the system is under heavy load, and we need to reclaim a lot of memory. We can then swap back to fx LRU
+
+
+## 10.  (**important**) Is it possible for a process to have two working sets, one representing data and another representing code? Explain.
+Could be done if code is frequently used, and data is different.
+
+## 11.  (**important**) In a 1,024-KB segment, memory is allocated using the buddy system. Which allocations are made (you could draw a tree illustrating the allocations) after the following memory requests are allocated:
+Cannot use the blocks that are already split. If have memory size of 8 and have allocated two 4's, we cannot use the same 8, even tho 3 has been allocated to 4 and we have 5 left
+-   Request 5-KB
+-   Request 135 KB.
+-   Request 14 KB.
+-   Request 3 KB.
+-   Request 12 KB.
+![[Buddy_System_Memory.excalidraw]]
+
+Next, modify the tree/allocations for the following releases of memory. Perform coalescing whenever possible:
+
+-   Release 3 KB.
+-   Release 5 KB.
+-   Release 14 KB.
+-   Release 12 KB.
+This would result in only having the left tree to go down to 256, as we dont need to split that memory up.
+
+
+## 12.  (**interesting**) The slab-allocation algorithm uses a separate cache for each different object type. Assuming there is one cache per object type, explain why this scheme doesn’t scale well with multiple CPUs. What could be done to address this scalability issue?
+The slab-allocation algorithm uses a separate cache for each different object type, which can lead to scalability issues when multiple CPUs are involved. This is because each CPU has its own cache, and if there are multiple CPUs working on different object types, there can be contention for cache resources, leading to cache thrashing and decreased performance.
+
+To address this scalability issue, one possible solution is to implement a shared cache that can be accessed by multiple CPUs. This shared cache could be designed to support multiple object types, and it would be responsible for managing and allocating memory for all object types. By using a shared cache, multiple CPUs can access the same cache and avoid cache thrashing, which can lead to improved performance.
+
+Another solution is to use a hierarchical cache system where each CPU has its own cache, but there is also a shared cache that sits between the CPUs and the main memory. This shared cache can be used to cache frequently accessed data and reduce the number of memory accesses required, which can improve performance. This approach is commonly used in modern computer systems and can be effective in managing the cache resources of multiple CPUs.
+
+Overall, to address the scalability issue of the slab-allocation algorithm with multiple CPUs, a shared cache or hierarchical cache system can be used to manage cache resources effectively and improve performance.

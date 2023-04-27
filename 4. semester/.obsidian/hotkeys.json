@@ -15,14 +15,5 @@
       ],
       "key": "N"
     }
-  ],
-  "obsidian-ocr:search-ocr": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "F"
-    }
   ]
 }

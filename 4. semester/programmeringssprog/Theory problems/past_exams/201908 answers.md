@@ -199,9 +199,12 @@ A polymorphic type system is a type system that allows values to have more than 
 There are two main forms of polymorphism in type systems:
 
 1.  Parametric polymorphism: This is a form of polymorphism in which a function or data type is generic and can operate on values of different types. This is often achieved through the use of type variables. For example, in the programming language Java, the ArrayList class is a parametrically polymorphic data type, allowing it to store elements of any type.
-    
-2.  Ad hoc polymorphism: This is a form of polymorphism in which a function or operator can have different implementations depending on the types of its arguments. This is often achieved through the use of overloaded functions or operators. For example, in the programming language Python, the '+' operator is ad hoc polymorphic, allowing it to perform addition on different types of values such as integers, floats, and strings.
-    
+
+THIS MEANS THAT FUNCTIONS AND TYPES CAN WORK WITH MORE TYPES. I.e **Generics**
+
+
+2. .  Ad hoc polymorphism: This is a form of polymorphism in which a function or operator can have different implementations depending on the types of its arguments. This is often achieved through the use of overloaded functions or operators. For example, in the programming language Python, the '+' operator is ad hoc polymorphic, allowing it to perform addition on different types of values such as integers, floats, and strings.
+Overloading, specifying how the function should work with specific types.
 
 Polymorphic type systems can make code more flexible, modular, and reusable. They can also help catch errors at compile time by ensuring that functions and variables are used only in ways that are compatible with their defined types.
 
