@@ -145,7 +145,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "discriminant",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -246,8 +246,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f7fe4bff2c40e084",
+  "active": "fcee12451607891b",
   "lastOpenFiles": [
+    "Pasted image 20230428095827.png",
+    "Pasted image 20230428095346.png",
     "Pasted image 20230428091013.png",
     "Pasted image 20230428090407.png",
     "Pasted image 20230428090012.png",
@@ -286,8 +288,6 @@
     "operativstystemer/8. Deadlocks.md",
     "Data mining and machine learning/4. Bayesian Learning.md",
     "Pasted image 20230421095319.png",
-    "Pasted image 20230421095244.png",
-    "Pasted image 20230421095230.png",
     "_exercise11.pdf",
     "Data mining and machine learning/Problems/solution01.pdf",
     "operativstystemer/assignment3/notes",
