@@ -9,14 +9,14 @@ maximize utilization
     
 3.  What are the tradeoffs involved in rereading code pages from the file system versus using swap space to store them?
    code page: pages for executable code.
-    overhead for going through the file-system
-	we need to allocate the swap space.
+    overhead for going through the file-system, but dont need the extra memory.
+	we need to allocate the swap space, but will be faster in a swap space.
 	
     
 4.  Is there any way to implement truly stable storage? Explain your answer.
-    store data for an infinite amount of time.
+    store data for an infinite amount of time. (i.e we can just smash it with a hammer, which also prevents this)
     
-    laws of physics prevents this.
+    laws of physics prevents this. 
     
     
 5.  (**rather easy, but will take long**) It is sometimes said that tape is a sequential-access medium, whereas a hard disk is a random-access medium. In fact, the suitability of a storage device for random access depends on the transfer size. The term streaming transfer rate denotes the rate for a data transfer that is underway, excluding the effect of access latency. In contrast, the effective transfer rate is the ratio of total bytes to total seconds, including overhead time such as access latency. Suppose we have a computer with the following characteristics: the level-2 cache has an access latency of 8 nanoseconds and a streaming transfer rate of 800 megabytes per second, the main memory has an access latency of 60 nanoseconds and a streaming transfer rate of 80 megabytes per second, the hard disk has an access latency of 15 milliseconds and a streaming transfer rate of 5 megabytes per second, and a tape drive has an access latency of 60 seconds and a streaming transfer rate of 2 megabytes per second.
@@ -30,7 +30,7 @@ maximize utilization
        
     5.  Compute the minimum transfer sizes that give acceptable utilization for cache, memory, and tape.
     6.  When is a tape a random-access device, and when is it a sequential-access device?
-If we access the data sequentially it is sequential. If we jump through it, it is not random
+If we access the data sequentially it is sequential. If we jump through it, it is random
 
 6.  Could a RAID level 1 organization achieve better performance for read requests than a RAID level 0 organization (with nonredundant striping of data)? If so, how?
     Multithread the reading, start differently in the mirrored blocks.
@@ -121,7 +121,7 @@ Just the overhead, but less memory usage
     -   If a system contains 1,000 disk drives, each of which has a 750,000hour MTBF, which of the following best describes how often a drive failure will occur in that disk farm: once per thousand years, once per century, once per decade, once per year, once per month, once per week, once per day, once per hour, once per minute, or once per second?
       $$\frac{750.000}{1000}=750hrs$$
     -   (**far-going camparison**) Mortality statistics indicate that, on the average, a U.S. resident has about 1 chance in 1,000 of dying between the ages of 20 and 21. Deduce the MTBF hours for 20-year-olds. Convert this figure from hours to years. What does this MTBF tell you about the expected lifetime of a 20-year-old?
-      hours in a year multiplies divided by 1/1000. covert it to years.  The MTBF is 1000 years
+      hours in a year divided by 1/1000. covert it to years.  The MTBF is 1000 years
       it tells us that if we stay 20 years old for 1000 years we are expected to fail. Tells us nothing
       .
       -  The manufacturer guarantees a 1-million-hour MTBF for a certain model of disk drive. What can you conclude about the number of years for which one of these drives is under warranty?

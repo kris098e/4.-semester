@@ -97,9 +97,41 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+                "file": "operativstystemer/Problems/problems 12.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "ac637864c67e0f90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/Theory problems/past_exams/Test example.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "788a2d726d5a73a4",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf"
+              }
+            }
+          },
+          {
+            "id": "2f711882003195c9",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf"
               }
             }
           },
@@ -116,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -162,8 +194,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -183,7 +214,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -200,7 +231,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -223,7 +254,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md"
+                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf"
               }
             }
           }
@@ -242,32 +273,45 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-ocr:Search OCR": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "fcee12451607891b",
+  "active": "2f711882003195c9",
   "lastOpenFiles": [
+    "programmeringssprog/Theory problems/Problems 1.md",
+    "programmeringssprog/Theory problems/Problems 4th chapter.md",
+    "programmeringssprog/Theory problems/problems chapter 10.md",
+    "Pasted image 20230503084112.png",
+    "Pasted image 20230503084024.png",
+    "Pasted image 20230503084015.png",
+    "Pasted image 20230503083921.png",
+    "Pasted image 20230503083913.png",
+    "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
+    "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
+    "programmeringssprog/Theory problems/past_exams/Test example.md",
+    "programmeringssprog/Haskell/Assignment/Feedback.md",
+    "programmeringssprog/Theory problems/problems.md",
+    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
+    "_test_example.pdf",
+    "operativstystemer/Problems/problems 12.md",
+    "operativstystemer/Problems/Untitled.md",
+    "operativstystemer/14. File System Implementation.md",
+    "operativstystemer/15. File system internals.md",
+    "operativstystemer/Problems/problems 9 and 10.md",
+    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
     "Pasted image 20230428095827.png",
     "Pasted image 20230428095346.png",
     "Pasted image 20230428091013.png",
     "Pasted image 20230428090407.png",
     "Pasted image 20230428090012.png",
-    "Pasted image 20230428085950.png",
-    "Pasted image 20230428085915.png",
-    "Pasted image 20230428085901.png",
     "Data mining and machine learning/Problems/Mock exam.md",
     "Data mining and machine learning/6. Supervised Learning.md",
-    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
     "_exercise12.pdf",
-    "operativstystemer/Problems/problems 12.md",
-    "operativstystemer/Problems/problems 9 and 10.md",
     "Excalidraw/RAID.excalidraw.md",
     "Excalidraw/KHIE.excalidraw.md",
     "Excalidraw/Drawing 2023-04-19 14.41.17.excalidraw.md",
     "Excalidraw/Buddy_System_Memory.excalidraw.md",
-    "operativstystemer/15. File system internals.md",
-    "operativstystemer/14. File System Implementation.md",
     "operativstystemer/16. security.md",
     "operativstystemer/12. IO systems.md",
     "operativstystemer/13. File-System Interface.md",
@@ -276,24 +320,11 @@
     "operativstystemer/assignment3/Intro.md",
     "operativstystemer/assignment3/sources/lfs",
     "operativstystemer/assignment3/notes/notes.md",
-    "programmeringssprog/10a. Covariance and implementation.md",
-    "programmeringssprog/10. Object orientation.md",
     "ch14-2023.pdf",
     "Unconfirmed 584646.crdownload",
-    "operativstystemer/Problems/problems 4 and 5.md",
-    "programmeringssprog/9 Object oriented intro.md",
-    "programmeringssprog/13. Historical Perspective.md",
-    "Pasted image 20230424095724.png",
-    "Pasted image 20230424094808.png",
-    "operativstystemer/8. Deadlocks.md",
-    "Data mining and machine learning/4. Bayesian Learning.md",
-    "Pasted image 20230421095319.png",
     "_exercise11.pdf",
     "Data mining and machine learning/Problems/solution01.pdf",
     "operativstystemer/assignment3/notes",
-    "programmeringssprog/Theory problems/past_exams/201908.pdf",
-    "programmeringssprog/Theory problems/past_exams/202208.pdf",
-    "programmeringssprog/Theory problems/past_exams/202206.pdf",
     "Untitled.canvas"
   ]
 }
