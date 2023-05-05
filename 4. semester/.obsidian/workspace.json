@@ -136,6 +136,16 @@
             }
           },
           {
+            "id": "c7209c729bcce57c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.7"
+              }
+            }
+          },
+          {
             "id": "9f12cd00452854cf",
             "type": "leaf",
             "state": {
@@ -148,7 +158,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -191,6 +201,14 @@
             "type": "leaf",
             "state": {
               "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "1041ec925a90705a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
               "state": {}
             }
           }
@@ -277,7 +295,7 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "2f711882003195c9",
+  "active": "c7209c729bcce57c",
   "lastOpenFiles": [
     "programmeringssprog/Theory problems/Problems 1.md",
     "programmeringssprog/Theory problems/Problems 4th chapter.md",
