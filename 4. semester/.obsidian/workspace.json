@@ -4,161 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "11cc7c529425ff57",
+        "id": "0f238821975b3ab3",
         "type": "tabs",
         "children": [
           {
-            "id": "ff364a1ade842976",
+            "id": "826688904f0a272a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/14. File System Implementation.md",
+                "file": "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "54f2484abc4ed025",
+            "id": "6b42dbdc08bab3b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/11..md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f12e7aae611acd00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Look at.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2170eaaee69451b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/12. IO systems.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e122a91f2f2e33fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/16. security.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f24e4fc4355d3b7d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Problems/problems 12.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fc36087386a4f039",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Problems/problems 12.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fcee12451607891b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "operativstystemer/Problems/problems 12.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ac637864c67e0f90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/Test example.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "788a2d726d5a73a4",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf"
-              }
-            }
-          },
-          {
-            "id": "2f711882003195c9",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf"
-              }
-            }
-          },
-          {
-            "id": "c7209c729bcce57c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.2.7"
-              }
-            }
-          },
-          {
-            "id": "9f12cd00452854cf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
+                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -216,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 206.50043487548828
+    "width": 200
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -232,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
+                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -249,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
+                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -272,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf"
+                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md"
               }
             }
           }
@@ -281,7 +155,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -295,54 +170,54 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "c7209c729bcce57c",
+  "active": "6b42dbdc08bab3b6",
   "lastOpenFiles": [
+    "programmeringssprog/Theory problems/past_exams/202006.pdf",
+    "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202006.md",
+    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
+    "programmeringssprog/Theory problems/past_exams/201908.pdf",
+    "programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
+    "operativstystemer/Problems/problems 15 and 16.md",
+    "operativstystemer/Exam.md",
+    "operativstystemer/Problems/problems 12 and 13 and 14.md",
+    "Excalidraw/SVMs.md",
+    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+    "Data mining and machine learning/Problems/13. probability, k-means algorithm, probability and statistics, support vector machine.md",
+    "Pasted Image 20230511094215_300.png",
+    "Pasted image 20230511092950.png",
+    "Pasted image 20230511092317.png",
+    "Pasted image 20230511085600.png",
+    "Pasted image 20230511083751.png",
+    "Data mining and machine learning/Problems/solution05.pdf",
+    "Data mining and machine learning/5. Learning with Distributions.md",
+    "_exercise13.pdf",
     "programmeringssprog/Theory problems/Problems 1.md",
+    "operativstystemer/assignment3.zip",
+    "operativstystemer/zi1wQGmE",
+    "operativstystemer/assignment3/sources/lfs",
+    "operativstystemer/assignment3/sources/lfs.o",
+    "operativstystemer/assignment3/report/FUSE_OS_assignment_3.pdf",
+    "operativstystemer/assignment3/video/video1880632513.mp4",
+    "operativstystemer/assignment3/sources/tests/007texteditor",
     "programmeringssprog/Theory problems/Problems 4th chapter.md",
+    "programmeringssprog/Theory problems/problems 5th chapter.md",
+    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
+    "Pasted image 20230510122700.png",
+    "Pasted image 20230510122032.png",
+    "operativstystemer/16. security and protection.md",
+    "operativstystemer/Problems/problems 11.md",
+    "programmeringssprog/Theory problems/Questions.md",
     "programmeringssprog/Theory problems/problems chapter 10.md",
+    "programmeringssprog/Theory problems/past_exams/Notes.md",
+    "programmeringssprog/5a. Implement scope rules.md",
+    "programmeringssprog/Theory problems/past_exams/Test example.md",
+    "programmeringssprog/Theory problems/past_exams/Questions.md",
     "Pasted image 20230503084112.png",
     "Pasted image 20230503084024.png",
     "Pasted image 20230503084015.png",
-    "Pasted image 20230503083921.png",
-    "Pasted image 20230503083913.png",
-    "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
-    "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
-    "programmeringssprog/Theory problems/past_exams/Test example.md",
     "programmeringssprog/Haskell/Assignment/Feedback.md",
-    "programmeringssprog/Theory problems/problems.md",
-    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
-    "_test_example.pdf",
-    "operativstystemer/Problems/problems 12.md",
-    "operativstystemer/Problems/Untitled.md",
-    "operativstystemer/14. File System Implementation.md",
-    "operativstystemer/15. File system internals.md",
-    "operativstystemer/Problems/problems 9 and 10.md",
-    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
-    "Pasted image 20230428095827.png",
-    "Pasted image 20230428095346.png",
-    "Pasted image 20230428091013.png",
-    "Pasted image 20230428090407.png",
-    "Pasted image 20230428090012.png",
-    "Data mining and machine learning/Problems/Mock exam.md",
-    "Data mining and machine learning/6. Supervised Learning.md",
-    "_exercise12.pdf",
-    "Excalidraw/RAID.excalidraw.md",
-    "Excalidraw/KHIE.excalidraw.md",
-    "Excalidraw/Drawing 2023-04-19 14.41.17.excalidraw.md",
-    "Excalidraw/Buddy_System_Memory.excalidraw.md",
-    "operativstystemer/16. security.md",
-    "operativstystemer/12. IO systems.md",
-    "operativstystemer/13. File-System Interface.md",
-    "operativstystemer/Look at.md",
-    "operativstystemer/11..md",
-    "operativstystemer/assignment3/Intro.md",
-    "operativstystemer/assignment3/sources/lfs",
-    "operativstystemer/assignment3/notes/notes.md",
-    "ch14-2023.pdf",
-    "Unconfirmed 584646.crdownload",
-    "_exercise11.pdf",
-    "Data mining and machine learning/Problems/solution01.pdf",
-    "operativstystemer/assignment3/notes",
     "Untitled.canvas"
   ]
 }

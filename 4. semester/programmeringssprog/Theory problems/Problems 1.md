@@ -1,5 +1,13 @@
+[[202006.pdf#page=2]]
+# 2
+partial evaluator is a program given D0 and D1 and outputs D2
+$p:(D_{1}, D_{2})\to D_{2}$
+![[Pasted image 20230510122700.png]]
+see that we have an interpreter written in L1 to L2 and from L2 to L3, so apply the first interpreter and can input to the next one.  So we get from L1 to L3. I.e an interpreter from L1 to L3
 
-# 1.3 Describe the differences between the interpretative and compiled implementa-tions of a programming language, emphasising the advantages and disadvan-tages.
+I does not matter what the partial evalutor is written in, it just means that the computer uses L0, and can output something in L1
+
+# 1.3 Describe the differences between the interpretative and compiled implementations of a programming language, emphasising the advantages and disadvantages.
 
 ## compiler
 ### advantages
@@ -19,7 +27,7 @@
 
 # 1.5 What are the advantages in using an intermediate machine for the implementation of a language?
 the idea is that we translate a program into another intermidate program. If we want the code to be run on 3 different machines, we need to make 3 compilers (1 for each ). If we use intermidate machines we can then compile the program into an intermediate prorgram, and  then this program can then have compilers for each. We leave the responsibility to the intermediate program to have compilers
-* we need only n+m  compilers, rather than n*n compilers. because we compile down to 1 program and then this program compiles into m other. If we have only the program, we have n programs that has to write compilers for the n other machines that wants to run the code
+* we need only n+m  compilers, rather than n\*n compilers. because we compile down to 1 program and then this program compiles into m other. If we have only the program, we have n programs that has to write compilers for the n other machines that wants to run the code
 
 
 
@@ -28,7 +36,7 @@ the idea is that we translate a program into another intermidate program. If we 
 intermediate machine);
 • The same compiler, translated into P-code; (probably such that the intermediate machine could also compile a Pascal program into P-code such that it can compile the pascal without another machine.)
 • An interpreter for P-code written in Pascal.
-## To implement the Pascal language in an interpretative way on a new host machine means (manually) translating the P-code interpreter into the language on the host machine. Given such an interpretative implementation, how can one obtain a compiled implementation for the same host machine, minimising the effort required? (Hint: think about a modification to the compiler for Pascal also written in Pascal.)
+## To implement the Pascal language in an interpretative way on a new host machine means (manually) translating the P-code interpreter into the language on the host machine. Given such an interpretative implementation, how can one obtain a compiled implementation for the same host machine, minimizing the effort required? (Hint: think about a modification to the compiler for Pascal also written in Pascal.)
 the notation means 
 function[program, input] = output
 ![[Pasted image 20230222112107.png]]

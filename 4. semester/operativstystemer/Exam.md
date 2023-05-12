@@ -1,0 +1,1 @@
+better to focus on one subsubjects in a subject than to touch all subsubjects in the subject, can give a briefin introduction and then go into depth with one of the subsubjects 

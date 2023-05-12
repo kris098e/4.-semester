@@ -1,0 +1,12 @@
+#! bin/bash
+
+echo "-------- Test13: text editor --------"
+cd /tmp/fuse
+touch hej
+echo "hjaelp jeg er fanget" > hej
+vim hej
+
+# cleanup
+sleep 5
+fusermount -u /tmp/fuse 2> /dev/null
+rm -r /tmp/fuse 2> /dev/null

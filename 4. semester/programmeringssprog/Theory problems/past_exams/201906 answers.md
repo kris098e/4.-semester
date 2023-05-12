@@ -39,6 +39,12 @@ Where the first x is 6 and the 2nd is 2. The out of scope x is not taken into co
 
 ![[201906.pdf#page=2]]
 # exercise 2
+partial evaluator is a program given D0 and D1 and outputs D2
+$p:(D_{1}, D_{2})\to D_{2}$
+![[Pasted image 20230510122700.png]]
+see that we have an interpreter written in L1 to L2 and from L2 to L3, so apply the first interpreter and can input to the next one.  So we get from L1 to L3. I.e an interpreter from L1 to L3
+
+I does not matter what the partial evalutor is written in, it just means that the computer uses L0, and can output something in L1
 
 
 # exercise 3
