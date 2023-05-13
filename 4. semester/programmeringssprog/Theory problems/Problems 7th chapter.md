@@ -10,7 +10,7 @@
    
    In a language with dynamic scope, the scope of a variable is determined based on the call stack at runtime. To implement deep binding using closures in such a language, closures need to capture not only the values of their free variables but also the entire call stack at the point of their creation. This is because the values of free variables in dynamic scope languages can change based on the call stack. The closure uses the value of the free variable that was in effect when it was created, rather than the current value of the variable.
 
-if using association list, we can just have a pointer to where we need the variables from. Alternatively we can just use CRC and??? 
+if using association list, we can just have a pointer to where we need the variables from. Alternatively we can just use CRT and??? 
    
 7. Consider the following fragment in a language with exceptions and call by value-result and call by reference:
 
@@ -27,7 +27,7 @@ write(y);
 ```
 
 State what is printed by the program when parameters are passed: 
-(i) by value-result: Write 0 (since noting is returned from the function. We first copy the whatever is in the actual parameter and use this. The "return value" is then what is assigned to y. When using `result-based passing` it is first at the last statement of the function, that we will update the value to the actual parameter)
+(i) by value-result: Write 0 (since noting is returned from the function, **i.e an exception is thrown before the function terminates itself**. We first copy the whatever is in the actual parameter and use this. The "return value" is then what is assigned to y. When using `result-based passing` it is first at the last statement of the function, that we will update the value to the actual parameter)
 (ii) by reference: Write 1
 
 8. In a pseudo-language with exceptions, consider the following block of code:
@@ -116,7 +116,7 @@ write(X);
 ```
 
 Write: 2
-Write: 4
+Write: 4, but could also be 3 as the "++" may not have been evaluated before returning from the function.
 
 4. The following code fragment, is to be handed to an interpreter for a pseudolanguage which permits constant parameters:
 
@@ -174,23 +174,24 @@ paste x++ into the expression. As it uses deep binding, or static binding, it us
 {int x = 0;
 int A(reference int y) {
 	int x = 2;
-	y = y + 1;
-	return B(y) + x;
+	y = y + 1; // y, x = 1. x = 2 
+	return B(y) + x; // B(y) + 2. B(2) + 2 = 4. return 9 + 2
 }
 int B(reference int y){
 	int C(reference int y){
-		int x = 3;
-		return A(y) + x + y;
+		int x = 3; 
+		return A(y) + x + y; // A(1) + 3 + 1. 4 +3 + 1 = 8
 	}
-	if (y == 1) return C(x) + y;
-	else return x + y;
+	if (y == 1) return C(x) + y;  // C(1) + 1 = 8 + 1 = 9. 
+	else return x + y; // 2 + 2
 }
-write (A(x));
+write (A(x)); // write 11
 }
 ```
 Assume that static scope is implemented using a display. Draw a diagram showing the state of the display and the activation-record stack when control enters the function A for the second time. For every activation record, just give value for the field that saves the previous value of the display.
 
-display: 1 entry for each static nesting. First points to the most outer scope.
+display: 1 entry for each static nesting. First points to the most outer scope. The sequence of calls is outer, (A,B), C
+![[Display_chapter_7]]
 
 ##### Chapter 4
 6. Say what will be printed by the following code fragment written in a pseudolanguage which uses static scope; the parameters are passed by a value.
@@ -220,13 +221,13 @@ display: 1 entry for each static nesting. First points to the most outer scope.
 ```C
 {int x = 2;
 void fie(reference int y){
-	x = x + y;
-	y = y + 1;
+	x = x + y; // x = 2 + 5 = 7
+	y = y + 1; // y = 5 + 1 = 6
 }
 {int x = 5;
  int y = 5;
- fie(x);
- write(x);
+ fie(x); // changes x to be equal to 6
+ write(x); // 6
 }
 write(x);
 }
@@ -239,13 +240,13 @@ write(x);
 ```C
 {int x = 2;
 void fie(value int y){
-	x = x + y;
+	x = x + y; // x = 2 + 5
 }
 {int x = 5;
  fie(x++);
- write(x);
+ write(x); // 6
  }
-write(x);
+write(x); // 7
 }
 ```
 
@@ -256,15 +257,15 @@ Write: 7
 ```C
 {int x = 2;
 void fie(name int y){
-	x = x + y;
+	x = x + y; // x = 2 + 5++
 }
 {int x = 5;
 	{int x = 7
 	}
- fie(x++);
- write(x);
+ fie(x++); // changes x = 6
+ write(x); // write 6
 }
-write(x);
+write(x); // 
 }
 ```
 1. Write: 6
@@ -281,8 +282,8 @@ void fie(reference int z){
 {int y = 3;
 	{int x = 3 // comes out of scope right after we exit the block
 	}
-	 fie(y); // y = 3 is used
-	 write(y);
+ fie(y); // y = 3 is used
+ write(y);
 }
 write(y);
 }
@@ -295,7 +296,7 @@ Write: 1
     
 ```C
 {int x = 0; // First updated to 1 & 2
-int A(reference int y // y = 0 & y = 1) {
+int A(reference int y) {
 	int x = 2;
 	y = y + 1; // Global x is set to 1 & 2
 	return B(y) + x; // global x = 2 -> y = 1 -> Return 13 + 2 = 15 & y = 2 -> Return 4 + 2 = 6 -> Returns 15
@@ -311,6 +312,7 @@ int B(reference int y // y = 1 & y = 2){
 write (A(x)); 
 }
 ```
+Here we assume that we first evaluate the first side of an expression and then the next. `C(x) + y` is called, y = 1, however `C(x)` changes `y=2`. which means we end up using `y=2`.
 
 Write: 15
 
@@ -332,6 +334,7 @@ write(foo(z, Omega() + z));
 which the parameters to foo are passed by name.
 
 Writes 0 -> Omega is not evaluated due to name passing.
+But by value the function is evaluated which will end up causing an error.
 
 ```C
 {int z= 0;
@@ -346,5 +349,5 @@ write(foo(z, Omega() + z));
 }
 ```
 (ii) State what will be the result of the execution of this fragment in the case in which the parameters to foo are passed by value.
-
+	
 Tries to evaluate omega due to value passing and will create infinite recursion

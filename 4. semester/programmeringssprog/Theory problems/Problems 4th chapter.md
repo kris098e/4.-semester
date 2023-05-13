@@ -49,6 +49,7 @@ void foo(int *y) {
 foo(*x);
 ```
 x lives after the foo() call, and y does not, and it is a reference to it. 
+This is because of the fact that c always uses passed by value, such that y becomes a copy, and not the exact x we use to call the method 
 
 # 5. Provide an example of a connection between a name and a denotable object whose life is longer than that of the object itself.
 ```c

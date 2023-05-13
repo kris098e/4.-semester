@@ -8,24 +8,36 @@
         "type": "tabs",
         "children": [
           {
-            "id": "826688904f0a272a",
+            "id": "6b42dbdc08bab3b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+                "file": "programmeringssprog/10. Object orientation.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "6b42dbdc08bab3b6",
+            "id": "e76070995501014d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+                "file": "programmeringssprog/Theory problems/Remember.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "81ae891fc8069a29",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/Theory problems/Remember.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+                "file": "programmeringssprog/Theory problems/Remember.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+                "file": "programmeringssprog/Theory problems/Remember.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md"
+                "file": "programmeringssprog/Theory problems/Remember.md"
               }
             }
           }
@@ -170,8 +182,27 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "6b42dbdc08bab3b6",
+  "active": "e76070995501014d",
   "lastOpenFiles": [
+    "programmeringssprog/Theory problems/Questions.md",
+    "_000 lookinto.md",
+    "programmeringssprog/10. Object orientation.md",
+    "_10_objects_concepts.pdf",
+    "_10a_generics_and_implementation.pdf",
+    "programmeringssprog/Theory problems/problems chapter 10.md",
+    "programmeringssprog/Theory problems/problems 8th chapter.md",
+    "programmeringssprog/8b polymorphism.md",
+    "programmeringssprog/Theory problems/Problems 7th chapter.md",
+    "programmeringssprog/Theory problems/problems 6th chapter.md",
+    "programmeringssprog/Theory problems/Remember.md",
+    "Excalidraw/Display_chapter_7.md",
+    "programmeringssprog/Theory problems/problems 5th chapter.md",
+    "programmeringssprog/5a. Implement scope rules.md",
+    "programmeringssprog/5. Memory Management.md",
+    "programmeringssprog/Theory problems/Problems 4th chapter.md",
+    "programmeringssprog/Theory problems/Problems 1.md",
+    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+    "programmeringssprog/Theory problems/past_exams/Questions.md",
     "programmeringssprog/Theory problems/past_exams/202006.pdf",
     "programmeringssprog/Theory problems/past_exams/202006 answers.md",
     "programmeringssprog/Theory problems/past_exams/202006.md",
@@ -183,41 +214,22 @@
     "operativstystemer/Exam.md",
     "operativstystemer/Problems/problems 12 and 13 and 14.md",
     "Excalidraw/SVMs.md",
-    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
-    "Data mining and machine learning/Problems/13. probability, k-means algorithm, probability and statistics, support vector machine.md",
     "Pasted Image 20230511094215_300.png",
     "Pasted image 20230511092950.png",
     "Pasted image 20230511092317.png",
     "Pasted image 20230511085600.png",
     "Pasted image 20230511083751.png",
     "Data mining and machine learning/Problems/solution05.pdf",
-    "Data mining and machine learning/5. Learning with Distributions.md",
     "_exercise13.pdf",
-    "programmeringssprog/Theory problems/Problems 1.md",
     "operativstystemer/assignment3.zip",
     "operativstystemer/zi1wQGmE",
     "operativstystemer/assignment3/sources/lfs",
     "operativstystemer/assignment3/sources/lfs.o",
-    "operativstystemer/assignment3/report/FUSE_OS_assignment_3.pdf",
-    "operativstystemer/assignment3/video/video1880632513.mp4",
-    "operativstystemer/assignment3/sources/tests/007texteditor",
-    "programmeringssprog/Theory problems/Problems 4th chapter.md",
-    "programmeringssprog/Theory problems/problems 5th chapter.md",
-    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
     "Pasted image 20230510122700.png",
     "Pasted image 20230510122032.png",
-    "operativstystemer/16. security and protection.md",
-    "operativstystemer/Problems/problems 11.md",
-    "programmeringssprog/Theory problems/Questions.md",
-    "programmeringssprog/Theory problems/problems chapter 10.md",
-    "programmeringssprog/Theory problems/past_exams/Notes.md",
-    "programmeringssprog/5a. Implement scope rules.md",
-    "programmeringssprog/Theory problems/past_exams/Test example.md",
-    "programmeringssprog/Theory problems/past_exams/Questions.md",
     "Pasted image 20230503084112.png",
     "Pasted image 20230503084024.png",
     "Pasted image 20230503084015.png",
-    "programmeringssprog/Haskell/Assignment/Feedback.md",
     "Untitled.canvas"
   ]
 }

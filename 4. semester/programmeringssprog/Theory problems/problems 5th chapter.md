@@ -49,15 +49,17 @@ A:{int X = 1;
   ....
 }
 ```
-in the example we have the activation records: A, bar, foo, B
+in the example we have the activation records: A, bar, foo, B. The activation records contained in A are only first popped when A is done. 
 
 # 4. Consider the following program fragment written in a pseudo-language using static scope:
 ```c
 void P1 {
-	void P2 { body-ofi-P2
+	void P2 { 
+		body-of-P2
 	}
 	void P3 {
-		void P4 { body-of-P4
+		void P4 { 
+			body-of-P4
 		}
 		body-of-P3
 	}

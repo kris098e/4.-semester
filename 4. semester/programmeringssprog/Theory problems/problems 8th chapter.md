@@ -1,12 +1,12 @@
 # 1,3-6
 ![[Pasted image 20230411141313.png]]
-$2*(10*10*4)+2*(10*4)+5*5=900$
+$2*(10*10*4)+2*(10*4)+5*4=900$
 
 
 # 3. Consider the following (Pascal) declarations:
 type string = packed array [1..16] of char;
 ![[Pasted image 20230411141346.png]]
-Have 16 bytes for the name
+Have 16 bytes for the name, the type string is a packet array of 16 chars each needing a byte.
 1 byte for the student, since it is bool
 and then 4 bytes for an integer **or** 4 bytes for pointer socialsecno.
 
