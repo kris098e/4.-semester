@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "programmeringssprog/10a. Covariance and implementation.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "programmeringssprog/10a. Covariance and implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "programmeringssprog/10a. Covariance and implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md"
+                "file": "programmeringssprog/10a. Covariance and implementation.md"
               }
             }
           }
@@ -184,9 +184,13 @@
   },
   "active": "e76070995501014d",
   "lastOpenFiles": [
-    "programmeringssprog/Theory problems/Questions.md",
-    "_000 lookinto.md",
     "programmeringssprog/10. Object orientation.md",
+    "programmeringssprog/Theory problems/Remember.md",
+    "programmeringssprog/Theory problems/past_exams/Questions.md",
+    "programmeringssprog/Theory problems/past_exams/Test example.md",
+    "programmeringssprog/10a. Covariance and implementation.md",
+    "_000 lookinto.md",
+    "programmeringssprog/Theory problems/Questions.md",
     "_10_objects_concepts.pdf",
     "_10a_generics_and_implementation.pdf",
     "programmeringssprog/Theory problems/problems chapter 10.md",
@@ -194,7 +198,6 @@
     "programmeringssprog/8b polymorphism.md",
     "programmeringssprog/Theory problems/Problems 7th chapter.md",
     "programmeringssprog/Theory problems/problems 6th chapter.md",
-    "programmeringssprog/Theory problems/Remember.md",
     "Excalidraw/Display_chapter_7.md",
     "programmeringssprog/Theory problems/problems 5th chapter.md",
     "programmeringssprog/5a. Implement scope rules.md",
@@ -202,7 +205,6 @@
     "programmeringssprog/Theory problems/Problems 4th chapter.md",
     "programmeringssprog/Theory problems/Problems 1.md",
     "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
-    "programmeringssprog/Theory problems/past_exams/Questions.md",
     "programmeringssprog/Theory problems/past_exams/202006.pdf",
     "programmeringssprog/Theory problems/past_exams/202006 answers.md",
     "programmeringssprog/Theory problems/past_exams/202006.md",
@@ -212,8 +214,6 @@
     "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
     "operativstystemer/Problems/problems 15 and 16.md",
     "operativstystemer/Exam.md",
-    "operativstystemer/Problems/problems 12 and 13 and 14.md",
-    "Excalidraw/SVMs.md",
     "Pasted Image 20230511094215_300.png",
     "Pasted image 20230511092950.png",
     "Pasted image 20230511092317.png",

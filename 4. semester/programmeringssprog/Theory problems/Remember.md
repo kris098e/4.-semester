@@ -1,3 +1,5 @@
+
+
 # 4th chapter
 ## Denotable objects
 denotable object is the object itself. I.e if we have a pointer to somewhere that lives in memory or the stack, the actual thing living in main memory or the stack is the denotable object. We can then have references to it after it is freed or popped from the stack, which means the reference lives longer than the object itself. If we have two pointers to the same thing, and one is removed after a function call then the object lives longer than the reference to it, since we now only have 1 pointer to it.
