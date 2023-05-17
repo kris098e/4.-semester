@@ -15,7 +15,6 @@ function outerFunction() {
 
 var greeting = outerFunction();
 greeting("John"); // Output: "Hello, John"
-
 ```
 
 ## b
@@ -45,9 +44,9 @@ The following program is written using a pseudo-code. Assume that dynamic scopin
 ```c
 { 
 	int x = 2;
-		int f(int y){
-			return x+y;
-		}
+	int f(int y){
+		return x+y;
+	}
 	int g (int h(int b)){
 		int x = 4;
 		return h(3) + x;

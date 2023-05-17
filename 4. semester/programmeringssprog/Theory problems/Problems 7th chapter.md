@@ -7,7 +7,7 @@
 
 ##### Chapter 7 - Suggested Exercises
 6. Based on the discussion of the implementation of deep binding using closures, describe in detail the case of a language with dynamic scope.
-   
+**Moral is, when using dynamic scope the variables can change values at runtime, so we need to store the entire call stack previous to when the function was made**
    In a language with dynamic scope, the scope of a variable is determined based on the call stack at runtime. To implement deep binding using closures in such a language, closures need to capture not only the values of their free variables but also the entire call stack at the point of their creation. This is because the values of free variables in dynamic scope languages can change based on the call stack. The closure uses the value of the free variable that was in effect when it was created, rather than the current value of the variable.
 
 if using association list, we can just have a pointer to where we need the variables from. Alternatively we can just use CRT and??? 

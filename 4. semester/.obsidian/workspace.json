@@ -13,38 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/10. Object orientation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e76070995501014d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/10a. Covariance and implementation.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "81ae891fc8069a29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "operativstystemer/18. Virtual.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/10a. Covariance and implementation.md",
+                "file": "operativstystemer/18. Virtual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/10a. Covariance and implementation.md",
+                "file": "operativstystemer/18. Virtual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/10a. Covariance and implementation.md"
+                "file": "operativstystemer/18. Virtual.md"
               }
             }
           }
@@ -167,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,21 +156,30 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "e76070995501014d",
+  "active": "6b42dbdc08bab3b6",
   "lastOpenFiles": [
+    "operativstystemer/17. protection.md",
+    "operativstystemer/18. Virtual.md",
+    "programmeringssprog/Theory problems/Problems 7th chapter.md",
+    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202006.md",
+    "programmeringssprog/Theory problems/past_exams/202006.pdf",
+    "programmeringssprog/Theory problems/Questions.md",
+    "programmeringssprog/Theory problems/problems 8th chapter.md",
+    "programmeringssprog/Theory problems/problems chapter 10.md",
+    "_10a_generics_and_implementation.pdf",
+    "programmeringssprog/10a. Covariance and implementation.md",
     "programmeringssprog/10. Object orientation.md",
     "programmeringssprog/Theory problems/Remember.md",
+    "operativstystemer/assignment3/report/FUSE_OS_assignment_3.pdf",
+    "ch17-2022.pdf",
+    "Unconfirmed 608949.crdownload",
+    "operativstystemer/16. security and protection.md",
     "programmeringssprog/Theory problems/past_exams/Questions.md",
     "programmeringssprog/Theory problems/past_exams/Test example.md",
-    "programmeringssprog/10a. Covariance and implementation.md",
     "_000 lookinto.md",
-    "programmeringssprog/Theory problems/Questions.md",
     "_10_objects_concepts.pdf",
-    "_10a_generics_and_implementation.pdf",
-    "programmeringssprog/Theory problems/problems chapter 10.md",
-    "programmeringssprog/Theory problems/problems 8th chapter.md",
     "programmeringssprog/8b polymorphism.md",
-    "programmeringssprog/Theory problems/Problems 7th chapter.md",
     "programmeringssprog/Theory problems/problems 6th chapter.md",
     "Excalidraw/Display_chapter_7.md",
     "programmeringssprog/Theory problems/problems 5th chapter.md",
@@ -205,15 +188,9 @@
     "programmeringssprog/Theory problems/Problems 4th chapter.md",
     "programmeringssprog/Theory problems/Problems 1.md",
     "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
-    "programmeringssprog/Theory problems/past_exams/202006.pdf",
     "programmeringssprog/Theory problems/past_exams/202006 answers.md",
-    "programmeringssprog/Theory problems/past_exams/202006.md",
-    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
     "programmeringssprog/Theory problems/past_exams/201908.pdf",
     "programmeringssprog/Haskell/Remember.md",
-    "programmeringssprog/Haskell/Pattern matching & pattern declaration.md",
-    "operativstystemer/Problems/problems 15 and 16.md",
-    "operativstystemer/Exam.md",
     "Pasted Image 20230511094215_300.png",
     "Pasted image 20230511092950.png",
     "Pasted image 20230511092317.png",
@@ -222,9 +199,6 @@
     "Data mining and machine learning/Problems/solution05.pdf",
     "_exercise13.pdf",
     "operativstystemer/assignment3.zip",
-    "operativstystemer/zi1wQGmE",
-    "operativstystemer/assignment3/sources/lfs",
-    "operativstystemer/assignment3/sources/lfs.o",
     "Pasted image 20230510122700.png",
     "Pasted image 20230510122032.png",
     "Pasted image 20230503084112.png",
