@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "0f238821975b3ab3",
+        "id": "74ee4d63a8784a2a",
         "type": "tabs",
         "children": [
           {
-            "id": "6b42dbdc08bab3b6",
+            "id": "c3d598d15a42138a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/18. Virtual.md",
+                "file": "operativstystemer/2. operating system structures.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/18. Virtual.md",
+                "file": "operativstystemer/2. operating system structures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/18. Virtual.md",
+                "file": "operativstystemer/2. operating system structures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,16 +134,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/18. Virtual.md"
+                "file": "operativstystemer/2. operating system structures.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,54 +157,54 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "6b42dbdc08bab3b6",
+  "active": "c3d598d15a42138a",
   "lastOpenFiles": [
-    "operativstystemer/17. protection.md",
-    "operativstystemer/18. Virtual.md",
-    "programmeringssprog/Theory problems/Problems 7th chapter.md",
-    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
-    "programmeringssprog/Theory problems/past_exams/202006.md",
-    "programmeringssprog/Theory problems/past_exams/202006.pdf",
-    "programmeringssprog/Theory problems/Questions.md",
-    "programmeringssprog/Theory problems/problems 8th chapter.md",
-    "programmeringssprog/Theory problems/problems chapter 10.md",
-    "_10a_generics_and_implementation.pdf",
-    "programmeringssprog/10a. Covariance and implementation.md",
-    "programmeringssprog/10. Object orientation.md",
-    "programmeringssprog/Theory problems/Remember.md",
-    "operativstystemer/assignment3/report/FUSE_OS_assignment_3.pdf",
-    "ch17-2022.pdf",
-    "Unconfirmed 608949.crdownload",
-    "operativstystemer/16. security and protection.md",
+    "Pasted image 20230525085147.png",
+    "programmeringssprog/Theory problems/past_exams/read again.md",
     "programmeringssprog/Theory problems/past_exams/Questions.md",
+    "programmeringssprog/Theory problems/past_exams/Need practise.md",
+    "programmeringssprog/Theory problems/past_exams/202206 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202208 answers.md",
+    "programmeringssprog/Theory problems/past_exams/Notes.md",
+    "programmeringssprog/Theory problems/past_exams/202106.pdf",
+    "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202006.pdf",
+    "programmeringssprog/Theory problems/past_exams/202006.md",
+    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202108.pdf",
     "programmeringssprog/Theory problems/past_exams/Test example.md",
-    "_000 lookinto.md",
-    "_10_objects_concepts.pdf",
-    "programmeringssprog/8b polymorphism.md",
-    "programmeringssprog/Theory problems/problems 6th chapter.md",
-    "Excalidraw/Display_chapter_7.md",
-    "programmeringssprog/Theory problems/problems 5th chapter.md",
+    "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
+    "Pasted image 20230523133251.png",
+    "Pasted image 20230523132340.png",
+    "Pasted image 20230523132332.png",
+    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+    "_DM566-2023-part6.pdf",
+    "Pasted image 20230523130217.png",
+    "Pasted image 20230523125555.png",
+    "Data mining and machine learning/Problems/solutions/bayes_optimal.py",
+    "Data mining and machine learning/Problems/solutions",
+    "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
+    "Pasted image 20230523123755.png",
+    "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
+    "_exercise15.pdf",
+    "_07_procedures.pdf",
+    "operativstystemer/Problems/problems 17 & 18.md",
+    "Excalidraw/Drawing 2023-05-23 09.36.15.excalidraw.md",
+    "operativstystemer/Problems/problems 15 and 16.md",
+    "operativstystemer/Problems/problems 12 and 13 and 14.md",
+    "programmeringssprog/Theory problems/past_exams/202206.pdf",
+    "programmeringssprog/Theory problems/past_exams/202208.pdf",
+    "programmeringssprog/Theory problems/Garbage collections.md",
+    "programmeringssprog/Theory problems/problems.md",
     "programmeringssprog/5a. Implement scope rules.md",
     "programmeringssprog/5. Memory Management.md",
-    "programmeringssprog/Theory problems/Problems 4th chapter.md",
-    "programmeringssprog/Theory problems/Problems 1.md",
-    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
-    "programmeringssprog/Theory problems/past_exams/202006 answers.md",
-    "programmeringssprog/Theory problems/past_exams/201908.pdf",
-    "programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
+    "operativstystemer/18. Virtual.md",
+    "operativstystemer/17. protection.md",
     "Pasted Image 20230511094215_300.png",
     "Pasted image 20230511092950.png",
     "Pasted image 20230511092317.png",
     "Pasted image 20230511085600.png",
-    "Pasted image 20230511083751.png",
-    "Data mining and machine learning/Problems/solution05.pdf",
-    "_exercise13.pdf",
-    "operativstystemer/assignment3.zip",
-    "Pasted image 20230510122700.png",
-    "Pasted image 20230510122032.png",
-    "Pasted image 20230503084112.png",
-    "Pasted image 20230503084024.png",
-    "Pasted image 20230503084015.png",
     "Untitled.canvas"
   ]
 }
