@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202106 answers.md",
+                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202106 answers.md",
+                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202106 answers.md",
+                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202106 answers.md"
+                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md"
               }
             }
           }
@@ -169,8 +169,13 @@
   },
   "active": "c3d598d15a42138a",
   "lastOpenFiles": [
-    "Excalidraw/Acitivation_record_stack.excalidraw.md",
     "programmeringssprog/Theory problems/past_exams/202106 answers.md",
+    "operativstystemer/2. operating system structures.md",
+    "Pasted image 20230525125400.png",
+    "operativstystemer/16. security and protection.md",
+    "operativstystemer/Problems/problems 17 & 18.md",
+    "operativstystemer/Problems/problems 12 and 13 and 14.md",
+    "Excalidraw/Acitivation_record_stack.excalidraw.md",
     "programmeringssprog/Theory problems/past_exams/202108.pdf",
     "programmeringssprog/Theory problems/past_exams/202208.pdf",
     "programmeringssprog/Theory problems/past_exams/202108 answers.md",
@@ -178,7 +183,6 @@
     "programmeringssprog/Theory problems/past_exams/202208 answers.md",
     "programmeringssprog/Theory problems/past_exams/202106.pdf",
     "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
-    "operativstystemer/2. operating system structures.md",
     "Pasted image 20230525085147.png",
     "programmeringssprog/Theory problems/past_exams/read again.md",
     "programmeringssprog/Theory problems/past_exams/Questions.md",
@@ -203,18 +207,13 @@
     "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
     "_exercise15.pdf",
     "_07_procedures.pdf",
-    "operativstystemer/Problems/problems 17 & 18.md",
     "Excalidraw/Drawing 2023-05-23 09.36.15.excalidraw.md",
     "operativstystemer/Problems/problems 15 and 16.md",
-    "operativstystemer/Problems/problems 12 and 13 and 14.md",
     "programmeringssprog/Theory problems/Garbage collections.md",
     "programmeringssprog/Theory problems/problems.md",
     "programmeringssprog/5a. Implement scope rules.md",
-    "programmeringssprog/5. Memory Management.md",
-    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
     "Pasted Image 20230511094215_300.png",
     "Pasted image 20230511092950.png",
-    "Pasted image 20230511092317.png",
     "Untitled.canvas"
   ]
 }
