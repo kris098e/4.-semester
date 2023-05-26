@@ -21,6 +21,11 @@ For Q4 A is a subclass of B and cannot be used as a B. The return value can act 
 As just specified, Q1 and Q2 will be allowed both runtime and compile time. However Q3 will not compile since the return value is not a supertype of B. Q4 will be able to compile, but if the parameter is acted upon as if it were a B it will run into runtime issues.
 
 # 2
+Language for which the interpreter/compiler is written in is the lower, and from and to is the upper
+
+a. yes it is
+b.
+![[Pasted image 20230510122032.png]]
 
 # 3 
 ## Define in your own words the notion of side effects?
@@ -89,6 +94,13 @@ it will store value B as a string
 it will attempt to convert b into an object and store it as an object in k.
 
 ```python
+x = 2 + int(2.3)
+```
+It will try to cast 2.3 to an int, rounding down or up based on the rules
+then evaluate the expressions with 2 ints, using the addition function in use.
+lastly it will assign it to x.
+
+```python
 x = 2 + 2.3
 ```
 it will evaluate the expression and coerce the final result type from the two result, based on the fact that the addition between these two have to be the same type, capturing as much information as possible thereby promoting the int 2 to a float
@@ -97,4 +109,4 @@ it will evaluate the expression and coerce the final result type from the two re
 The pros of casting is that the programmer can clearly see which type a variable will have, but the cons is that the programmer itself has to think about type casting the types which may result in an error if done incorrectly, and also the programmer has to spend time on type casting. The compiler is most of the times more clever than the programmer so the compiler should be better most of the times, however this leaves control to the compiler instead of the programmer which may both be a con and pro, since the compiler may not do what the programmer expect, but most of the time it should do what the programmer expects, which leaves the programmer doing less work.
 
 ## Assuming you would like to design a language to develop mission critical software, would you chose to support in your language a cast or coercion mechanism? Motivate your answer.
-I would choose a type casting language, since the programmer should have full control of what is happening, which should not be left up to a compiler decision. Then of course the code should be read by multiple persons, ensuring the program is correct. While also being tested. If the programmers are competent the language should be using casting and if a good compiler is used, where the same tests passes then a coercion mechanism should be used.
+I would choose a type casting language, since the programmer should have full control of what is happening, which should not be left up to a compiler decision. Then of course the code should be read by multiple persons, ensuring the program is correct. While also being tested. If the programmers are competent the language should be using casting and if a good compiler is used, where the same tests passes then a coercion mechanism should be used, making it easier for the programmers.

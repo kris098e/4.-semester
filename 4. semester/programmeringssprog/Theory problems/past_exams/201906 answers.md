@@ -81,12 +81,19 @@ call by value result:
 ```
 
 # exercise 4
+
+The `Mark` phase is needed such that all objects are set to not being used, and then the collector can traverse all of the pointers on the stack, moving the objects which are used, while also marking them as in use. Then all of the object which are no in use can be deallocated.
+
+Stop and copy does not need this phase, as it just goes through all of the pointers stored on the stack, copies them, and then the to-space are used as the from-space, which effectively deallocated the objects not in use, since they were not copied.
+
+The con of stop and copy is the increased memory usage. The con of mark and sweep the fact that it has to go over the heap twice.
+
 ## stop and copy
 Stop and copy is a garbage collection algorithm used in programming languages to manage memory. The algorithm is based on the idea of dividing the heap memory into two equal parts: the "from-space" and the "to-space".
 
 The algorithm works by first allocating memory in the from-space for the program's data structures. As the program runs, it creates and destroys objects, leaving some of the memory unused. When the from-space becomes full, the garbage collector pauses the program and starts the copying phase.
 
-During the copying phase, the garbage collector traverses the objects in the from-space, copying the live objects to the to-space. The garbage collector updates all pointers in the live objects to point to their new location in the to-space. When the copying phase is complete, the from-space is completely empty, and the to-space contains all the live objects.
+the  garbage collector traverses the objects in the from-space, copying the live objects to the to-space. The garbage collector updates all pointers in the live objects to point to their new location in the to-space. When the copying phase is complete, the from-space is completely empty, and the to-space contains all the live objects.
 
 After the copying phase is complete, the garbage collector swaps the roles of the from-space and to-space, making the to-space the new from-space. This process frees up all the unused memory in the old from-space and makes it available for use by the program.
 
@@ -114,6 +121,8 @@ On the other hand, Mark and Compact algorithm works by marking all the live obje
 
 In summary, Stop and Copy is a simpler and more efficient algorithm that avoids fragmentation by copying live objects from one space to another. Mark and Compact, while more complex, eliminates fragmentation by moving live objects to a contiguous block of memory. The choice of which algorithm to use depends on the specific needs and constraints of the program being developed.
 
+
+Stop and copy uses more memory considering it has a to- and from-space. But it is more efficient, since it does not need to pass over the heap 2 times, it can just copy all the live objects. However mark and compact goes over the heap twice marking the used object and then compacting them while updating the pointers.
 
 ## pros and cons for stop and copy
 ### pros
@@ -161,7 +170,7 @@ B b = new B();
 A a = (A) b;
 
 a.x //access the shadowed variable
-a.foo(2) // access the overriden method
+a.foo(2) // access the method in B still
 ```
 
 The concept of `virtual` is implemented in `C++`. This means that it can be overridden.  If java were to implement it, it would something like this

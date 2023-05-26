@@ -50,7 +50,7 @@ the two processes will then call fork, creating 4 processes in total. And lastly
 
 # 3. Original versions of Apple’s mobile iOS operating system provided no means of concurrent processing. Discuss three major complications that concurrent processing adds to an operating system.
 * context switches
-* race conditions
+* race conditions (In the code)
 * memory handling
 	* interprocess communication
 * process schedualing
@@ -143,7 +143,7 @@ int main()
 }
 ```
 $A=0$ as it is the child process
-$B=2603$ the actual processID?
+$B=2603$ the actual processID
 
 $C=2603$ since the call to fork() will in the parent process return the **pid** of the child it just created.
 $D=2600$

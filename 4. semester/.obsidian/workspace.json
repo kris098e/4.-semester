@@ -4,28 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "74ee4d63a8784a2a",
+        "id": "7228bba6f627caad",
         "type": "tabs",
         "children": [
           {
-            "id": "c3d598d15a42138a",
+            "id": "26b05375315575af",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+                "file": "operativstystemer/3. processes.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "5db98baf24af937c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Acitivation_record_stack.excalidraw.md"
               }
             }
           }
@@ -87,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -104,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+                "file": "operativstystemer/3. processes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+                "file": "operativstystemer/3. processes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202006 answers.md"
+                "file": "operativstystemer/3. processes.md"
               }
             }
           }
@@ -167,18 +156,32 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "c3d598d15a42138a",
+  "active": "26b05375315575af",
   "lastOpenFiles": [
+    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
+    "operativstystemer/3. processes.md",
+    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202006.md",
+    "programmeringssprog/Theory problems/past_exams/202006.pdf",
+    "operativstystemer/Problems/problems 3 and 4.md",
+    "operativstystemer/Problems/problems 4 and 5.md",
+    "Pasted image 20230526083741.png",
+    "Pasted image 20230526083145.png",
+    "_DM566-2023-part4.pdf",
+    "_DM566-2023-part3.pdf",
     "programmeringssprog/Theory problems/past_exams/202106 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
+    "operativstystemer/Problems/problems 2 & 3.md",
+    "Pasted image 20230525152208.png",
     "operativstystemer/2. operating system structures.md",
+    "Excalidraw/Acitivation_record_stack.excalidraw.md",
     "Pasted image 20230525125400.png",
     "operativstystemer/16. security and protection.md",
     "operativstystemer/Problems/problems 17 & 18.md",
     "operativstystemer/Problems/problems 12 and 13 and 14.md",
-    "Excalidraw/Acitivation_record_stack.excalidraw.md",
     "programmeringssprog/Theory problems/past_exams/202108.pdf",
     "programmeringssprog/Theory problems/past_exams/202208.pdf",
-    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
     "programmeringssprog/Theory problems/past_exams/202206 answers.md",
     "programmeringssprog/Theory problems/past_exams/202208 answers.md",
     "programmeringssprog/Theory problems/past_exams/202106.pdf",
@@ -188,9 +191,6 @@
     "programmeringssprog/Theory problems/past_exams/Questions.md",
     "programmeringssprog/Theory problems/past_exams/Need practise.md",
     "programmeringssprog/Theory problems/past_exams/Notes.md",
-    "programmeringssprog/Theory problems/past_exams/202006 answers.md",
-    "programmeringssprog/Theory problems/past_exams/202006.pdf",
-    "programmeringssprog/Theory problems/past_exams/202006.md",
     "programmeringssprog/Theory problems/past_exams/Test example.md",
     "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
     "Pasted image 20230523133251.png",
@@ -203,17 +203,7 @@
     "Data mining and machine learning/Problems/solutions/bayes_optimal.py",
     "Data mining and machine learning/Problems/solutions",
     "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
-    "Pasted image 20230523123755.png",
     "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
-    "_exercise15.pdf",
-    "_07_procedures.pdf",
-    "Excalidraw/Drawing 2023-05-23 09.36.15.excalidraw.md",
-    "operativstystemer/Problems/problems 15 and 16.md",
-    "programmeringssprog/Theory problems/Garbage collections.md",
-    "programmeringssprog/Theory problems/problems.md",
-    "programmeringssprog/5a. Implement scope rules.md",
-    "Pasted Image 20230511094215_300.png",
-    "Pasted image 20230511092950.png",
     "Untitled.canvas"
   ]
 }

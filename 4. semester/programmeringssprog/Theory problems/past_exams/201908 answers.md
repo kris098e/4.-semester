@@ -18,9 +18,7 @@ greeting("John"); // Output: "Hello, John"
 ```
 
 ## b
-In deep binding, a variable reference in a nested function is resolved to the value of the variable in the environment where the function was defined, rather than the environment where the function is called. This means that if the variable's value is changed after the nested function is defined, the nested function will use the updated value.
-
-In shallow binding, on the other hand, a variable reference in a nested function is resolved to the value of the variable in the environment where the function is called, rather than the environment where the function was defined. This means that if the variable's value is changed after the nested function is defined, the nested function will still use the original value.
+Deep binding binds the environment at the time a procedure is passed as an argument, while shallow binding binds the environment at the time a procedure is actually called.
 
 ```javascript
 var x = 10;
@@ -36,7 +34,7 @@ function outerFunction() {
 }
 
 var inner = outerFunction();
-inner(); // Output: 10 if shallow (use the enivornment it is called from), output: 20 if deep (use environment it was defined in).
+inner(); // Output: 10 if shallow (use the enivornment when it is called), output: 20 if deep (use environment it was called defined).
 ```
 
 ## c
@@ -45,11 +43,11 @@ The following program is written using a pseudo-code. Assume that dynamic scopin
 { 
 	int x = 2;
 	int f(int y){
-		return x+y;
+		return x+y; // 4 + 3
 	}
 	int g (int h(int b)){
 		int x = 4;
-		return h(3) + x;
+		return h(3) + x; // 7 + 4
 	}
 	{ 
 	int x = 6; 
@@ -71,7 +69,7 @@ Therefore it would be looking like it was using deep-binding, as the environment
 The output would then be `(2+3+4)=9`
 
 # exercise 2
-![[201908.pdf#page=2]]
+
 # exercise 3.
 ## a.
 Calling by name will expand the formal parameters to the actual parameters. Therefore when writing `v` it replaces it with `x` when calling the function in the example.
@@ -83,9 +81,9 @@ Static scoping means the program will use the variable which is in the current s
 	int z = 10;
 	void foo(name int v, name int w){ // v = x, w = y
 		int x = 1000;
-		w = v; // y = x = 1000
-		v = v+w+z; // x = x + y + 10 = 1000 + 1000 + 10 = 2010
-		z = 1000;
+		w = v; // y = x = 2. uses outerscope x
+		v = v+w+z; // outer x = 2 + 5 + 10 = 17
+		z = 1000; // = 1000
 	}
 	{ 
 		int x = 20;
@@ -94,7 +92,7 @@ Static scoping means the program will use the variable which is in the current s
 		foo(x, y);
 		write(x,y,z); // write(20,50,100)
 	}
-	write(x,y,z); // write(2010, 1000, 1000)
+	write(x,y,z); // write(17, 2, 1000)
 }
 ```
 
@@ -147,7 +145,6 @@ call by value will make a copy of the actual parameters, and use these when usin
 ```
 
 # exercise 4.
-![[201908.pdf#page=3]]
 ## a.
 Type: collection of values (homogeneous and
 effectively presented) equipped with a set of
@@ -159,14 +156,15 @@ Effectively presented means that the collection is well-organized and can be eas
 
 
 ### use cases
-They are used storing data, in the correct form. Such that if we want to store an integer, it is stored in x-amount of bits, and we can efficiently use operations on it, that are defined for this data type.
+They are used for storing data, in the correct form. Such that if we want to store an integer, it is stored in x-amount of bits, and we can efficiently use operations on it, that are defined for this data type.
+
+Encapsulating data in collections are useful when we want to iterate some collection
 
 ## b.
-In computer programming, a scalar type is a data type that represents a single value, while a composite type represents a collection of values.
+A scalar type is a single value, not made up of other values and their operations
+while a composite type is made up of other scalar types.
 
 Scalar types include primitive types such as integers, floating-point numbers, characters, and Boolean values. These types are used to store simple values that can be easily manipulated by the computer.
-
-An example of a scalar type is an integer. Integers represent whole numbers and can be used to store values such as 1, 2, 3, and so on. Another example of a scalar type is a character, which can be used to store individual letters or symbols.
 
 Composite types, on the other hand, include arrays, structures, and classes. These types are used to group related values together into a single object.
 
@@ -197,7 +195,7 @@ A polymorphic type system is a type system that allows values to have more than 
 
 There are two main forms of polymorphism in type systems:
 
-1.  Parametric polymorphism: This is a form of polymorphism in which a function or data type is generic and can operate on values of different types. This is often achieved through the use of type variables. For example, in the programming language Java, the ArrayList class is a parametrically polymorphic data type, allowing it to store elements of any type.
+1.  Parametric polymorphism: This is a form of polymorphism in which a function or data type is generic and can operate on values of different types. This is often achieved through the use of type variables. For example, in the programming language Java, the ArrayList class is a parametrically polymorphic data type, allowing it to store elements of any type. They can then work with infinitely many types
 
 THIS MEANS THAT FUNCTIONS AND TYPES CAN WORK WITH MORE TYPES. I.e **Generics**
 
@@ -224,4 +222,42 @@ Having super classes and extending classes. The extending classes can then be us
 
 
 # exercise 5
+## One way to distinguish objects that are still alive (garbage detection) is the reference counting technique. Briefly describe this technique
+An object holds a reference count, i.e if the program still holds a pointer to this object in memory. When no pointers are kept to the object, i can safely be garbage collected and deallocated.  
 
+## Mention one pros and one/two cons of reference counting compared to marking and copying?
+pros: can be done on the fly, i.e each time the reference count is decremented, the program can check if the reference count has gone to 0, and deallocate the object. Compared to marking and copying where it will first start when memory is needed that cannot be given, or some threshhold specified, which will pause the program for longer than the simple check for if the reference count has gone to 0.
+
+cons: the extra memory added to each object may become large, since it needs this additional memory, also occupying some additional memory.
+it does not line up the objects for sequential blocks. This means that each time an object are to be created the memory is searched for a free space, which may take longer since the memory is scattered in the address space, instead of when using a sequential block of memory, you can just go to the end of the allocated blocks and start allocating there.
+
+## Consider the following fragment written in a pseudo-language with a reference-counting garbage collector.
+```c
+class C { int n; C next;}
+C foo(){
+	C p = new C(); // object OGG1
+	p.next = new C(); // object OGG2
+	C q = new C();// object OGG3
+	q.next = p.next;
+	return p.next;
+}
+C r = foo();
+```
+State what are the values of the reference counters for the three objects after execution of line q.next = p.next and then of line C r = foo(). Motivate your answer. Are there any objects that can be returned to the free list? If so, which ones?
+
+**q.next = p.next**: 
+	p points to object OGG1
+	p.next points to object OGG2
+	q points to OGG3
+	q.next points to OGG2
+	
+	1 to OGG1
+	2 to OGG2
+	1 to OGG3
+
+**C r = foo()**
+pointer to OGG2
+nothing points to OGG1
+nothing points to OGG3
+
+only pointer to OGG2 and the others can be returned to the free list.
