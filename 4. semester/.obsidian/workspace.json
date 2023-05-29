@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/3. processes.md",
+                "file": "operativstystemer/4. threads.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -93,13 +94,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/3. processes.md",
+                "file": "operativstystemer/4. threads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/3. processes.md",
+                "file": "operativstystemer/4. threads.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,11 +134,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/3. processes.md"
+                "file": "operativstystemer/4. threads.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -158,12 +160,15 @@
   },
   "active": "26b05375315575af",
   "lastOpenFiles": [
-    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
+    "Pasted image 20230529124301.png",
     "operativstystemer/3. processes.md",
     "programmeringssprog/Theory problems/past_exams/201908 answers.md",
+    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202006.pdf",
+    "operativstystemer/4. threads.md",
+    "Pasted image 20230529083043.png",
     "programmeringssprog/Theory problems/past_exams/202006 answers.md",
     "programmeringssprog/Theory problems/past_exams/202006.md",
-    "programmeringssprog/Theory problems/past_exams/202006.pdf",
     "operativstystemer/Problems/problems 3 and 4.md",
     "operativstystemer/Problems/problems 4 and 5.md",
     "Pasted image 20230526083741.png",
@@ -199,11 +204,8 @@
     "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
     "_DM566-2023-part6.pdf",
     "Pasted image 20230523130217.png",
-    "Pasted image 20230523125555.png",
     "Data mining and machine learning/Problems/solutions/bayes_optimal.py",
     "Data mining and machine learning/Problems/solutions",
-    "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
-    "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
     "Untitled.canvas"
   ]
 }

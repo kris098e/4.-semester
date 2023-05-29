@@ -1,4 +1,3 @@
-![[201908.pdf]]
 # exercise 1
 ## a
 A closure is such that a function can use all the variables it needs, to execute the function. I.e it remembers the environment it needs to successfully complete the function call.
@@ -16,6 +15,20 @@ function outerFunction() {
 var greeting = outerFunction();
 greeting("John"); // Output: "Hello, John"
 ```
+It remembers the `outervariable`, since it cannot be executed with this. 
+
+```java
+{
+int x = 2;
+void h() { print(x); }
+e(h);
+}
+
+function e((void h())) {
+    h();
+}
+```
+Here `h` has to remember, by using closures, to use the variable `x`
 
 ## b
 Deep binding binds the environment at the time a procedure is passed as an argument, while shallow binding binds the environment at the time a procedure is actually called.
@@ -37,6 +50,20 @@ var inner = outerFunction();
 inner(); // Output: 10 if shallow (use the enivornment when it is called), output: 20 if deep (use environment it was called defined).
 ```
 
+
+```java
+{
+int x = 2;
+void h() { print(x); }
+e(h);
+}
+
+function e((void h())) {
+    x = 4;
+    h(); // if shallow, print 4, if deep, print 2. 
+}
+```
+
 ## c
 The following program is written using a pseudo-code. Assume that dynamic scoping is used. What does the following program write if shallow binding is used? Motivate the answer.
 ```c
@@ -47,17 +74,16 @@ The following program is written using a pseudo-code. Assume that dynamic scopin
 	}
 	int g (int h(int b)){
 		int x = 4;
-		return h(3) + x; // 7 + 4
+		return h(3) + x; // 7 + 4 = 11
 	}
 	{ 
 	int x = 6; 
-	int z = g(f); 
-	write(z) 
+	int z = g(f);
+	write(z) // write 11
 	} 
 }
 ```
-When f is defined x = 2. However as we use shallow binding, it uses the environment in which is called. 
-The procedure g calls f, but x = 4 here. Therefore the call to g is `(4+3+4)=11`. Therefore it will write out `11`.
+When f is defined x = 6, however when calling f, x = 4
 
 ## d.
 f would use the environment it was defined in. I.e x=6.
