@@ -38,10 +38,10 @@ If we dont have several kernel threads, fx only one kernel thread, then parralle
 
 The lightweight process maps user-level threads to kernel-threads, so the kernel does only know about the kernel-level threads.
 
-it does not make sense to have more kernel-threads than user-space threads, because user-level threads are mapped to kernel-threads. It does however make sense the other way around
+it does not make sense to have more kernel-threads than user-space threads, because user-level threads are mapped to kernel-threads. It does however make sense the other way around. This is because we can have user threads doing some software while waiting for a kernel-thread.
 
-5. Describe the actions taken by a kernel to context-switch between kernellevel threads.
-save fx. the program counter, such that the other thread knows where to start
+5. Describe the actions taken by a kernel to context-switch between kernel-level threads.
+save fx. the program counter, such that the other thread knows where to start, save stack and registers.
 
 6. What resources are used when a thread is created? How do they differ from those used when a process is created?
 More lightweight to make a new thread, as a process needs its own memory and more, the thread needs only to create a new stack for this. The threads **controll block** is much smaller. This is the major part
@@ -76,7 +76,7 @@ just insert into the formulla
     -   The fork-join array summation application described in Section 4.5.2
     -   The Grand Central Dispatch system
 
-1. data parallelism
+1. data parallelism (shares code)
 2. data parallelism (shares code)
 3. task parallelism (1 task reading, other threads doing something else)
 4. data parallelism (exact same code being ran to sum up)
@@ -85,12 +85,12 @@ just insert into the formulla
 12. Consider the following code segment:
 ```c
     pid t pid;
-    pid = fork(); 
+    pid = fork(); // 1 extra 
     if (pid == 0) { /* child process */
-        fork(); 
-        thread create( . . .); 
+        fork(); // 2 proceses
+        thread create( . . .);  // 2 threads created
     }
-    fork(); 
+    fork(); // parent + 2 processes and 2 threads calling this, 5 + 2 = 7 
 ```
 -   How many unique processes are created?
 parents forks twice
@@ -141,6 +141,6 @@ as `value` is a global variable in the process which creates a thread, i.e the c
 	    -   The number of kernel threads allocated to the program is equal to the number of processing cores.
 	    -   The number of kernel threads allocated to the program is greater than the number of processing cores but less than the number of user-level threads.
 1. underperform, as we cannot use all cors that is given
-2. underperform?, as all threads can use a core but some threads may be waiting for an I/O-device, or are just blocking
+2. underperform, as all threads can use a core but some threads may be waiting for an I/O-device, or are just blocking
 3. Faster, because if some kernel-level threads blocks/waits for I/O, then we can switch to another kernel-level thread which can start executing.
 

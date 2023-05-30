@@ -1,4 +1,13 @@
+# Display
+When drawing the display, remember the back pointers to the block within the same nesting.
+look at
+[[mockup_exam_answers.pdf#page=2]]
 
+# Mark and compact
+does not just require two times over the heap, requires multiple scans over the heap. That is, 1 for marking, 1 for computing the positions where the blocks will be moved to be contigous, 2nd update the internal pointers to the objects, and third actually moving the objects.
+
+# Type compatability
+read [[mockup_exam_answers.pdf#page=5]]
 
 # 4th chapter
 ## Denotable objects
@@ -77,4 +86,32 @@ write(P(x++) + x); // 7 + 6 = 13
 paste x++ into the expression. As it uses deep binding, or static binding, it uses the x that is in the scope of the caller, when passing `x++`.
 
 # Chapter 10
-When typecasting to a superclass of a class, it will still be using the original methods and the variables within this. However when accessing the variables, it will be using the super?
+When typecasting to a superclass of a class, it will still be using the original methods and the variables within this. However when accessing the variables, it will be using the super.
+
+![[Pasted image 20230529141903.png]]
+```java
+class test {
+    public static void main(String[] args) {
+        A a = new A();
+        B b = new B();
+        a.hello();
+        b.hello();
+        a = (A)b;
+        a.hello();
+        System.out.println(a.x);
+        System.out.println(b.x);
+    }
+}
+
+class A {
+    int x = 2;
+    void hello() { System.out.println("Hello"); }
+}
+class B extends A {
+    int x = 4;
+    void hello() { System.out.println("Bonjour"); }
+}
+class C {
+    void hello() { System.out.println("Hola"); }
+}
+```

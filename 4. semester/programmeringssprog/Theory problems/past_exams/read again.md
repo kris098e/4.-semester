@@ -40,7 +40,7 @@ Uses the environment from where the function is actually used.
 	}
 	{ 
 		int x = 7;
-		int z = g(f); // f is binded such that x = 7 here, since we use dynamic scoping. Would be 0 if using static scoping
+		int z = g(f); // f is binded such that x = 7 here, since we use dynamic scoping. Would be 0 if using static scoping since the x would be out of scope for the function call.
 		write(z); // 10
 	}
 }
@@ -50,6 +50,8 @@ Remember that when using dynamic scope, it is first binding when calling the fun
 
 # 1
 ## a
+physcial machine is an implemented abstracted machine
+
 (Abstract Machine) Assume that we are given a programming lan-
 guage, L . An abstract machine for L , denoted by M L , is any set of data structures and algorithms which can perform the storage and execution of programs written in L.
 

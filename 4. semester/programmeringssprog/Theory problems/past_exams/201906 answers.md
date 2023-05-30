@@ -1,6 +1,6 @@
 ![[201906.pdf]]
 # exercise 1
-As dynamic scoping is used, we use the  x which was on the most recent activation record. Therefore, the program will write 11 and 2. WE write 10 since the ... 
+As dynamic scoping is used, we use the  x which was on the most recent activation record. Therefore, the program will write 11 and 2.
 **look at the comments**
 ```c
 { int x = 2;
@@ -177,7 +177,7 @@ class A {
 	virtual void foo() { write("hello") }
 }
 
-class B extends A {
+class B : public A {
 	void bar() { write("virtual") }
 	void foo() { write("virtual") }
 }

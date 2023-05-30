@@ -121,7 +121,7 @@ calculate the wait time for each schedualing, calculate average and rank them by
 
 	it will favour I/O-bound programs since the CPU-bound programs will use the processor more than theese. If the I/O-bound programs will start to get more processor time, the CPU-bound processes will then get less time and will then get increased time on the CPU, when many I/O-bound programs has used the processor.
 
-if a process is being starved, then it will be priorities
+if a process is being starved, then it will be prioritized 
 
 9.  Distinguish between PCS and SCS scheduling.
 **Process-contention scope**: scope in which we have threads in some process, which are scheduled onto the process
