@@ -59,7 +59,7 @@ e(h);
 }
 
 function e((void h())) {
-    x = 4;
+    int x = 4;
     h(); // if shallow, print 4, if deep, print 2. 
 }
 ```
@@ -91,10 +91,12 @@ Therefore the calculation in g would be `(6+3+4)=13`.
 
 ## e.
 With static scoping, f would us e `x=2` as its x-value.
-Therefore it would be looking like it was using deep-binding, as the environment it was defined in, is also using `x=2`. Using softbinding here would not matter, as the calling environment is out of scope for the function f.
+Therefore it would be looking like it was using deep-binding, as the environment it was defined in, is also using `x=2`. Using shallow binding here would not matter, as the calling environment is out of scope for the function f.
 The output would then be `(2+3+4)=9`
 
 # exercise 2
+![[Pasted image 20230531105555.png]]
+
 
 # exercise 3.
 ## a.
@@ -166,7 +168,7 @@ call by value will make a copy of the actual parameters, and use these when usin
 		foo(x, y); 
 		write(x,y,z); // not changed, as static scope used, and by value. write(20, 50, 100)
 	}
-	write(x,y,z); // write(2, 5, 10)
+	write(x,y,z); // write(2, 5, 1000)
 }
 ```
 
@@ -212,6 +214,7 @@ class Student {
 }
 ```
 the two classes are equivalent if comparing by structural equivalence.  Since they look the same in memory, i.e having 2 ints and just that.
+![[Pasted image 20230531095946.png]]
 
 ### name equivalence
 Two types are the same, if they have the same name. So if we have two ints, they are of the same time, and they are the same type. Comparing String and int will then of course be evaluated to false.

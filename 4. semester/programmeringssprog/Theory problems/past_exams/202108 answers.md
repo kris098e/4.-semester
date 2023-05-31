@@ -43,6 +43,7 @@ int main() {
 What does this code print when main is executed? Please explain why.
 The methods that are marked as virtual can be overridden, the  methods not marked as virtual cannot.
 
+Virtual methods mean that when using the method, we use the **dynamic lookup** for finding the function, instead of the static lookup. I.e here b also has the base type `Base` but the virtual method uses the **dynamic lookup**. We could make it print both of the methods in `Derived` if we make a new `c` by `Derived c = new Derived()` which only has the methods for Derived
 # 2
 ## Describe what an activation record is.
 #activation_record an activation record is used when calling a procedure/function, to store the values necessary for giving the control back to the caller, and also holds information for the variables needed. It holds a pointer to the previous activation record, which is where to return control to, actual parameters for the function, local variables/temporary variables and intermediate results in the function, where to store the result of the function, and a static chain pointer for where to look if using static scope. 

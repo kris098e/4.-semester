@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5dd9ac915e5b1edc",
+            "id": "a5aeb879dc3d581f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/5. CPU Schedualing.md",
+                "file": "operativstystemer/6. Synchronization tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -23,9 +23,11 @@
             "id": "7b60cf009b53454b",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/201908.pdf"
+                "file": "programmeringssprog/Theory problems/past_exams/202108 answers.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -104,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/5. CPU Schedualing.md",
+                "file": "operativstystemer/6. Synchronization tools.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/5. CPU Schedualing.md",
+                "file": "operativstystemer/6. Synchronization tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/5. CPU Schedualing.md"
+                "file": "operativstystemer/6. Synchronization tools.md"
               }
             }
           }
@@ -168,54 +170,54 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "5dd9ac915e5b1edc",
+  "active": "a5aeb879dc3d581f",
   "lastOpenFiles": [
-    "Pasted image 20230530123412.png",
-    "programmeringssprog/3. undecidability.md",
-    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
-    "programmeringssprog/Theory problems/past_exams/201908.pdf",
+    "operativstystemer/9. Main Memory.md",
+    "operativstystemer/8. Deadlocks.md",
+    "operativstystemer/7. Synchronization tools examples.md",
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/5. CPU Schedualing.md",
+    "Data mining and machine learning/Problems/16..md",
+    "Pasted image 20230531130945.png",
+    "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
+    "Pasted image 20230531130051.png",
+    "Pasted image 20230531130042.png",
+    "_DM566-2023-part2.pdf",
+    "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
+    "_DM566-2023-part5.pdf",
+    "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
     "programmeringssprog/Theory problems/past_exams/201906 answers.md",
-    "programmeringssprog/Theory problems/past_exams/201906.pdf",
+    "programmeringssprog/Theory problems/Remember.md",
     "programmeringssprog/Theory problems/past_exams/202006 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
+    "programmeringssprog/Theory problems/past_exams/Questions.md",
+    "programmeringssprog/6. Flow control, expressions, commands.md",
+    "programmeringssprog/5a. Implement scope rules.md",
+    "programmeringssprog/5. Memory Management.md",
+    "programmeringssprog/Theory problems/Questions.md",
+    "programmeringssprog/9 Object oriented intro.md",
+    "programmeringssprog/10. Object orientation.md",
+    "programmeringssprog/10a. Covariance and implementation.md",
+    "programmeringssprog/Theory problems/past_exams/201908 answers.md",
+    "Pasted image 20230531105555.png",
+    "Pasted image 20230531104302.png",
+    "Excalidraw/compatability_intrepreter.excalidraw.md",
+    "Pasted Image 20230531103301_619.png",
     "programmeringssprog/Theory problems/past_exams/202006.pdf",
     "programmeringssprog/Theory problems/past_exams/202106 answers.md",
-    "202006.md",
-    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
-    "programmeringssprog/Theory problems/past_exams/202206 answers.md",
     "programmeringssprog/Theory problems/past_exams/202208 answers.md",
-    "operativstystemer/5. CPU Schedualing.md",
-    "operativstystemer/Problems/problems 5 and 6.md",
-    "Pasted image 20230530110834.png",
-    "Pasted image 20230530110008.png",
-    "Pasted image 20230530103321.png",
-    "Pasted image 20230530102718.png",
-    "Pasted image 20230530102533.png",
-    "Pasted image 20230530094947.png",
-    "Pasted image 20230530091057.png",
-    "Pasted image 20230530084622.png",
-    "CPU schedulingen.md",
-    "operativstystemer/2. operating system structures.md",
-    "operativstystemer/4. threads.md",
-    "operativstystemer/3. processes.md",
-    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
-    "programmeringssprog/2. bnf-semantics.md",
-    "programmeringssprog/Theory problems/past_exams/read again.md",
-    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
-    "programmeringssprog/Theory problems/Remember.md",
+    "Pasted image 20230531095946.png",
+    "Excalidraw/Acitivation_record_stack.excalidraw.md",
+    "programmeringssprog/Theory problems/past_exams/201908.pdf",
     "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
+    "Pasted image 20230530131752.png",
+    "_exercise16.pdf",
+    "Pasted image 20230530123412.png",
+    "programmeringssprog/Theory problems/past_exams/201906.pdf",
+    "Pasted image 20230530110834.png",
     "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
-    "operativstystemer/Remember.md",
-    "Excalidraw/Display_chapter_7.md",
-    "programmeringssprog/Theory problems/past_exams/Test example.md",
-    "Pasted image 20230529141903.png",
-    "operativstystemer/Problems/problems 4 and 5.md",
-    "Pasted image 20230529131339.png",
-    "programmeringssprog/Theory problems/past_exams/202006.md",
     "_DM566-2023-part4.pdf",
     "_DM566-2023-part3.pdf",
-    "programmeringssprog/Theory problems/past_exams/202108.pdf",
-    "programmeringssprog/Theory problems/past_exams/202208.pdf",
-    "programmeringssprog/Theory problems/past_exams/202106.pdf",
     "Untitled.canvas"
   ]
 }

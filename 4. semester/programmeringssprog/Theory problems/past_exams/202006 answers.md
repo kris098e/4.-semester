@@ -17,14 +17,21 @@ For Q3 C is superclass of B therefore it can act as B and therefore the paramete
 
 For Q4 A is a subclass of B and cannot be used as a B. The return value can act as a type B tho, but since the parameter says less, this will run into runtime issues.
 
+
 ## d
 Only Q4 since it is the only one having return value which is covariant and the argument being contravariant
+They will all compile, since we just overload the ones that just overrides
 
+**Java will only override if the parameters are the same.**
 
 # 2
 Language for which the interpreter/compiler is written in is the lower, and from and to is the upper
 
-a. yes it is
+
+a. yes it is, since we check through the diagonal
+![[compatability_intrepreter.excalidraw]]
+L2 matches with compiler, L2 matches with the other compiler, L3 matches with L3
+
 b.
 ![[Pasted image 20230510122032.png]]
 
@@ -44,7 +51,7 @@ Illustrate this with an example
 	foo();
 }
 ```
-Here, when calling foo, it alters a. This means that it changes the programs state which is not directly related to the functions returnvalue. 
+Here, when calling foo, it alters a. This means that it changes the programs state which is not directly related to the functions return value. 
 
 ## Why are side effects important? What are their pros and cons?
 It is important to be able to make more flexible programs, bringing a programs state forward to where the programmer wants it to go.
@@ -53,6 +60,8 @@ Most of the times side effects are undesirable since it often introduce complica
 
 However if used responsibly it can make a programmers life easier, fx. introducing a global count-variable, where each function call will increment this count as a side-effect. Logic could then be implemented around this side effect
 
+**Key idea in imperative programming, an key idea in function programming not to have this
+I.e in imperative programming, we are not ensured that the function will be pure, and they are always pure in functional programming**
 
 ## By reading the specification of the C++ language, you notice that it guarantees that arguments will be evaluated linearly and will not interleave, but that there are not guarantee of evaluation of parameters or expressions in any specific order. Consider the following C-like program.
 ```c++
@@ -72,6 +81,9 @@ write(0,0)
 arguments evaluate from left to right, but the (v++ + v) is evaluated with the v first, and then v++:
 write(0, 1)
 
+Evaluate from right to left, but the expressions from left to right
+write(1,0)
+
 # 4
 ## What does the term cast and coercion mean?
 Casting means to get one variable from one type to another data type via explicitly writing in the code that it should be cast to a different type. Fx
@@ -84,6 +96,9 @@ Type coercion means from an expression the type is coerced from the result. Fx i
 x = 2 + 2.3
 ```
 x ends up being a float, even tho an int and float is used, but to capture the entire result x has to be a float
+
+Implicit type casting
+
 
 ## Write two pseudocode programs showing an example of cast and an example of coercion (max 3 lines each). Explain what an interpreter would do when processing your pseudocode programs.
 

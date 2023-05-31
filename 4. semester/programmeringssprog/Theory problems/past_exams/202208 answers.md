@@ -120,7 +120,7 @@ int [] A = new int [5];
 void fie (name int x, name int y) {
 	int i = 3;
 	x = x+1; // outer i = 2
-	y = 1; // A[3] = 2, feel like this should be A[2]? but we have to use the environment of the caller?????????
+	y = 1; // A[2] = 1
 	A[i] = 3; // A[3] = 3
 	A[A[i]] = 4; // A[3] = 4
 }
@@ -129,9 +129,9 @@ for (j = 0; j <= 4; j += 1) {
 }
 fie(i, A[i]);
 write(A[1]); // 0
-write(A[2]); // 0
+write(A[2]); // 1
 write(A[3]); // 4
-write(A[i]); // A[2], 0
+write(A[i]); // A[2], 1
 ```
 
 ## b
@@ -143,7 +143,7 @@ int [] A = new int [5];
 void fie (name int x, name int y) {
 	int i = 3;
 	x = x+1; // outer i = 2
-	y = 1; // A[2] = 2
+	y = 1; // A[2] = 1
 	A[i] = 3; // A[3] = 3
 	A[A[i]] = 4; // A[3] = 4
 }

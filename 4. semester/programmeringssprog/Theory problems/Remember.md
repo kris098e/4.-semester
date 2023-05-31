@@ -1,3 +1,113 @@
+# Virtual
+## Consider the following C++-like pseudo-code language allowing the usage of virtual methods by using the virtual keyword
+
+``` java
+class Base {
+public:
+	void NonVirtual() {
+		write("Not virtual");
+	}
+	virtual void Virtual() {
+		write("Not virtual");
+}
+}
+class Derived : public Base {
+public:
+	void NonVirtual() {
+		write("Derived not virtual");
+	}
+	void Virtual() {
+		write("Derived virtual");
+	}
+};
+int main() {
+	Base a = new Base();
+	Base b = new Derived();
+	
+	a.NonVirtual(); // "Not virtual"
+	a.Virtual(); // "Not virtual"
+	b.NonVirtual(); // "Not virtual"
+	b.Virtual(); // "Derived virtual"
+}
+```
+What does this code print when main is executed? Please explain why.
+The methods that are marked as virtual can be overridden, the  methods not marked as virtual cannot.
+
+Virtual methods mean that when using the method, we use the **dynamic lookup** for finding the function, instead of the static lookup. I.e here b also has the base type `Base` but the virtual method uses the **dynamic lookup**. We could make it print both of the methods in `Derived` if we make a new `c` by `Derived c = new Derived()` which only has the methods for Derived
+
+When using dynamic lookup we are forced to look into the v-table.
+
+
+# Type-safety
+Refers to the contravariant and covariant problems of the functions.
+Java only overrides if the arguments are the same, else it overloads the methods. All java-programs will actually compile, since it will just either override or overload.
+
+All classes in C++ are static unless it has virtual modifier, and vice versa in java.
+
+# 4 202208
+## a
+Since when using call by name and there are name clashes, it uses the variable found in an outer scope. i.e in the function it will use the outer `i` when x is used, since there are name clashes.
+
+Equivalent of asking formal parameter evaluated in the
+environment of the caller
+[[_07_procedures.pdf#page=16]]
+
+```java
+int i = 1;
+int [] A = new int [5];
+void fie (name int x, name int y) {
+	int i = 3;
+	x = x+1; // outer i = 2
+	y = 1; // A[2] = 1
+	A[i] = 3; // A[3] = 3
+	A[A[i]] = 4; // A[3] = 4
+}
+for (j = 0; j <= 4; j += 1) {
+	A[j] = 0;
+}
+fie(i, A[i]);
+write(A[1]); // 0
+write(A[2]); // 1
+write(A[3]); // 4
+write(A[i]); // A[2], 1
+```
+
+# Types
+The two rules are 
+### structural equivalence
+The two types are the same if they have the same structure. This means that
+```java
+class Wine {
+	int year;
+	int age;
+}
+
+class Student {
+	int age;
+	int year;
+}
+```
+the two classes are equivalent if comparing by structural equivalence.  Since they look the same in memory, i.e having 2 ints and just that.
+![[Pasted image 20230531095946.png]]
+
+### name equivalence
+Two types are the same, if they have the same name. So if we have two ints, they are of the same time, and they are the same type. Comparing String and int will then of course be evaluated to false.
+
+
+# Side-effects
+## Why are side effects important? What are their pros and cons?
+It is important to be able to make more flexible programs, bringing a programs state forward to where the programmer wants it to go.
+
+Most of the times side effects are undesirable since it often introduce complicated programs, since it fx is hard to see how many times the function is called if some conditions are used. They can introduce bugs, since it is hard to keep track of this global variable
+
+However if used responsibly it can make a programmers life easier, fx. introducing a global count-variable, where each function call will increment this count as a side-effect. Logic could then be implemented around this side effect
+
+**Key idea in imperative programming, an key idea in function programming not to have this
+I.e in imperative programming, we are not ensured that the function will be pure, and they are always pure in functional programming
+
+# Vtable
+Virtual Function Table, i.e it does not contain all of the variables but only the functions
+
 # Display
 When drawing the display, remember the back pointers to the block within the same nesting.
 look at

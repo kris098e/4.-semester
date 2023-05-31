@@ -7,6 +7,9 @@ An error on the other hand is when the program is not in a recoverable state, an
 
 To sum up the difference is that an exception can be handled, and an error cannot. The exception can continue execution while the error stops the program.
 
+Examples include `OutOfMemoryError`, `StackOverflowError`, etc.
+
+
 ## Consider the following pseudo code of a language with exceptions
 ```java
 void f() throws X {
@@ -36,12 +39,12 @@ Another approach is to put each exception handler on the stack, popping one for 
 ## Describe one limitation of implementing exceptions by using only the the stack and activation records.
 We would have to go through each activation record one by one, where some of the blocks may not even have an exception handler implemented. Therefore it would be better to fx have a table with a pointer to the activation records, where this table is sorted, such that the closest activation record is stored first and then the first exception handler is the last element. Then when an exception is raised it should lookup and exception handler for this specific exception, where this table should then have the entries <exception-type, pointer-to-activation-record>. Taking the first one and going to that block, freeing all local variables and activation records in the blocks below this and give control to this block. This could also be done via hashmap where the java-like syntax could be `HashMap<Class<Exception>, List<Address-pointer>>`, accessing all handlers for the specific exception where the corresponding list should be sorted as described above.
 
+We expect that exceptions are rare, such that we dont want  this extra overhead of memory.
+And also if a block does not call another function it does not need to be put on the stack of activation records, but if we want to store the exception handler on the stack then it has to be put on the stack
+
+
 # 2
 ## ????????????????????????????????????????????
-
-
-
-
 
 
 # 3
@@ -56,6 +59,7 @@ Single inheritance means that a class can only inherit from a single super class
 
 ## Name a problem that can emerge when dealing with multiple inheritance.
 Ambiguity is a problem, fx if a class is derrived from two classes which both a function with the same name, it is not possible to know which function should be accessed, when calling the function from within the derived class or in an instance of this class. Extra steps has to be taken, i.e one approach can be to take the first specified class' method if name clashes occur, or if name clashes occur, the class can itself specify which function it wants using some techniques, which could fx be if the two super classes are `class Animal` and `class Human` which has the method `method eat()` the derived class, fx `class Anton` which extends both of the above classes, it could speciy the method it wants with `class Anton extends Human, Animal specification Human::eat`, meaning it wants the Human's eat method.
+C++ has multiple inheritance. java has single.
 
 ## Describe how single inheritance can be implemented using linked lists.
 Taking an example into use with
@@ -124,8 +128,8 @@ first x is changed to 1 and then B is called with the same reference to the oute
 	int x = 0;
 	int A(reference int y) {
 		int x=2;
-		y=y+1; // outer x = 1, 1st x A = 2 + 1 = 3 
-		return B(y)+x; // B(x) + 2 = 14 + 2 = 16, B(x in first A) + 2, return 5 + 2
+		y=y+1; // outer x = 1, 1st x in A = 2 + 1 = 3 
+		return B(y)+ x; // B(x) + 3 = 14 + 3 = 17, B(x in first A) + 2, return 5 + 2
 	}
 	int B(reference int y){
 		int C(reference int y){
@@ -135,7 +139,7 @@ first x is changed to 1 and then B is called with the same reference to the oute
 	if (y==1) return C(x)+y; // C(x in first A) + outer x, 13 + 1 = 14
 	else return x+y; // return x in 2nd A and x in 1st A, 2 + 3 
 	}
-	write (A(x)); // reference to outer x, write 16
+	write (A(x)); // reference to outer x, write 17
 	write (x); // 1
 }
 ```

@@ -34,16 +34,19 @@ write(x);  // 7, changed in the call of foo()
 ```
 
 The A-list can be used to implement the dynamic scope rule, searching through the variables which are most recently created, given the current environment/activation-record-structure.
-![[Pasted image 20230419082905.png]]
+
+![[Pasted image 20230531104302.png]]
 Where the first x is 6 and the 2nd is 2. The out of scope x is not taken into consideration in the A-list, as it would be wasted memory to keep track of this aswell.
 
 # exercise 2
 partial evaluator is a program given D0 and D1 and outputs D2
+
+
 $p:(D_{1}, D_{2})\to D_{2}$
 ![[Pasted image 20230510122700.png]]
 see that we have an interpreter written in L1 to L2 and from L2 to L3, so apply the first interpreter and can input to the next one.  So we get from L1 to L3. I.e an interpreter from L1 to L3
 
-I does not matter what the partial evalutor is written in, it just means that the computer uses L0, and can output something in L1
+The partial evalutor evaluates something in L1 which matches with the fact that the interpreter is written in L1.
 
 
 # exercise 3
@@ -173,7 +176,7 @@ a.foo(2) // access the method in B still
 The concept of `virtual` is implemented in `C++`. This means that it can be overridden.  If java were to implement it, it would something like this
 ```java
 class A {
-	void bar() {write("not virtual")}
+	void bar() { write("not virtual")}
 	virtual void foo() { write("hello") }
 }
 
@@ -184,8 +187,9 @@ class B : public A {
 
 main() {
 	B b = new B()
-
+	
 	b.bar() // will print out "not virtual". cannot be overritten.
 	b.foo() // will print out "virtual". The method can be overwritten.
 }
 ```
+All classes in C++ are static unless it has virtual modifier, and vice versa in java.
