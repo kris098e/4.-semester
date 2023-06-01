@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -172,11 +171,12 @@
   },
   "active": "a5aeb879dc3d581f",
   "lastOpenFiles": [
+    "operativstystemer/5. CPU Schedualing.md",
+    "operativstystemer/Problems/problems 6 and 7.md",
+    "operativstystemer/6. Synchronization tools.md",
     "operativstystemer/9. Main Memory.md",
     "operativstystemer/8. Deadlocks.md",
     "operativstystemer/7. Synchronization tools examples.md",
-    "operativstystemer/6. Synchronization tools.md",
-    "operativstystemer/5. CPU Schedualing.md",
     "Data mining and machine learning/Problems/16..md",
     "Pasted image 20230531130945.png",
     "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
@@ -207,7 +207,6 @@
     "programmeringssprog/Theory problems/past_exams/202106 answers.md",
     "programmeringssprog/Theory problems/past_exams/202208 answers.md",
     "Pasted image 20230531095946.png",
-    "Excalidraw/Acitivation_record_stack.excalidraw.md",
     "programmeringssprog/Theory problems/past_exams/201908.pdf",
     "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
     "Pasted image 20230530131752.png",

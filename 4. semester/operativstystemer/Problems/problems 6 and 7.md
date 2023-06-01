@@ -11,10 +11,10 @@ spinlocks will hold the CPU until a check passes. If the check can only be updat
 if context switch right after the while loop finished, then it doesnt get to `--` on the semaphore
 
 5. Illustrate how a binary semaphore can be used to implement mutual exclusion among n processes.
-dont have to ensure mutual exclusion, so just have a semaphore initialized to being 1, and then one process graps the lock, the other then wait until signal, and one will then grap it again and so on...
+dont have to ensure bounded waiting, so just have a semaphore initialized to being 1, and then one process graps the lock, the other then wait until signal, and one will then grap it again and so on...
 
 6. Race conditions are possible in many computer systems. Consider a banking system that maintains an account balance with two functions: deposit(amount) and withdraw(amount). These two functions are passed the amount that is to be deposited or withdrawn from the bank account balance. Assume that a husband and wife share a bank account. Concurrently, the husband calls the withdraw() function, and the wife calls deposit(). Describe how a race condition is possible and what might be done to prevent the race condition from occurring.
-Aquire a lock before updating the shared bank account balance.
+Aquire a lock before updating the shared bank account balance. Could also use lockfree implementation with just CAS like the increment function for atomic operations.
 
 
 7. The pseudocode below illustrates the basic push() and pop() operations of an array-based stack. Assuming that this algorithm could be used in a concurrent environment, answer the following questions:
@@ -156,7 +156,7 @@ if short is less than 2 context switches, then spinlock. 1 for sleep and 1 for w
 * The lock is to be held for a long duration.
 sleep
 * A thread may be put to sleep while holding the lock.
-go to sleep, since we know the other process will also need to do atleast 2 context-switches before we can get the lock
+go to sleep, since we know the other process will also need to do atleast 2 context-switches before we can get the lock. Meaning that if we know it is possible that another thread can sleep with the lock, we should sleep. No guarantees of the process not just going to sleep.
 
 
 13. A multithreaded web server wishes to keep track of the number of requests it services (known as hits). Consider the two following strategies to prevent a race condition on the variable hits. The first strategy is to use a basic mutex lock when updating hits:
@@ -177,7 +177,7 @@ A second strategy is to use an atomic integer:
 Explain which of these two strategies is more efficient.
 
 **Merkle** explained that if we are using semaphores instead of atomic built in features, then we should use the features as they should be faster. We dont have to worry about the semaphores.
-So we assume the _atomic  integer is faster_
+So we assume the _atomic  integer is faster_. This increment should also be lock-free.
 
 14. Servers can be designed to limit the number of open connections. For example, a server may wish to have only N socket connections at any point in time. As soon as N connections are made, the server will not accept another incoming connection until an existing connection is released. Illustrate how semaphores can be used by a server to limit the number of concurrent connections.
 
