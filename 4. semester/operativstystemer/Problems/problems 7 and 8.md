@@ -7,7 +7,7 @@ See also the Weekly Notes from [Week 11](https://imada.sdu.dk/~daniel/DM510-202
 **circular wait**
 
 2. .  The Linux kernel has a policy that a process cannot hold a spinlock while attempting to acquire a semaphore. Explain why this policy is in place.
-
+If another process is trying to grab the spinlock, while it is holding the semaphore
 
 
 # Chapter 8

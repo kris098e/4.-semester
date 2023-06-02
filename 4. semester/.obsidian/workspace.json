@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "operativstystemer/Problems/problems 6 and 7.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,13 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/202108 answers.md",
+                "file": "operativstystemer/8. Deadlocks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -89,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -105,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "operativstystemer/8. Deadlocks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md",
+                "file": "operativstystemer/8. Deadlocks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/6. Synchronization tools.md"
+                "file": "operativstystemer/8. Deadlocks.md"
               }
             }
           }
@@ -169,14 +171,20 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "a5aeb879dc3d581f",
+  "active": "7b60cf009b53454b",
   "lastOpenFiles": [
-    "operativstystemer/5. CPU Schedualing.md",
-    "operativstystemer/Problems/problems 6 and 7.md",
-    "operativstystemer/6. Synchronization tools.md",
-    "operativstystemer/9. Main Memory.md",
+    "Pasted image 20230602191416.png",
+    "operativstystemer/11..md",
     "operativstystemer/8. Deadlocks.md",
+    "operativstystemer/9. Main Memory.md",
+    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
+    "operativstystemer/Problems/problems 6 and 7.md",
+    "operativstystemer/Problems/problems 7 and 8.md",
     "operativstystemer/7. Synchronization tools examples.md",
+    "Pasted image 20230602133740.png",
+    "Pasted image 20230602132821.png",
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/5. CPU Schedualing.md",
     "Data mining and machine learning/Problems/16..md",
     "Pasted image 20230531130945.png",
     "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
@@ -189,7 +197,6 @@
     "programmeringssprog/Theory problems/past_exams/201906 answers.md",
     "programmeringssprog/Theory problems/Remember.md",
     "programmeringssprog/Theory problems/past_exams/202006 answers.md",
-    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
     "programmeringssprog/Theory problems/past_exams/Questions.md",
     "programmeringssprog/6. Flow control, expressions, commands.md",
     "programmeringssprog/5a. Implement scope rules.md",
@@ -201,19 +208,14 @@
     "programmeringssprog/Theory problems/past_exams/201908 answers.md",
     "Pasted image 20230531105555.png",
     "Pasted image 20230531104302.png",
-    "Excalidraw/compatability_intrepreter.excalidraw.md",
     "Pasted Image 20230531103301_619.png",
     "programmeringssprog/Theory problems/past_exams/202006.pdf",
-    "programmeringssprog/Theory problems/past_exams/202106 answers.md",
-    "programmeringssprog/Theory problems/past_exams/202208 answers.md",
     "Pasted image 20230531095946.png",
     "programmeringssprog/Theory problems/past_exams/201908.pdf",
     "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
     "Pasted image 20230530131752.png",
     "_exercise16.pdf",
-    "Pasted image 20230530123412.png",
     "programmeringssprog/Theory problems/past_exams/201906.pdf",
-    "Pasted image 20230530110834.png",
     "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
     "_DM566-2023-part4.pdf",
     "_DM566-2023-part3.pdf",
