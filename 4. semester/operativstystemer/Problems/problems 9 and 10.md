@@ -5,7 +5,8 @@
 
 
 #### 2. (**important**) Why are page sizes always powers of 2?
-Hvis page size ikke er 2 potens vil man spilde nogle offset-bits, da man ikke kan bruge alle alle bytes.
+Hvis page size ikke er 2 potens vil man spilde nogle offset-bits, da man ikke kan bruge alle alle bytes. 
+Det vil også resultere i et ekstra check man skulle lave hver gang for at se om det var et valid sted i hukommelsen.
 
 #### 3. Consider a system in which a program can be separated into two parts: code and data. The CPU knows whether it wants an instruction (instruction fetch) or data (data fetch or store). Therefore, two base –limit register pairs are provided: one for instructions and one for data. The instruction base –limit register pair is automatically read-only, so programs can be shared among different users. Discuss the advantages and disadvantages of this scheme.
 Waste less memory since we shared memory, and the instructions are read only so no synchronization. Think about the libc also lives one place in memory, and multiple processes page-tables refers to the same frame in memory.

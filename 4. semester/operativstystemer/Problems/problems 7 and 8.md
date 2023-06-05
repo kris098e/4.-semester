@@ -101,7 +101,7 @@ If another process is trying to grab the spinlock, while it is holding the semap
 10.  (**important**) Is it possible to have a deadlock involving only one single-threaded process? Explain your answer.
 No this is not possible, as only this process can grab any potential locks, so this process does not ever want to synchronize with other processes.
 
-no Circular wait
+no Circular wait, no hold and wait
 
 11.  Draw the resource-allocation graph that illustrates deadlock from the program example shown in Figure 8.1 in Section 8.2.
 ```c
@@ -135,7 +135,7 @@ T2 has resource 2 request 1, T1 has resource 1 and request 2
 	* mutual exclusion is satisfied since one has to acquire the lock to write.
 	* hold and wait is satisfied since if the first reader acquire a reader lock it still may have to wait for a writer lock.
 	* No preemption is satisfied.
-	* circular wait is staisfied, since if we have two writer locks, 1 writer can wait for the writer lock that 2 has and 2 can wait for the one that 1 has
+	* circular wait is staisfied, since if we have two writer locks, 1 writer can wait for the writer lock that 2 has and 2 can wait for the one that 1 has. This is due to the fact that we have multiple writer locks.
 
 13.  The program example shown in Figure 8.1 of the book (2 mutex deadlock example) doesn’t always lead to deadlock. Describe what role the CPU scheduler plays and how it can contribute to deadlock in this program.
 	if the CPU-schedular decides to preempt a process in `one()` after acquring both locks it is fine if no other process is in `two()`, but if the process running in `one()` has acquired the first lock and then get preempted, deadlock may occur if a process in `two()` starts running.
