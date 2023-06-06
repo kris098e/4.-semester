@@ -79,12 +79,12 @@ When returning a function it also needs to capture the activation records indefi
 # In what conditions a static memory management is not enough to implement an interpreter or compiler for a language? Explain why.
 When using recursive behaviour of functions. The amount of recursive calls can maybe not be determined at compile time, especially if the program takes in user input. This will lead to need for dynamic memory management
 
-Too large structs or arrays
 if there are user-input, the input may be too large, if not predefined the size of the input
 
 ## b
 The heap is where a process can allocate memory within the given process-address-space. This can be done dynamicly, where if a program needs to store a variable, it can allocate space for it and can then also free this memory when it is not needed anymore. A variable can be whatever data structure is specified.
 
+Main purpose is the variable size objects,  not FIFO life and when the program can allocate memory during runtime fx having pointers.
 
 If kept on the stack we have memorize where the specific variable is on the stack if we want to move around, and free something.
 The stack is also mostly used for temporarily kept values, i.e fx for local variables which are popped after the function returns
@@ -163,15 +163,16 @@ A polymorphic type system is a type system that allows values to have more than 
 
 There are two main forms of polymorphism in type systems:
 
-1.  Parametric polymorphism: This is a form of polymorphism in which a function or data type is generic and can operate on values of different types. This is often achieved through the use of type variables. For example, in the programming language Java, the ArrayList class is a parametrically polymorphic data type, allowing it to store elements of any type. They can then work with infinitely many types
+1. **Parametric polymorphism**: This is a form of polymorphism in which a function or data type is generic and can operate on values of different types. This is often achieved through the use of type variables. For example, in the programming language Java, the ArrayList class is a parametrically polymorphic data type, allowing it to store elements of any type. They can then work with infinitely many types
 
 THIS MEANS THAT FUNCTIONS AND TYPES CAN WORK WITH MORE TYPES. I.e **Generics**
 
 
-2. .  Ad hoc polymorphism: This is a form of polymorphism in which a function or operator can have different implementations depending on the types of its arguments. This is often achieved through the use of overloaded functions or operators. For example, in the programming language Python, the '+' operator is ad hoc polymorphic, allowing it to perform addition on different types of values such as integers, floats, and strings.
+2. .**Ad hoc polymorphism**: This is a form of polymorphism in which a function or operator can have different implementations depending on the types of its arguments. This is often achieved through the use of overloaded functions or operators. For example, in the programming language Python, the '+' operator is ad hoc polymorphic, allowing it to perform addition on different types of values such as integers, floats, and strings.
 Overloading, specifying how the function should work with specific types.
 
 Polymorphic type systems can make code more flexible, modular, and reusable. They can also help catch errors at compile time by ensuring that functions and variables are used only in ways that are compatible with their defined types.
+
 ### Subtype polymorphism
 Having super classes and extending classes. The extending classes can then be used like it is the superclass.
 
@@ -300,7 +301,8 @@ When drawing the display, remember the back pointers to the block within the sam
 does not just require two times over the heap, requires multiple scans over the heap. That is, 1 for marking, 1 for computing the positions where the blocks will be moved to be contigous, 2nd update the internal pointers to the objects, and third actually moving the objects.
 
 # Type compatability
-The types are the same but has different formal definition. Meaning that if a and b both have the type C, they are formally different but are considered to be the same if not looking at the stored data.
+The types are the same but has different formal definition. Meaning that if a and b both have the type C, they are formally different but are considered to be the same if not looking at the stored data. **two types are the equivalent if they formally different but can be considered interchangeable**
+
 type compatability is when a type can be used anywhere another type can be used. This does not go both ways. I.e a subtype can be used where a supertype is needed, but not the other way around.
 read [[mockup_exam_answers.pdf#page=5]]
 

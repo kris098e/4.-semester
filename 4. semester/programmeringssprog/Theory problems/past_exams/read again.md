@@ -1,10 +1,7 @@
 ## In what conditions a static memory management is not enough to implement an interpreter or compiler for a language? Explain why.
 When using recursive behaviour of functions. The amount of recursive calls can maybe not be determined at compile time, especially if the program takes in user input. This will lead to need for dynamic memory management
 
-Too large structs or arrays
 if there are user-input, the input may be too large, if not predefined the size of the input
-
-
 
 ## The following program is written using a pseudo-code. Assume that dynamic scoping is used. What does the following program write if shallow binding is used? Motivate the answer.
 
