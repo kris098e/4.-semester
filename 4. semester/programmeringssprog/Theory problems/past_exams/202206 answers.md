@@ -1,9 +1,6 @@
 # 1
 ## a
-(Abstract Machine) Assume that we are given a programming lan-
-guage, L . An abstract machine for L , denoted by M L , is any set of data structures and algorithms which can perform the storage and execution of programs written in L.
-
-I.e it is an abstraction of a physical machine, letting us focus on the software needing to be implemented leaving all thoughts about implementation of hardware and type of hardware out.
+(Abstract Machine) Assume that we are given a programming language, L . An abstract machine for L , denoted by M L , is any set of data structures and algorithms which can perform the storage and execution of programs written in L.
 
 Different ways:
 1. Realization in Hardware
@@ -30,9 +27,9 @@ host machine
 • Maximum flexibility.
 
 ## b
-The interpeter is used to execute and translate a specific language on the abstract machines. The interpeter is needed, such that the language written in a different language than what the abstract understands, it can be translated into the instructions the abstract machine understands line by line, which can then be executed. 
+The interpeter is used to execute and translate a specific language on the abstract machines. The interpeter is needed, such that the program written in a different language than what the abstract understands, it can be translated into the instructions the abstract machine understands line by line, which can then be executed. 
 
-fetching, decoding and executing is what the interpreter does
+fetching instructions and data, decoding instructions and executing is what the interpreter does
 
 ## c
 Interpetrers are easier to write, and usually requires less memory. It generates no intermediate files, i.e does not generate an executable. 
@@ -82,7 +79,7 @@ scalar type: int floats boolean chars
 composite: combinations of scalar types
 
 ## b
-They are equivalent when they have the same structure in memory. fx
+They are equivalent when they have the same structure. fx
 
 ```java
 class K {

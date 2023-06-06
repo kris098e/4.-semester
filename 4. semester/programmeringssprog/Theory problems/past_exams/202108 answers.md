@@ -53,7 +53,7 @@ Virtual methods mean that when using the method, we use the **dynamic lookup** f
 
 ## What do we mean with static memory management?
 #static_memory_management
-The memory is assigned in compile time, i.e after the program is compiled into an executable not change to memory specification can be made dynamicly in the program. It is generally faster since there will be no overhead of memory allocation and deallocation during the executing, since everything involving memory management is done at startup. However of course it is unflexible, and if the memory usage cannot be determined at compile time, the compiler will have to guess. If the memory is too big it will lead to internal fragmentation, and if it guesses to low, the program may finish with undefined behaviour or will simply not execute
+The memory is assigned in compile time, i.e after the program is compiled into an executable no change to memory specification can be made dynamicly in the program. It is generally faster since there will be no overhead of memory allocation and deallocation during the executing, since everything involving memory management is done at startup. However of course it is unflexible, and if the memory usage cannot be determined at compile time, the compiler will have to guess. If the memory is too big it will lead to internal fragmentation, and if it guesses to low, the program may finish with undefined behaviour or will simply not execute
 
 ## In what conditions a static memory management is not enough to implement an interpreter or compiler for a language? Explain why.
 When using recursive behaviour of functions. The amount of recursive calls can maybe not be determined at compile time, especially if the program takes in user input. This will lead to need for dynamic memory management
@@ -102,7 +102,7 @@ I.e the program can begin the calculation right away instead of using additional
 ```java
 // precon: acc = 1 when called from outside the function
 int fact(int n, int acc) {
-	if n == 1 return 1;
+	if n == 1 return acc;
 	return fact(n-1, acc*n)
 }
 ```
@@ -112,11 +112,11 @@ look at question b. And dont have to make additional activation record
 
 # 4
 ## Describe the notion of closure. What is it used for?
-#closure s are used to capture an environment, which is used when we want to pass functions as arguments and return functions in a function.  Which variables should the passed function and or returned function use? There are two methods, **deep binding** and **shallow binding** which will be explained in the next question
+#closure s are used to capture an environment, of variables and values, which is used when we want to pass functions as arguments and return functions in a function.  Which variables should the passed function and or returned function use? There are two methods, **deep binding** and **shallow binding** which will be explained in the next question
 
 ## Describe what deep binding and shallow binding are
-#deep_binding the passed function or returned function uses the environment from where it is created. This is done via closures, capturing the environment and using the variables from where it is created.
-#shallow_binding the passed function or returned function uses the environment from where it is called. Where closures are used. 
+#deep_binding the passed function or returned function uses the environment from where it is created. This is done via closures, capturing the environment and using the variables from where it is created. It uses the scope of where the function is defined
+#shallow_binding the passed function or returned function uses the environment from where it is called. Where closures are used.  I.e it uses the scope of the where the function is called.
 
 When returning a function it also needs to capture the activation records indefinetly or until there is no longer a pointer to the returned function, since it may use out of scope variables when the function has returned. 
 

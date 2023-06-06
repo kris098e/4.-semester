@@ -17,7 +17,7 @@ I does not matter what the partial evalutor is written in, it just means that th
 * code for compilers are more complex and harder to implement
 * inflexible, may destroy the overall structure of the program (does not have the source), when compiling to the machine code - fx. doing tricks to make it faster
 
-## Inerpreter
+## Interpreter
 ### advantages
 * easier to make
 * flexible, still have the overall structure and source

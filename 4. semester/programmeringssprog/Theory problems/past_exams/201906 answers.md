@@ -44,9 +44,9 @@ partial evaluator is a program given D0 and D1 and outputs D2
 
 $p:(D_{1}, D_{2})\to D_{2}$
 ![[Pasted image 20230510122700.png]]
-see that we have an interpreter written in L1 to L2 and from L2 to L3, so apply the first interpreter and can input to the next one.  So we get from L1 to L3. I.e an interpreter from L1 to L3
+see that we have an interpreter written in L1 to L2 and from L2 to L3, so apply the first interpreter and can input to the next one.  This means that we will interpret the interpreter with $I_{L_{1}}^{L_{2}}$ interpreting the interpreter such that we get from L2 to L3 instead. Since it is partially evaluated, we get a compiler, since all of the interpreted output will be stored 
 
-The partial evalutor evaluates something in L1 which matches with the fact that the interpreter is written in L1.
+Remember the diagonal rule.
 
 
 # exercise 3
@@ -88,7 +88,7 @@ The `Mark` phase is needed such that all objects are set to not being used, and 
 
 Stop and copy does not need this phase, as it just goes through all of the pointers stored on the stack, copies them, and then the to-space are used as the from-space, which effectively deallocated the objects not in use, since they were not copied.
 
-The con of stop and copy is the increased memory usage. The con of mark and sweep is the fact that it has to go over the heap twice.
+The con of stop and copy is the increased memory usage. The con of mark and sweep is the fact that it has to go over the heap Multiple times
 
 ## stop and copy
 Uses `Chaney's Algorithm` simply copying the the root-set (What is pointed to on the stack) and then copying the root-sets children, which will be done again and again.
@@ -121,12 +121,12 @@ Stop and Copy and Mark and Compact are both garbage collection algorithms used t
 
 Stop and Copy algorithm divides the heap memory into two equal parts: the "from-space" and the "to-space". During program execution, live objects are allocated in the from-space. When the from-space becomes full, the garbage collector pauses the program and copies all the live objects to the to-space. The to-space becomes the new from-space, and the old from-space is completely empty and available for new objects. This algorithm requires extra memory for the to-space but is efficient and avoids fragmentation.
 
-On the other hand, Mark and Compact algorithm works by marking all the live objects in the heap memory and compacting them to eliminate fragmentation. During the marking phase, the garbage collector traverses all objects in the heap memory and marks the live ones. In the compacting phase, the garbage collector moves all the live objects to a contiguous block of memory, updates all the pointers in the program, and releases the unused memory. This algorithm is powerful but slower than Stop and Copy as it requires moving all the live objects to a new location in memory and updating all the program's pointers, while also having to pass the heap twice
+On the other hand, Mark and Compact algorithm works by marking all the live objects in the heap memory and compacting them to eliminate fragmentation. During the marking phase, the garbage collector traverses all objects in the heap memory and marks the live ones. In the compacting phase, the garbage collector moves all the live objects to a contiguous block of memory, updates all the pointers in the program, and releases the unused memory. This algorithm is powerful but slower than Stop and Copy as it requires moving all the live objects to a new location in memory and updating all the program's pointers, while also having to pass the heap multiple times
 
 In summary, Stop and Copy is a simpler and more efficient algorithm that avoids fragmentation by copying live objects from one space to another. Mark and Compact, while more complex, eliminates fragmentation by moving live objects to a contiguous block of memory. The choice of which algorithm to use depends on the specific needs and constraints of the program being developed.
 
 
-Stop and copy uses more memory considering it has a to- and from-space. But it is more efficient, since it does not need to pass over the heap 2 times, it can just copy all the live objects. However mark and compact goes over the heap twice marking the used object and then compacting them while updating the pointers.
+Stop and copy uses more memory considering it has a to- and from-space. But it is more efficient, since it does not need to pass over the heap multiple times, it can just copy all the live objects. However mark and compact goes over the heap multiple times marking the used object and then compacting them while updating the pointers.
 
 ## pros and cons for stop and copy
 ### pros
@@ -145,7 +145,7 @@ Although stop-and-copy garbage collection is generally faster than mark-and-comp
 3.  Inefficient for Large Objects: The stop-and-copy algorithm may be less efficient for large objects because it needs to copy them in their entirety, even if only a small portion of the object is actually in use. This can lead to wasted memory and increased copying times.
     
 
-In contrast, the mark-and-compact algorithm does not have these drawbacks because it does not require double the memory, it avoids memory fragmentation, it can handle large objects more efficiently, and it does not have long pauses during its execution. However, it may be slower than stop-and-copy for small to medium-sized programs. Ultimately, the choice of garbage collection algorithm depends on the specific requirements of the application and the available resources.
+In contrast, the mark-and-compact algorithm does not have these drawbacks because it does not require double the memory, it avoids memory fragmentation, it can handle large objects more efficiently. However, it may be slower than stop-and-copy for small to medium-sized programs. Ultimately, the choice of garbage collection algorithm depends on the specific requirements of the application and the available resources.
 
 ## Final thoughts
 For mark and compact the algorithm has to compact the memory, as it is only allowed to used the working memory for making the memory contiguous. This means that is has to compact the memory, taking extra caution of not overwriting memory. The compacting in the same memory space is what is making it slower than stop-and-copy, since stop-and-copy only needs to copy it onto some memory for which it can use all memory, not concerned with overwriting. Stop-and-copy also needs additional memory, most of the time **double** the amount of memory of what the process actually needs. Where mark and compact does not need the additional memory

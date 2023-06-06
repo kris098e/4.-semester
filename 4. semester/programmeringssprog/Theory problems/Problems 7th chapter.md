@@ -116,7 +116,7 @@ write(X);
 ```
 
 Write: 2
-Write: 4, but could also be 3 as the "++" may not have been evaluated before returning from the function.
+Write: 3
 
 4. The following code fragment, is to be handed to an interpreter for a pseudolanguage which permits constant parameters:
 

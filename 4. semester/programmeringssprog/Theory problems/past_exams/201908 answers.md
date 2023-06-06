@@ -110,7 +110,7 @@ Static scoping means the program will use the variable which is in the current s
 	void foo(name int v, name int w){ // v = x, w = y
 		int x = 1000;
 		w = v; // y = x = 2. uses outerscope x
-		v = v+w+z; // outer x = 2 + 5 + 10 = 17
+		v = v+w+z; // outer x = 2 + 2 + 10 = 14
 		z = 1000; // = 1000
 	}
 	{ 
@@ -120,7 +120,7 @@ Static scoping means the program will use the variable which is in the current s
 		foo(x, y);
 		write(x,y,z); // write(20,50,100)
 	}
-	write(x,y,z); // write(17, 2, 1000)
+	write(x,y,z); // write(14, 2, 1000)
 }
 ```
 
@@ -131,7 +131,7 @@ Yes we can call by reference in the previous code example. This will alter what 
 	int x = 2;
 	int y = 5;
 	int z = 10;
-	void foo(reference int v, reference int w)
+	void foo(reference int v, reference int w) {
 		int x = 1000;
 		w = v; // y = x = 20
 		v = v+w+z; // x = x + y + 10 = 20 + 20 + 10 = 50
@@ -177,6 +177,8 @@ call by value will make a copy of the actual parameters, and use these when usin
 Type: collection of values (homogeneous and
 effectively presented) equipped with a set of
 operations to manipulate these values
+
+Type: Collection of homogeneous values which can presented, while have a set of operations to manipulate it.
 
 In the context you provided, homogeneous means that all the values in the collection are of the same type. For example, a homogeneous collection of values could contain only integers or only strings, but not a mix of both.
 
@@ -255,10 +257,10 @@ Having super classes and extending classes. The extending classes can then be us
 An object holds a reference count, i.e if the program still holds a pointer to this object in memory. When no pointers are kept to the object, i can safely be garbage collected and deallocated.  
 
 ## Mention one pros and one/two cons of reference counting compared to marking and copying?
-pros: can be done on the fly, i.e each time the reference count is decremented, the program can check if the reference count has gone to 0, and deallocate the object. Compared to marking and copying where it will first start when memory is needed that cannot be given, or some threshhold specified, which will pause the program for longer than the simple check for if the reference count has gone to 0.
+pros: can be done on the fly, i.e each time the reference count is decremented, the program can check if the reference count has gone to 0, and deallocate the object. Compared to marking and copying where it will first start when memory is needed that cannot be given, or some threshhold specified, which will pause the program for longer than the simple check for if the reference count has gone to 0. This means that reference counting will deal with the garbage collection right away, instead of postpone it until some threshold of memory.
 
 cons: the extra memory added to each object may become large, since it needs this additional memory, also occupying some additional memory.
-it does not line up the objects for sequential blocks. This means that each time an object are to be created the memory is searched for a free space, which may take longer since the memory is scattered in the address space, instead of when using a sequential block of memory, you can just go to the end of the allocated blocks and start allocating there.
+it does not line up the objects for contiguous blocks. This means that each time an object are to be created the memory is searched for a free space, which may take longer since the memory is scattered in the address space, instead of when using a contiguous block of memory, you can just go to the end of the allocated blocks and start allocating there. I.e reference counting will end up creating more internal fragmentation
 
 ## Consider the following fragment written in a pseudo-language with a reference-counting garbage collector.
 ```c

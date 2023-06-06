@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b3f0a5046fb5d1a7",
+            "id": "aad88b903a029b95",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Theory problems/past_exams/201906 answers.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0755d339029c8e35",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "programmeringssprog/Theory problems/Problems 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "programmeringssprog/Theory problems/Problems 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "programmeringssprog/Theory problems/Problems 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md"
+                "file": "programmeringssprog/Theory problems/Problems 1.md"
               }
             }
           }
@@ -170,16 +157,38 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "0755d339029c8e35",
+  "active": "aad88b903a029b95",
   "lastOpenFiles": [
-    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
+    "programmeringssprog/Theory problems/Garbage collections.md",
+    "programmeringssprog/Theory problems/problems chapter 10.md",
     "programmeringssprog/Theory problems/Remember.md",
-    "operativstystemer/10. Virtual Memory.md",
-    "operativstystemer/9. Main Memory.md",
-    "operativstystemer/8. Deadlocks.md",
-    "operativstystemer/Problems/problems 9 and 10.md",
-    "operativstystemer/Problems/problems 11.md",
-    "operativstystemer/Problems/problems 12 and 13 and 14.md",
+    "Pasted image 20230606131416.png",
+    "programmeringssprog/Theory problems/Questions.md",
+    "programmeringssprog/Theory problems/problems 8th chapter.md",
+    "programmeringssprog/Theory problems/Problems 7th chapter.md",
+    "programmeringssprog/Theory problems/problems 6th chapter.md",
+    "programmeringssprog/Theory problems/problems 5th chapter.md",
+    "programmeringssprog/Theory problems/Problems 4th chapter.md",
+    "programmeringssprog/Theory problems/Problems 1.md",
+    "programmeringssprog/Theory problems/problems.md",
+    "programmeringssprog/Theory problems/read up on.md",
+    "Pasted image 20230606123334.png",
+    "programmeringssprog/Theory problems/past_exams/202206 answers.md",
+    "programmeringssprog/3. undecidability.md",
+    "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
+    "Excalidraw/Acitivation_record_stack.excalidraw.md",
+    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
+    "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
+    "programmeringssprog/Theory problems/past_exams/202208 answers.md",
+    "_05_memory.pdf",
+    "programmeringssprog/Haskell/Remember.md",
+    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
+    "programmeringssprog/Theory problems/past_exams/202106 answers.md",
+    "programmeringssprog/Theory problems/past_exams/read again.md",
+    "programmeringssprog/Theory problems/past_exams/Test example.md",
+    "programmeringssprog/Theory problems/past_exams/Notes.md",
+    "programmeringssprog/Theory problems/past_exams/Need practise.md",
+    "programmeringssprog/Theory problems/past_exams/202006 answers.md",
     "Pasted image 20230605131115.png",
     "Pasted image 20230605131020.png",
     "Pasted image 20230605123520.png",
@@ -188,36 +197,13 @@
     "Pasted image 20230605110107.png",
     "Pasted image 20230605105718.png",
     "Pasted image 20230605105424.png",
-    "Pasted image 20230605105405.png",
-    "Pasted image 20230605104949.png",
-    "operativstystemer/11. Mass-Storage Systems.md",
-    "operativstystemer/12. IO systems.md",
-    "operativstystemer/18. Virtual.md",
-    "operativstystemer/Problems/problems 7 and 8.md",
-    "operativstystemer/Problems/problems 6 and 7.md",
-    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
-    "operativstystemer/7. Synchronization tools examples.md",
-    "operativstystemer/6. Synchronization tools.md",
-    "operativstystemer/5. CPU Schedualing.md",
-    "Data mining and machine learning/Problems/16..md",
-    "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
     "_DM566-2023-part2.pdf",
-    "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
     "_DM566-2023-part5.pdf",
-    "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
-    "programmeringssprog/Theory problems/past_exams/202006 answers.md",
-    "programmeringssprog/Theory problems/past_exams/Questions.md",
-    "programmeringssprog/6. Flow control, expressions, commands.md",
-    "programmeringssprog/5a. Implement scope rules.md",
-    "programmeringssprog/5. Memory Management.md",
     "programmeringssprog/Theory problems/past_exams/202006.pdf",
     "programmeringssprog/Theory problems/past_exams/201908.pdf",
-    "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
     "_exercise16.pdf",
     "programmeringssprog/Theory problems/past_exams/201906.pdf",
-    "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
     "_DM566-2023-part4.pdf",
-    "_DM566-2023-part3.pdf",
     "Untitled.canvas"
   ]
 }

@@ -49,13 +49,13 @@ Q4 is allowed since C is covariant with B and paramater is contraviant with B
 
 **static chain pointer** used to know which activation record contains this one, and can be used for static scoping.
 
-**return address** such that the program knows where to continue exection when done with this activation record.
+**return address** such that the program knows where to continue execution when done with this activation record.
 
 **return address for the result** where to store the result for what is calculated in this activation record.
 
 **local variables** such that we in this activation record can store variables that are needed for the execution of this.
 
-**intermediate results** if we have a calculation $\frac{a}{b}+\frac{c}{d}$ it will store $\frac{a}{b}$ such that it can calulcate $\mathrm{Re}sult+\frac{c}{d}$
+**intermediate results** if we have a calculation $\frac{a}{b}+\frac{c}{d}$ it will store $\frac{a}{b}$ such that it can calculate $\mathrm{Re}sult+\frac{c}{d}$
 
 **parameters** for the function
 

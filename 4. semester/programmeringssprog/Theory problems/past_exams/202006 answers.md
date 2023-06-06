@@ -1,26 +1,25 @@
 [[202006.pdf]]
 # 1
 ## a
-Overriding refers to the process of defining a method in a subclass that already exists in the superclass. When a method is called on an object of the subclass, the version of the method defined in the subclass is called, rather than the one defined in the superclass. The method in the subclass must have the same name, return type, and parameter list as the method in the superclass, in order to override it.
+Overriding refers to the process of defining a method in a subclass that already exists in the superclass. When a method is called on an object of the subclass, the version of the method defined in the subclass is called, rather than the one defined in the superclass. The method in the subclass must have the same name and parameter list as the method in the superclass, in order to override it.
 
-Overloading, on the other hand, refers to the process of defining multiple methods in a class with the same name, but with different parameters. The methods can have different return types or different numbers and types of parameters. When a method is called, the appropriate version of the method is selected based on the number and types of arguments passed to it.
+Overloading, on the other hand, refers to the process of defining multiple methods in a class with the same name, but with different parameters. The methods can have different return types or different numbers and types of parameters. When a method is called, the appropriate version of the method is selected based on the number and types of arguments passed to it and ordering.
 
 ## b
 The key difference between overriding and overloading is that overriding is used to provide a different implementation for an existing method in a subclass, whereas overloading is used to define multiple methods with the same name but different parameters.
 
 ## c
-For Q1 we just overload the method, when providing something of type A will return something of type A. Having 2 methodsfor `fie`
+For Q1 we just overload the method, when providing something of type A will return something of type A. Having 2 methodsfor `fie`. It is a risk to type security as the return type is not covariant.
 
-For Q2 we again just overload the class. Having 2 methods for `fie`
+For Q2 we again just overload the class. Having 2 methods for `fie`. Provide a threat to type security as the parameter is not contravariant to the original method
 
-For Q3 C is superclass of B therefore it can act as B and therefore the parameter is correct, however the return type is a subclass of B, and therefore A cannot be used as a B which will result in runtime errors.
+For Q3 the parameter is not contravariant and the return type is not covariant.
 
-For Q4 A is a subclass of B and cannot be used as a B. The return value can act as a type B tho, but since the parameter says less, this will run into runtime issues.
+For Q4 the return type i covariant and the parameter is contravariant which causes no threat to type security
 
 
 ## d
-Only Q4 since it is the only one having return value which is covariant and the argument being contravariant
-They will all compile, since we just overload the ones that just overrides
+They will all compile, since we just overload the ones that does not override
 
 **Java will only override if the parameters are the same.**
 
@@ -60,7 +59,7 @@ Most of the times side effects are undesirable since it often introduce complica
 
 However if used responsibly it can make a programmers life easier, fx. introducing a global count-variable, where each function call will increment this count as a side-effect. Logic could then be implemented around this side effect
 
-**Key idea in imperative programming, an key idea in function programming not to have this
+**Key idea in imperative programming, a key idea in function programming not to have this
 I.e in imperative programming, we are not ensured that the function will be pure, and they are always pure in functional programming**
 
 ## By reading the specification of the C++ language, you notice that it guarantees that arguments will be evaluated linearly and will not interleave, but that there are not guarantee of evaluation of parameters or expressions in any specific order. Consider the following C-like program.
@@ -95,7 +94,7 @@ Type coercion means from an expression the type is coerced from the result. Fx i
 ```python
 x = 2 + 2.3
 ```
-x ends up being a float, even tho an int and float is used, but to capture the entire result x has to be a float
+x ends up being a float, even tho an int and float is used, to capture the entire result x has to be a float
 
 Implicit type casting
 
