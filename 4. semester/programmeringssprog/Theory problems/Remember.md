@@ -1,3 +1,9 @@
+
+# A-list
+**Remember it is not just the x which we are putting in the A-list. It is every variable**.
+![[Pasted image 20230531104302.png]]
+Where the first x is 6 and the 2nd is 2. The out of scope x is not taken into consideration in the A-list, as it would be wasted memory to keep track of this aswell.
+
 # Virtual
 ## Consider the following C++-like pseudo-code language allowing the usage of virtual methods by using the virtual keyword
 

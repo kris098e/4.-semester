@@ -172,7 +172,7 @@ When you try to use a page, but the corresponding frame is not in main memory.
 Page faults occur when a process attempts to access a page of virtual memory that is not currently in physical memory (RAM). This can happen due to a variety of reasons such as a page being swapped out to disk or being allocated for the first time. When a page fault occurs, the operating system takes the following actions:
 
 1.  The processor generates a page fault exception and transfers control to the operating system's kernel.
-2.  The operating system determines the cause of the page fault and checks whether the access was legal or not.
+2.  The operating system determines the cause of the page fault and checks whether the access was legal or not. i.e in its address space.
 3.  If the access was illegal (e.g., accessing a page that is not owned by the process), the operating system terminates the process with an appropriate error message.
 4.  If the access was legal, the operating system determines the location of the page in the virtual memory space and checks whether the page is currently in physical memory (RAM) or not.
 5.  If the page is in physical memory, the operating system updates the page table and restarts the instruction that caused the page fault.
@@ -256,7 +256,7 @@ for (int i = 0; i < 100; i++)
   for (int j = 0; j < 100; j++)
       A[i][j] = 0;
 ```
-$\frac{100}{2}=50$ page faults. 
+$\frac{100}{2}=50$ page faults. first get the 
 
 
 ## 4.  (**important**) Consider the following page reference string: `1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6`. How many page faults would occur for the following replacement algorithms, assuming one, two, three, four, five, six, and seven frames? Remember that all frames are initially empty, so your first unique pages will cost one fault each.

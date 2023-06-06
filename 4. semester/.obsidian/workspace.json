@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/10. Virtual Memory.md",
+                "file": "programmeringssprog/Theory problems/past_exams/201906 answers.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0755d339029c8e35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/Theory problems/Remember.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -77,8 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -94,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/10. Virtual Memory.md",
+                "file": "programmeringssprog/Theory problems/Remember.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/10. Virtual Memory.md",
+                "file": "programmeringssprog/Theory problems/Remember.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,11 +146,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/10. Virtual Memory.md"
+                "file": "programmeringssprog/Theory problems/Remember.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -157,27 +170,30 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "b3f0a5046fb5d1a7",
+  "active": "0755d339029c8e35",
   "lastOpenFiles": [
-    "Pasted image 20230605102832.png",
-    "Pasted image 20230605101639.png",
-    "Pasted image 20230605101632.png",
-    "Pasted image 20230605093238.png",
-    "Pasted image 20230605092746.png",
-    "Pasted image 20230605092235.png",
-    "Pasted image 20230605092011.png",
-    "operativstystemer/Problems/problems 9 and 10.md",
+    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
+    "programmeringssprog/Theory problems/Remember.md",
     "operativstystemer/10. Virtual Memory.md",
     "operativstystemer/9. Main Memory.md",
+    "operativstystemer/8. Deadlocks.md",
+    "operativstystemer/Problems/problems 9 and 10.md",
+    "operativstystemer/Problems/problems 11.md",
+    "operativstystemer/Problems/problems 12 and 13 and 14.md",
+    "Pasted image 20230605131115.png",
+    "Pasted image 20230605131020.png",
+    "Pasted image 20230605123520.png",
+    "Pasted image 20230605123144.png",
+    "Pasted image 20230605112555.png",
+    "Pasted image 20230605110107.png",
+    "Pasted image 20230605105718.png",
+    "Pasted image 20230605105424.png",
+    "Pasted image 20230605105405.png",
+    "Pasted image 20230605104949.png",
     "operativstystemer/11. Mass-Storage Systems.md",
     "operativstystemer/12. IO systems.md",
     "operativstystemer/18. Virtual.md",
-    "Pasted image 20230605085236.png",
-    "Pasted image 20230605084124.png",
-    "Pasted image 20230605084113.png",
-    "Pasted image 20230605083252.png",
     "operativstystemer/Problems/problems 7 and 8.md",
-    "operativstystemer/8. Deadlocks.md",
     "operativstystemer/Problems/problems 6 and 7.md",
     "programmeringssprog/Theory problems/past_exams/202108 answers.md",
     "operativstystemer/7. Synchronization tools examples.md",
@@ -189,14 +205,11 @@
     "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
     "_DM566-2023-part5.pdf",
     "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
-    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
-    "programmeringssprog/Theory problems/Remember.md",
     "programmeringssprog/Theory problems/past_exams/202006 answers.md",
     "programmeringssprog/Theory problems/past_exams/Questions.md",
     "programmeringssprog/6. Flow control, expressions, commands.md",
     "programmeringssprog/5a. Implement scope rules.md",
     "programmeringssprog/5. Memory Management.md",
-    "programmeringssprog/Theory problems/Questions.md",
     "programmeringssprog/Theory problems/past_exams/202006.pdf",
     "programmeringssprog/Theory problems/past_exams/201908.pdf",
     "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
