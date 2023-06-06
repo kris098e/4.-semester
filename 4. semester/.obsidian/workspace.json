@@ -11,8 +11,12 @@
             "id": "e494d5a623020d44",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "programmeringssprog/Theory problems/Remember.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "programmeringssprog/Theory problems/Remember.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "programmeringssprog/Theory problems/Remember.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "programmeringssprog/Theory problems/Remember.md"
+              }
             }
           }
         ],
@@ -151,6 +159,8 @@
   },
   "active": "e494d5a623020d44",
   "lastOpenFiles": [
+    "programmeringssprog/Theory problems/past_exams/read again.md",
+    "programmeringssprog/Theory problems/past_exams/Need practise.md",
     "programmeringssprog/Theory problems/Remember.md",
     "programmeringssprog/Theory problems/past_exams/201906 answers.md",
     "programmeringssprog/5a. Implement scope rules.md",
@@ -165,8 +175,6 @@
     "programmeringssprog/Theory problems/past_exams/202108 answers.md",
     "programmeringssprog/Theory problems/past_exams/202108.pdf",
     "programmeringssprog/Theory problems/past_exams/202106 answers.md",
-    "programmeringssprog/Theory problems/past_exams/read again.md",
-    "programmeringssprog/Theory problems/past_exams/Need practise.md",
     "programmeringssprog/Theory problems/past_exams/Notes.md",
     "programmeringssprog/Theory problems/Problems 1.md",
     "programmeringssprog/Theory problems/Garbage collections.md",
