@@ -28,3 +28,7 @@
 - Linux (preemptive, CFS, RR, virtual runtime (priority))
 - Windows (preemptive, 32 level priority, )
 - Both uses multilevel feedback queue with RR in some of the queues
+- Test of the model
+    - Deterministic Model (given an exact input)
+    - Simulation Model (random number generater)
+    - Queueing Models (generate formula for fx CPU utilization from data received)
