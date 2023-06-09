@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/presentation/2_operating_system_structure.md",
+                "file": "operativstystemer/4. threads.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/presentation/2_operating_system_structure.md",
+                "file": "operativstystemer/4. threads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/presentation/2_operating_system_structure.md",
+                "file": "operativstystemer/4. threads.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/presentation/2_operating_system_structure.md"
+                "file": "operativstystemer/4. threads.md"
               }
             }
           }
@@ -153,16 +152,19 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "f7fe4bff2c40e084",
+  "active": "f205f3616ba3983d",
   "lastOpenFiles": [
-    "operativstystemer/2. operating system structures.md",
-    "operativstystemer/presentation/2_operating_system_structure.md",
-    "operativstystemer/presentation",
     "operativstystemer/3. processes.md",
     "operativstystemer/4. threads.md",
+    "operativstystemer/Problems/problems 4 and 5.md",
+    "operativstystemer/presentation/3_processes_threads_concurrency.md",
+    "operativstystemer/presentation/2_operating_system_structure.md",
+    "operativstystemer/2. operating system structures.md",
+    "operativstystemer/presentation",
     "operativstystemer/5. CPU Schedualing.md",
     "operativstystemer/7. Synchronization tools examples.md",
     "operativstystemer/6. Synchronization tools.md",
@@ -184,9 +186,7 @@
     "programmeringssprog/3. undecidability.md",
     "programmeringssprog/2. bnf-semantics.md",
     "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
-    "programmeringssprog/Theory problems/past_exams/202108 answers.md",
     "programmeringssprog/Theory problems/past_exams/202108.pdf",
-    "programmeringssprog/Theory problems/past_exams/202106 answers.md",
     "Pasted image 20230606131416.png",
     "Pasted image 20230606123334.png",
     "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
