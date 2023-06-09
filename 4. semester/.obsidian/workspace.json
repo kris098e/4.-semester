@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "baa6834636ba8ee4",
+        "id": "f973e0e28bafd8f4",
         "type": "tabs",
         "children": [
           {
-            "id": "e494d5a623020d44",
+            "id": "f205f3616ba3983d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "operativstystemer/presentation/2_operating_system_structure.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "operativstystemer/presentation/2_operating_system_structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md",
+                "file": "operativstystemer/presentation/2_operating_system_structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "programmeringssprog/Theory problems/Remember.md"
+                "file": "operativstystemer/presentation/2_operating_system_structure.md"
               }
             }
           }
@@ -142,8 +143,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -153,15 +153,27 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "canvas:Create new canvas": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "obsidian-ocr:Search OCR": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e494d5a623020d44",
+  "active": "f7fe4bff2c40e084",
   "lastOpenFiles": [
+    "operativstystemer/2. operating system structures.md",
+    "operativstystemer/presentation/2_operating_system_structure.md",
+    "operativstystemer/presentation",
+    "operativstystemer/3. processes.md",
+    "operativstystemer/4. threads.md",
+    "operativstystemer/5. CPU Schedualing.md",
+    "operativstystemer/7. Synchronization tools examples.md",
+    "operativstystemer/6. Synchronization tools.md",
+    "operativstystemer/13. File-System Interface.md",
+    "operativstystemer/12. IO systems.md",
+    "operativstystemer/11. Mass-Storage Systems.md",
+    "operativstystemer/10. Virtual Memory.md",
+    "operativstystemer/8. Deadlocks.md",
+    "programmeringssprog/Theory problems/Remember.md",
     "programmeringssprog/Theory problems/past_exams/read again.md",
     "programmeringssprog/Theory problems/past_exams/Need practise.md",
-    "programmeringssprog/Theory problems/Remember.md",
     "programmeringssprog/Theory problems/past_exams/201906 answers.md",
     "programmeringssprog/5a. Implement scope rules.md",
     "programmeringssprog/5. Memory Management.md",
@@ -175,19 +187,7 @@
     "programmeringssprog/Theory problems/past_exams/202108 answers.md",
     "programmeringssprog/Theory problems/past_exams/202108.pdf",
     "programmeringssprog/Theory problems/past_exams/202106 answers.md",
-    "programmeringssprog/Theory problems/past_exams/Notes.md",
-    "programmeringssprog/Theory problems/Problems 1.md",
-    "programmeringssprog/Theory problems/Garbage collections.md",
-    "programmeringssprog/Theory problems/problems chapter 10.md",
     "Pasted image 20230606131416.png",
-    "programmeringssprog/Theory problems/Questions.md",
-    "programmeringssprog/Theory problems/problems 8th chapter.md",
-    "programmeringssprog/Theory problems/Problems 7th chapter.md",
-    "programmeringssprog/Theory problems/problems 6th chapter.md",
-    "programmeringssprog/Theory problems/problems 5th chapter.md",
-    "programmeringssprog/Theory problems/Problems 4th chapter.md",
-    "programmeringssprog/Theory problems/problems.md",
-    "programmeringssprog/Theory problems/read up on.md",
     "Pasted image 20230606123334.png",
     "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
     "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
@@ -204,7 +204,6 @@
     "_DM566-2023-part5.pdf",
     "programmeringssprog/Theory problems/past_exams/202006.pdf",
     "programmeringssprog/Theory problems/past_exams/201908.pdf",
-    "_exercise16.pdf",
     "Untitled.canvas"
   ]
 }
