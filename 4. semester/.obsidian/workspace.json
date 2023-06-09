@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/4. threads.md",
+                "file": "operativstystemer/5. CPU Schedualing.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/4. threads.md",
+                "file": "operativstystemer/5. CPU Schedualing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/4. threads.md",
+                "file": "operativstystemer/5. CPU Schedualing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/4. threads.md"
+                "file": "operativstystemer/5. CPU Schedualing.md"
               }
             }
           }
@@ -158,14 +158,16 @@
   },
   "active": "f205f3616ba3983d",
   "lastOpenFiles": [
-    "operativstystemer/3. processes.md",
+    "operativstystemer/presentation/4_CPU_schedulaing.md",
+    "operativstystemer/Problems/problems 5 and 6.md",
+    "operativstystemer/5. CPU Schedualing.md",
     "operativstystemer/4. threads.md",
+    "operativstystemer/3. processes.md",
     "operativstystemer/Problems/problems 4 and 5.md",
     "operativstystemer/presentation/3_processes_threads_concurrency.md",
     "operativstystemer/presentation/2_operating_system_structure.md",
     "operativstystemer/2. operating system structures.md",
     "operativstystemer/presentation",
-    "operativstystemer/5. CPU Schedualing.md",
     "operativstystemer/7. Synchronization tools examples.md",
     "operativstystemer/6. Synchronization tools.md",
     "operativstystemer/13. File-System Interface.md",
@@ -184,8 +186,6 @@
     "programmeringssprog/Theory problems/past_exams/202206 answers.md",
     "programmeringssprog/Theory problems/past_exams/202206.pdf",
     "programmeringssprog/3. undecidability.md",
-    "programmeringssprog/2. bnf-semantics.md",
-    "programmeringssprog/1. Abstract Machines with Interpeters and Compilers.md",
     "programmeringssprog/Theory problems/past_exams/202108.pdf",
     "Pasted image 20230606131416.png",
     "Pasted image 20230606123334.png",

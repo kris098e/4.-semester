@@ -1,0 +1,30 @@
+- CPU- and I/O bound processes
+- preemptive and non-preemptive
+    - process state switching
+- dispatcher (save state, restore state)
+- scheduling critereas (CPU utilization, wait time ...)
+    - priority
+    - starvation
+- Algorithms
+    - FCFS
+    - SJF
+        - Implementation not possible, predict
+    - Round Robin
+        - time quantum sice
+- Multilevel queue & multilevel feedback queue
+    - Example (different queues, time quantum, algorithm to use)
+- Multi-processor schedualing (assymetric, symmetric)
+    - examples:
+        - Cache, Soft & hard affinity
+        - NUMA architecture (scheduale on same NUMA node)
+        - Heterogeneous multiprocessing (want slow or fast)
+    - Hardware-threads
+- Real-time schedualing (hard & soft)
+    - event latency (interrupt latency + dispatch latency)
+    - Schedualed in periods
+        - Rate monotonic schedualing (preemptive, priority inverse of CPU time, optimal for static priorities)
+            - bounded at 69% CPU util for inf processes, for 2 83%. I.e dont overcommit
+        - Earliest Deadling First (preemptive, dynamic adjusted priorities) 
+- Linux (preemptive, CFS, RR, virtual runtime (priority))
+- Windows (preemptive, 32 level priority, )
+- Both uses multilevel feedback queue with RR in some of the queues
