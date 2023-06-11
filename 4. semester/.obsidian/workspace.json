@@ -13,9 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/5. CPU Schedualing.md",
+                "file": "operativstystemer/Problems/problems 12 and 13 and 14.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "4ff166c0eff96899",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ch13.pdf"
               }
             }
           }
@@ -93,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/5. CPU Schedualing.md",
+                "file": "operativstystemer/Problems/problems 12 and 13 and 14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/5. CPU Schedualing.md",
+                "file": "operativstystemer/Problems/problems 12 and 13 and 14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/5. CPU Schedualing.md"
+                "file": "operativstystemer/Problems/problems 12 and 13 and 14.md"
               }
             }
           }
@@ -158,9 +168,19 @@
   },
   "active": "f205f3616ba3983d",
   "lastOpenFiles": [
+    "operativstystemer/13. File-System Interface.md",
+    "operativstystemer/16. security and protection.md",
+    "operativstystemer/14. File System Implementation.md",
+    "Pasted image 20230611085221.png",
+    "Pasted image 20230611085120.png",
+    "Pasted image 20230611084732.png",
+    "Pasted image 20230611080507.png",
+    "ch13.pdf",
+    "Unconfirmed 860472.crdownload",
+    "Pasted image 20230611073640.png",
+    "operativstystemer/5. CPU Schedualing.md",
     "operativstystemer/presentation/4_CPU_schedulaing.md",
     "operativstystemer/Problems/problems 5 and 6.md",
-    "operativstystemer/5. CPU Schedualing.md",
     "operativstystemer/4. threads.md",
     "operativstystemer/3. processes.md",
     "operativstystemer/Problems/problems 4 and 5.md",
@@ -170,7 +190,6 @@
     "operativstystemer/presentation",
     "operativstystemer/7. Synchronization tools examples.md",
     "operativstystemer/6. Synchronization tools.md",
-    "operativstystemer/13. File-System Interface.md",
     "operativstystemer/12. IO systems.md",
     "operativstystemer/11. Mass-Storage Systems.md",
     "operativstystemer/10. Virtual Memory.md",
@@ -183,9 +202,7 @@
     "programmeringssprog/5. Memory Management.md",
     "programmeringssprog/4. Names, Environment, Scoping Rules.md",
     "programmeringssprog/Theory problems/past_exams/202208 answers.md",
-    "programmeringssprog/Theory problems/past_exams/202206 answers.md",
     "programmeringssprog/Theory problems/past_exams/202206.pdf",
-    "programmeringssprog/3. undecidability.md",
     "programmeringssprog/Theory problems/past_exams/202108.pdf",
     "Pasted image 20230606131416.png",
     "Pasted image 20230606123334.png",
@@ -195,15 +212,8 @@
     "Pasted image 20230605131115.png",
     "Pasted image 20230605131020.png",
     "Pasted image 20230605123520.png",
-    "Pasted image 20230605123144.png",
-    "Pasted image 20230605112555.png",
-    "Pasted image 20230605110107.png",
-    "Pasted image 20230605105718.png",
-    "Pasted image 20230605105424.png",
     "_DM566-2023-part2.pdf",
     "_DM566-2023-part5.pdf",
-    "programmeringssprog/Theory problems/past_exams/202006.pdf",
-    "programmeringssprog/Theory problems/past_exams/201908.pdf",
     "Untitled.canvas"
   ]
 }
