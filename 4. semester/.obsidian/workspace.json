@@ -13,9 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/Problems/problems 12 and 13 and 14.md",
+                "file": "operativstystemer/15. File system internals.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "d336c694ba3c9c5c",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ch11.pdf"
               }
             }
           },
@@ -103,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/Problems/problems 12 and 13 and 14.md",
+                "file": "operativstystemer/15. File system internals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/Problems/problems 12 and 13 and 14.md",
+                "file": "operativstystemer/15. File system internals.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/Problems/problems 12 and 13 and 14.md"
+                "file": "operativstystemer/15. File system internals.md"
               }
             }
           }
@@ -169,8 +179,27 @@
   "active": "f205f3616ba3983d",
   "lastOpenFiles": [
     "operativstystemer/13. File-System Interface.md",
-    "operativstystemer/16. security and protection.md",
     "operativstystemer/14. File System Implementation.md",
+    "operativstystemer/15. File system internals.md",
+    "ch15.pdf",
+    "Unconfirmed 228387.crdownload",
+    "operativstystemer/8. Deadlocks.md",
+    "operativstystemer/9. Main Memory.md",
+    "operativstystemer/10. Virtual Memory.md",
+    "operativstystemer/12. IO systems.md",
+    "operativstystemer/11. Mass-Storage Systems.md",
+    "operativstystemer/Problems/problems 12 and 13 and 14.md",
+    "ch12.pdf",
+    "Unconfirmed 521602.crdownload",
+    "operativstystemer/Problems/problems 11.md",
+    "Pasted image 20230611154259.png",
+    "Pasted image 20230611154118.png",
+    "Pasted image 20230611152207.png",
+    "Pasted image 20230611151833.png",
+    "Pasted image 20230611113315.png",
+    "ch11.pdf",
+    "Unconfirmed 407509.crdownload",
+    "operativstystemer/16. security and protection.md",
     "Pasted image 20230611085221.png",
     "Pasted image 20230611085120.png",
     "Pasted image 20230611084732.png",
@@ -190,30 +219,10 @@
     "operativstystemer/presentation",
     "operativstystemer/7. Synchronization tools examples.md",
     "operativstystemer/6. Synchronization tools.md",
-    "operativstystemer/12. IO systems.md",
-    "operativstystemer/11. Mass-Storage Systems.md",
-    "operativstystemer/10. Virtual Memory.md",
-    "operativstystemer/8. Deadlocks.md",
     "programmeringssprog/Theory problems/Remember.md",
     "programmeringssprog/Theory problems/past_exams/read again.md",
     "programmeringssprog/Theory problems/past_exams/Need practise.md",
-    "programmeringssprog/Theory problems/past_exams/201906 answers.md",
-    "programmeringssprog/5a. Implement scope rules.md",
-    "programmeringssprog/5. Memory Management.md",
-    "programmeringssprog/4. Names, Environment, Scoping Rules.md",
-    "programmeringssprog/Theory problems/past_exams/202208 answers.md",
     "programmeringssprog/Theory problems/past_exams/202206.pdf",
-    "programmeringssprog/Theory problems/past_exams/202108.pdf",
-    "Pasted image 20230606131416.png",
-    "Pasted image 20230606123334.png",
-    "programmeringssprog/Theory problems/past_exams/mockup_exam_answers.pdf",
-    "programmeringssprog/Theory problems/past_exams/mockup_exam.pdf",
-    "_05_memory.pdf",
-    "Pasted image 20230605131115.png",
-    "Pasted image 20230605131020.png",
-    "Pasted image 20230605123520.png",
-    "_DM566-2023-part2.pdf",
-    "_DM566-2023-part5.pdf",
     "Untitled.canvas"
   ]
 }
