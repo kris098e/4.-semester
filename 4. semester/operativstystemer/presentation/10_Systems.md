@@ -1,0 +1,40 @@
+File-System Implementation, File System Internals, and I/O Systems
+
+- Layered (slow)
+    - Application programs (Pathfinder)
+    - Logical file Systems (file to Inode)
+    - File-organization module (logic address)
+    - Basic file Systems (retrieve block x)
+    - I/O control (read drive x, cylinder x, track x, sector x)
+    - Device drivers (Hardware commands)
+- Different file systems
+    - UFS (UNIX), FAT(well support)...
+    - Virtual file systems (procfs, tmpfs, FUSE)
+        - Implement `write(), open(), read()...`
+        - Remote file system (manual, Distributed file systems, WWW)
+            - Internet connection
+            - Security
+            - Consistency semantics
+- Disk operations
+    - Boot control block 
+    - volume control block (FBS)
+    - per-file FCB (pointers to blocks, permission, size...)
+- I/O
+    - Device drivers (fx speak to disk, DMU)
+        - Lives in address specific address space
+    - NonBlocking, blocking, asynchronous
+    
+- Memory operations(user space, kernel memory with direcotyr, 2ndary storage)
+    - open (uses directory)
+    - read (uses per-process file table)
+- Allocation Methods
+    - Contiguous Allocation
+    - Linked Allocation (FAT)
+    - Indexed allocation
+- Free space management
+    - bitvector
+    - linked list (grouping, counting)
+- Efficiency and performance (cache open files, and recently touched files)
+- Recovery
+    - Log structured (in fast NVM storage)
+    - Snapshots (WAFL)

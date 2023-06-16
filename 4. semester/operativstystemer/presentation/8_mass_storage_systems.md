@@ -1,0 +1,29 @@
+- Hard Disk Drives (HDDs)
+    - Seek time: move arm (miliseconds)
+    - Rotational latency: rotate disk (miliseconds)
+    - Positioning time: Seek time + rotational latency
+    - Fast (sequential)
+- Nonvolatile memory (NVM)
+    - Page wears out after ~100.000 errases
+    - Fast (Random access)
+        - below 80% (due to errasing when writing)
+            - garbage collector
+    - Bus bottlenect => connect to motherboard
+- Magnetic tapes (reliable, slow, cheap)
+- Compare prices 
+- Disk Scheduling
+    - FCFS (inneficient => can be LSTF)
+    - SSTF (starvation)
+    - SCAN (amost redundant half of the scan)
+    - C-SCAN (wrap)
+- NVM scheduling (write equally to each block)
+- Storage device management (low level formatted, logical formatted)
+- Swap-Space Management (low level formatted, raw blocks)
+- Redundant Arrays of Inexpensive Disks (RAID)
+    - RAID 0 (Pure striping)
+    - RAID 1 (Pure mirroring)
+    - RAID 4 (Block-interleaved parity)
+    - RAID 5 (Block-interleaved distributed parity)
+    - Raid 0+1 (stripe then copy)
+    - RAID 1+0 (write then mirror then continue the stripe)
+- Cloud Storage / object storage

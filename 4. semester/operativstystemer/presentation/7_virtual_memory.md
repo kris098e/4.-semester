@@ -1,0 +1,34 @@
+- Background
+    - limitations of memory
+    - only part of program in memory for execution (fx error handling)
+        - +degree of multiprogramming (+CPU util)
+        - less I/O (load less memory)
+- virtual memory stack & heap (drawing)
+    - Shared pages (libc)
+- Demand paging
+    - Page fault (invalid bit & valid bit, drawing/steps to handle)
+    - Free frame list
+- Copy-and-Write
+- Page replacement
+    - FIFO (Belady's anomaly)
+    - Optimal
+    - LRU(approximations)
+        - Counter (put clock into data, O(n))
+        - stack implementation (Double linked list)
+        - 2nd chance (and many more)        
+- Cunting algorithm
+    - Least frequently used (low counter)
+    - Most frequently used (big counter)
+- Applications and page replacement
+    - databases (optimizes their own memory)
+- Allocation of frames (equal, proportional, priority)
+    - NUMA
+    - global & local (Memory usage)
+    - Thrashing (CPU utilization to memory usage)
+        - Working set model (locallity)
+        - Page fault frequency
+    - Reaper (daemon, threshold, OOM killer)
+- Allocating kernel memory
+    - Buddy system
+    - Slap (Preallocated, Cache, 1.7KB struct size)
+- Other consideration (programming structure, prepaging...)

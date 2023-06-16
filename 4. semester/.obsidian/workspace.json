@@ -13,9 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "operativstystemer/9. Main Memory.md",
+                "file": "operativstystemer/16. security and protection.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "2ea3aea474528cbc",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "ch13.pdf"
               }
             }
           },
@@ -89,8 +99,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ee496c24ab06da8b",
@@ -106,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "operativstystemer/9. Main Memory.md",
+                "file": "operativstystemer/16. security and protection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "operativstystemer/9. Main Memory.md",
+                "file": "operativstystemer/16. security and protection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "operativstystemer/9. Main Memory.md"
+                "file": "operativstystemer/16. security and protection.md"
               }
             }
           }
@@ -172,44 +181,45 @@
   },
   "active": "dc8e4e4bf817d7f5",
   "lastOpenFiles": [
+    "operativstystemer/presentation/11_security_protection.md",
+    "operativstystemer/presentation/11_secu",
+    "operativstystemer/12. IO systems.md",
+    "operativstystemer/15. File system internals.md",
+    "operativstystemer/14. File System Implementation.md",
+    "operativstystemer/16. security and protection.md",
+    "operativstystemer/13. File-System Interface.md",
+    "operativstystemer/presentation/10_Systems.md",
+    "operativstystemer/presentation/O_Systems.md",
+    "operativstystemer/presentation/10_File-System_Implementation_File_System_Internals_and_I/O_Systems.md",
+    "operativstystemer/presentation/10_File-System_Implementation_File_System_Internals_and_I",
+    "operativstystemer/presentation/10_.md",
+    "operativstystemer/11. Mass-Storage Systems.md",
+    "ch13.pdf",
+    "operativstystemer/presentation/5_deadlocks.md",
+    "operativstystemer/presentation/9_file_system_interface.md",
+    "operativstystemer/10. Virtual Memory.md",
+    "operativstystemer/presentation/8_mass_storage_systems.md",
+    "operativstystemer/Problems/problems 11.md",
+    "operativstystemer/presentation/8_",
+    "ch10-2023.pdf",
+    "Unconfirmed 782469.crdownload",
+    "operativstystemer/9. Main Memory.md",
+    "operativstystemer/presentation/7_virtual_memory.md",
+    "operativstystemer/presentation/7_main_memory.md",
+    "operativstystemer/presentation/7_main_memory",
     "operativstystemer/8. Deadlocks.md",
     "operativstystemer/presentation/6_main_memory.md",
     "ch14-2023.pdf",
-    "operativstystemer/presentation/5_deadlocks.md",
     "operativstystemer/7. Synchronization tools examples.md",
     "operativstystemer/presentation/5_deadlocks",
     "operativstystemer/6. Synchronization tools.md",
     "operativstystemer/presentation/4_synchronization_tools_examples.md",
     "operativstystemer/presentation/3_CPU_schedulaing.md",
     "operativstystemer/presentation/2_processes_threads_concurrency.md",
-    "operativstystemer/presentation/1_operating_system_structure.md",
     "operativstystemer/presentation/4",
-    "operativstystemer/13. File-System Interface.md",
-    "operativstystemer/15. File system internals.md",
-    "operativstystemer/14. File System Implementation.md",
-    "operativstystemer/17. protection.md",
-    "operativstystemer/2. operating system structures.md",
-    "operativstystemer/0. Intro.md",
-    "operativstystemer/Problems/problems 17 & 18.md",
-    "operativstystemer/18. Virtual.md",
     "Pasted image 20230614120045.png",
     "Pasted image 20230614102525.png",
-    "operativstystemer/Problems/problems 15 and 16.md",
-    "ch13.pdf",
-    "ch11.pdf",
     "Pasted image 20230613141657.png",
-    "operativstystemer/16. security and protection.md",
-    "operativstystemer/Problems/problems 12 and 13 and 14.md",
-    "ch16.pdf",
-    "Unconfirmed 892644.crdownload",
-    "ch15.pdf",
-    "Unconfirmed 228387.crdownload",
-    "operativstystemer/9. Main Memory.md",
-    "operativstystemer/10. Virtual Memory.md",
-    "operativstystemer/12. IO systems.md",
-    "operativstystemer/11. Mass-Storage Systems.md",
-    "ch12.pdf",
-    "operativstystemer/Problems/problems 11.md",
     "Pasted image 20230611154259.png",
     "Pasted image 20230611154118.png",
     "Pasted image 20230611152207.png",
@@ -217,7 +227,6 @@
     "Pasted image 20230611113315.png",
     "Pasted image 20230611085221.png",
     "Pasted image 20230611085120.png",
-    "operativstystemer/5. CPU Schedualing.md",
     "Untitled.canvas"
   ]
 }

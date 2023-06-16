@@ -1,0 +1,36 @@
+- File concepts (contigous logical adress space, paging)
+- File attributes
+    - Name
+    - Identifier
+    - Type (text file, source file, executable file)
+    - Location (pointer)
+    - Size
+    - Protection (Who can read, write)
+    - Time, date, and user identification
+- File operations
+    create,delete,read, write, open, close, change the ownership
+- Open file table (count)
+- File locking (exclusion, single open...)
+- File structure (sequential, direct access, index file)
+- Disk structure (partition, volume)
+- Types of file systems (mount, seperate data)
+    - procfs (kernel)
+    - tmpfs (in memory)
+    - ...
+- Operations on OS directory
+    - Traverse, find, delete, rename...
+- Directory organization (efficiency, naming)
+    - Single-Level Directory (single directory for all users)
+    - Two-Level Directory (Separate directory for each user)
+    - Tree-Structured Directories (sub)
+    - Acyclic-Graph Directories (soft and hard links)
+- File Sharing
+    - Multi-user system
+    - Network file system
+- Consistency semantics
+    - Linux (immediately)
+    - Andrew file system (session, callback)
+- Access Lists and Groups
+    - Owner
+    - Groups
+    - Public
