@@ -1,0 +1,32 @@
+- IBM 1972
+- Hypervisor
+  - Type 0 - Hardware
+  - Type 1 - Like os
+  - Type 2 - Operating-like software
+- Implementation of VMMS
+    - Paravirtualization 
+    - Programming-environment virtualization (JVM)
+    - Emulators (assembly instruction)
+    - Application containment (Host kernel)
+        - Solaris zones, linux containers, docker
+- Docker
+  - Dockerfile
+  - Docker Image
+  - Docker Container
+- Benefits
+    - snapshots, live migrations, freeze, clone, protection
+    - Developing multiplatform
+- Problems
+    - Switch kernel mode => what does host do
+    - Trap-and-emulate
+        - Special instructions / Binary translation
+- Hardware support
+    - CPU extra bit for vkernel or not
+    - CPU scheduling
+    - Memory managment / page tables
+    - I/O
+    - Overcommitment
+- Unikernels
+    - Improve efficency and security
+    - Bare minimum
+        - Pack application with it
