@@ -54,7 +54,7 @@
      
     
 2.  (**important**) What is the purpose of using a “salt” along with a user-provided password? Where should the salt be stored, and how should it be used? 
-	salt is a random that is put into the password, such that if we have the same password for two application, it will have different hashes.  I.e it is concatted with the password. It should be stored next to the hashes. The salt does not need to be a secret.
+	salt is a random string that is put into the password, such that if we have the same password for two application, it will have different hashes.  I.e it is concatted with the password. It should be stored next to the hashes. The salt does not need to be a secret.
     
     
 3.  (**important**) An experimental addition to UNIX allows a user to connect a watchdog program to a file. The watchdog is invoked whenever a program requests access to the file. The watchdog then either grants or denies access to the file. Discuss two pros and two cons of using watchdogs for security.

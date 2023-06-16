@@ -1,0 +1,27 @@
+- Race conditions
+    - Critical section problem
+        - Mutual exclusion
+        - Bounded Waiting
+        - Progress
+- Petersens solution (software based, friendly, restructouring of code)
+- Hardware support
+    - Memory barriers (compiler, visibility)
+    - Hardware instructions (guarantee)
+        - Test and set
+        - Compare and swap
+    - Atomic variables
+- Mutex locks
+    - Regular locks
+    - spin-locks (Busy wait, overhead)
+    - Semaphores (counting, binary, queue)
+    - Monitors (conditional variables)
+- Liveness
+- Priority Inversion
+- Reader writer problem
+- Dining philosophers problem
+    - Semaphore solution (deadlock)
+    - Monitor solution (only pickup if you can aquire both. when putting down, test if your sidemates can pick up both of theirs, if they can, awaken them and put them to eating)
+- Alternative approaches
+    - Functional programming languages
+    - OpenMP
+    - Transactional memory (hardware, fx cache coherency protocol)

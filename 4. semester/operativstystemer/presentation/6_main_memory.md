@@ -1,0 +1,34 @@
+- Many processes in memory
+- Hardware
+    - base + limit
+- Address binding
+    - compile time, load time, execution time
+- logical physical
+    - mapping (MMU, base+limit example)
+- Dynamic loading, dynamic-linking
+- Allocations methods
+    - Contigous
+        - protection (base+limit checking)
+        - Memory allocation (varying block sizes, FF, BF, WF)
+        - Fragmentation (compaction, paging)
+    - Paging (drawing)
+        - Page table (in memory)
+        - TLB (caching, hardware)
+- Huge memory structure
+    - 32-bit logical address space
+    - 4-KB page Size
+    - Page table would have 1 million entries: $(2^{32} / 2^{12})$
+    - Entry size / pointer size: 4 bytes
+    - 4-MB page table (since 4 byte entries)
+- Solution
+    - Hierarchical Paging (10 | 10 | 12)
+        - problem: 64 bit (32 | 10 | 10 | 12)
+    - Hashed Page Tables (clashes)
+        - modulo reduce page table size (store in use pages)
+        - constant time lookup
+    - Inverted Page Tables
+        - Global store `<pID, page>` gives `<index>
+        - Page size = Adress Size
+- Swapping
+    - (old) Swap process => (new)swap page
+    - (mobile) terminate, power save
