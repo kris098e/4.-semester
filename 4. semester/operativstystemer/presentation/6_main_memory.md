@@ -1,11 +1,12 @@
 - Many processes in memory
+- logical physical
+    - mapping (MMU)
 - Hardware
     - base + limit
 - Address binding
     - compile time, load time, execution time
-- logical physical
-    - mapping (MMU, base+limit example)
 - Dynamic loading, dynamic-linking
+    - shared pages
 - Allocations methods
     - Contigous
         - protection (base+limit checking)
@@ -17,18 +18,17 @@
 - Huge memory structure
     - 32-bit logical address space
     - 4-KB page Size
-    - Page table would have 1 million entries: $(2^{32} / 2^{12})$
-    - Entry size / pointer size: 4 bytes
+    - Page table would have roughly 1 million entries: $(2^{32} / 2^{12})$
     - 4-MB page table (since 4 byte entries)
+    - Indexing slow
 - Solution
     - Hierarchical Paging (10 | 10 | 12)
         - problem: 64 bit (32 | 10 | 10 | 12)
     - Hashed Page Tables (clashes)
-        - modulo reduce page table size (store in use pages)
+        - modulo reduce page table size (only store in use pages)
         - constant time lookup
-    - Inverted Page Tables
+    - Inverted Page Tables (1 page pr frame)
         - Global store `<pID, page>` gives `<index>
-        - Page size = Adress Size
 - Swapping
     - (old) Swap process => (new)swap page
     - (mobile) terminate, power save

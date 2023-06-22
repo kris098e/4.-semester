@@ -27,9 +27,9 @@
 - File Sharing
     - Multi-user system
     - Network file system
-- Consistency semantics
-    - Linux (immediately)
-    - Andrew file system (session, callback)
+    - Consistency semantics
+        - Linux (immediately)
+        - Andrew file system (session, callback)
 - Access Lists and Groups
     - Owner
     - Groups

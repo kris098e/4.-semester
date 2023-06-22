@@ -23,10 +23,10 @@ File-System Implementation, File System Internals, and I/O Systems
     - Device drivers (fx speak to disk, DMU)
         - Lives in address specific address space
     - NonBlocking, blocking, asynchronous
-    
 - Memory operations(user space, kernel memory with direcotyr, 2ndary storage)
-    - open (uses directory)
-    - read (uses per-process file table)
+    - drawing
+        - open (uses directory)
+        - read (uses per-process file table)
 - Allocation Methods
     - Contiguous Allocation
     - Linked Allocation (FAT)

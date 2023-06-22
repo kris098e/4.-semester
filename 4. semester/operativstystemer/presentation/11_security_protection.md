@@ -1,11 +1,10 @@
-# Kristian <3
 - Difference
 - Hardware attacking
     - Read of memory
     - Exploit speculative instruction pipeline
 - Shodan
 - Security problem 
-    - Threat (vulneribility)
+    - Threat (vulneribility, trivy)
     - Attack (attempt)
         - confidentiality, denial of service, theft of service...
         - man-in-the-middel, session hijacking...

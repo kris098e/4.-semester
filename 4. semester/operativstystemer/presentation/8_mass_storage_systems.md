@@ -4,10 +4,10 @@
     - Positioning time: Seek time + rotational latency
     - Fast (sequential)
 - Nonvolatile memory (NVM)
-    - Page wears out after ~100.000 errases
     - Fast (Random access)
         - below 80% (due to errasing when writing)
             - garbage collector
+    - Page wears out after ~100.000 errases
     - Bus bottlenect => connect to motherboard
 - Magnetic tapes (reliable, slow, cheap)
 - Compare prices 
@@ -19,11 +19,11 @@
 - NVM scheduling (write equally to each block)
 - Storage device management (low level formatted, logical formatted)
 - Swap-Space Management (low level formatted, raw blocks)
-- Redundant Arrays of Inexpensive Disks (RAID)
+- RAID (mean time till data loss)
     - RAID 0 (Pure striping)
     - RAID 1 (Pure mirroring)
     - RAID 4 (Block-interleaved parity)
     - RAID 5 (Block-interleaved distributed parity)
     - Raid 0+1 (stripe then copy)
     - RAID 1+0 (write then mirror then continue the stripe)
-- Cloud Storage / object storage
+- Storage attachment (fiber, network, cloud storage)

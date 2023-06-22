@@ -1,4 +1,3 @@
-- IBM 1972
 - Hypervisor
   - Type 0 - Hardware
   - Type 1 - Like os
@@ -11,7 +10,7 @@
         - Solaris zones, linux containers, docker
 - Docker
   - Dockerfile
-  - Docker Image
+  - Docker Image  - Docker Image
   - Docker Container
 - Benefits
     - snapshots, live migrations, freeze, clone, protection

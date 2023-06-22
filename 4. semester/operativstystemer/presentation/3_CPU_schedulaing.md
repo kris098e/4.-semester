@@ -1,34 +1,35 @@
 - CPU- and I/O bound processes
 - preemptive and non-preemptive
-    - process state switching
+    - process state switching (fx running => ready)
 - dispatcher (save state, restore state)
 - scheduling critereas (CPU utilization, wait time ...)
     - priority
-    - starvation
+        - starvation
 - Algorithms
     - FCFS
     - SJF
         - Implementation not possible, predict
     - Round Robin
-        - time quantum sice
-- Multilevel queue & multilevel feedback queue
-    - Example (different queues, time quantum, algorithm to use)
-- Multi-processor schedualing (assymetric, symmetric)
-    - examples:
-        - Cache, Soft & hard affinity
-        - NUMA architecture (scheduale on same NUMA node)
-        - Heterogeneous multiprocessing (want slow or fast)
-    - Hardware-threads
+        - time quantum slice
 - Real-time schedualing (hard & soft)
     - event latency (interrupt latency + dispatch latency)
     - Schedualed in periods
         - Rate monotonic schedualing (preemptive, priority inverse of CPU time, optimal for static priorities)
             - bounded at 69% CPU util for inf processes, for 2 83%. I.e dont overcommit
         - Earliest Deadling First (preemptive, dynamic adjusted priorities) 
-- Linux (preemptive, CFS, RR, virtual runtime (priority))
-- Windows (preemptive, 32 level priority, )
-- Both uses multilevel feedback queue with RR in some of the queues
+- Multilevel queue & multilevel feedback queue (allow to migrate or not)
+    - Example (different queues, time quantum, algorithm to use)
+- Multi-processor schedualing (assymetric (bottleneck), symmetric)
+    - examples:
+        - Cache, Soft & hard affinity
+        - global or local queues
+        - NUMA architecture (scheduale on same NUMA node)
+        - Heterogeneous multiprocessing (want slow or fast)
+    - Hardware-threads (since memory access slow)
 - Test of the model
     - Deterministic Model (given an exact input)
     - Simulation Model (random number generater)
     - Queueing Models (generate formula for fx CPU utilization from data received)
+- Linux (preemptive, CFS, RR, virtual runtime (priority))
+- Windows (preemptive, 32 level priority)
+- Both uses multilevel feedback queue with RR in some of the queues

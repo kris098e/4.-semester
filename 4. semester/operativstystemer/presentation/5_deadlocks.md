@@ -14,7 +14,7 @@
     - Exclude a deadlock characterisation
 - Deadlock avoidance
     - safe and unsafe state
-    - bankers (use example, remove need calculate on whiteboard)
+    - bankers algorithm (use example)
 $$
 \begin{array}{cccccc}
 & Allocation & Max & Available & Need \\
@@ -25,7 +25,7 @@ T_2 & 302 & 902 & & 600 \\
 T_3 & 211 & 222 & & 011 \\
 T_4 & 002 & 433 & & 431 \\ 
 \end{array}
-$$ 
+$$
     - Resource Allocation Algorithm (claim edge)
 - Deadlock detection
     - Single instance of each resource type (collapse edges, $O(n^2)$, wait for graph)

@@ -1,6 +1,6 @@
 - Draw process in memory
 - PCB (is used by the CPU-schedular, dispatcher and when context switching)
-	- process state
+	- process state (fx waiting)
 	- process number (pID)
 	- program counter
 	- registers
@@ -12,10 +12,9 @@
 	- zombie, orphan
 - process scheduling (I/O and CPU bound)
 - threads
-	- Draw thread single thread and multi thread
+	- Draw single thread and multi thread
 	- concurrency/parallelism, responsiveness, lightweight
 	- what is shared (global variables and heap memory)
-
 - IPC
 	- pipes/message-passing (named and ordinary)
 	- shared memory (Synchronization)
