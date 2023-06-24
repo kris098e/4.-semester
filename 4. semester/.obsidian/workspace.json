@@ -4,15 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "d7052767e9e4e0be",
+        "id": "556517d3f509ba8e",
         "type": "tabs",
         "children": [
           {
-            "id": "b80c8ee0c50ef667",
+            "id": "f05dd74714b3ad03",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ce107ec56f44be51",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "pdfs/_exercise15.pdf"
+              }
+            }
+          },
+          {
+            "id": "47bec0650c7eac08",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "pdfs/_DM566-2023-part6.pdf"
+              }
             }
           }
         ]
@@ -44,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#bias",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,6 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,11 +152,12 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md"
+              }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -149,54 +176,53 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "7e2586818a156850",
+  "active": "f05dd74714b3ad03",
   "lastOpenFiles": [
-    "202006.md",
-    "ch_02_linux_modules.pdf.md",
-    "ch08.pdf.md",
-    "CPU schedulingen.md",
-    "Untitled.canvas",
-    "d.md",
-    "_DM566-2023-part6.pdf",
-    "pdfs/_test_example.pdf",
-    "pdfs/_solution05.pdf",
-    "pdfs/_solution04.pdf",
-    "pdfs/_solution03.pdf",
-    "pdfs/solution02.pdf",
-    "pdfs/_solution01.pdf",
-    "pdfs/_exercise16.pdf",
+    "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/find-root-information-gain-tree.py",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/find-root-gini-decision-tree.py",
+    "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+    "Data mining and machine learning/remember.md~",
+    "Data mining and machine learning/6. Supervised Learning.md",
+    "Data mining and machine learning/5. Learning with Distributions.md",
+    "Data mining and machine learning/4. Bayesian Learning.md",
+    "Data mining and machine learning/3. Classification.md",
+    "Data mining and machine learning/2. Feature Spaces and Clustering.md",
+    "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
+    "Data mining and machine learning/Problems/16..md",
+    "Data mining and machine learning/Problems/2021exam.md",
+    "Data mining and machine learning/Problems/2022exam.md",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/information-gain-tree.py",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/tree.png",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/tree.dot",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/gini-index-tree.py",
     "pdfs/_exercise15.pdf",
-    "pdfs/_exercise13.pdf",
-    "pictures/Pasted image 20230620140333.png",
-    "pictures/Pasted image 20230620121214.png",
-    "pictures/Pasted image 20230614120045.png",
-    "pictures/Pasted image 20230614102525.png",
-    "pictures/Pasted image 20230613141657.png",
-    "pictures/Pasted image 20230611154259.png",
-    "pictures/Pasted image 20230611154118.png",
-    "pictures/Pasted image 20230611152207.png",
-    "pictures/Pasted image 20230611151833.png",
-    "pictures/Pasted image 20230611113315.png",
-    "operativstystemer/presentation/0000HUSK.md",
-    "operativstystemer/14. File System Implementation.md",
-    "operativstystemer/15. File system internals.md",
-    "operativstystemer/12. IO systems.md",
-    "operativstystemer/3. processes.md",
-    "operativstystemer/5. CPU Schedualing.md",
-    "operativstystemer/presentation/09.md",
-    "operativstystemer/presentation/08.md",
-    "operativstystemer/presentation/00Oeve_paa.md",
-    "operativstystemer/presentation/01.md",
-    "operativstystemer/presentation/0KIG_PAA_IGEN.MD",
-    "operativstystemer/10. Virtual Memory.md",
-    "operativstystemer/presentation/07.md",
-    "operativstystemer/presentation/000comments.md",
-    "operativstystemer/9. Main Memory.md",
-    "operativstystemer/18. Virtual.md",
-    "operativstystemer/17. protection.md",
-    "operativstystemer/presentation/12_virtualzation.md",
-    "operativstystemer/presentation/012.md",
-    "operativstystemer/16. security and protection.md",
-    "operativstystemer/13. File-System Interface.md"
+    "Data mining and machine learning/Problems/13. probability, k-means algorithm, probability and statistics, support vector machine.md",
+    "pdfs/_DM566-2023-part6.pdf",
+    "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
+    "Data mining and machine learning/8. Ensemble Learning.md",
+    "Data mining and machine learning/Problems/solution07.pdf",
+    "Data mining and machine learning/Problems/solution06.pdf",
+    "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
+    "Data mining and machine learning/Problems/Mock exam.md",
+    "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
+    "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
+    "Data mining and machine learning/Problems/1. Problems Set-rules.md",
+    "Pasted image 20230325123317.png.md",
+    "Excalidraw/KNearest.excalidraw.md",
+    "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
+    "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
+    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482216.jpg",
+    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482210.jpg",
+    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482288.jpg",
+    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482329.jpg",
+    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482264.jpg",
+    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482311.jpg",
+    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482339.jpg",
+    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482299.jpg",
+    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482272.jpg",
+    "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
+    "Untitled.canvas"
   ]
 }
