@@ -1,3 +1,6 @@
+# !REMEMBER AT EXAM!
+1. Dont answer on questions which you are not 100% sure of. Negative points will bring **atleast** 1 of your correct answers down.
+
 # THINGS YOU THOUGHT WRONG ABOUT(things written down is what is actually correct)
 true: with a big $k$ you have a larger bias
 
@@ -12,9 +15,6 @@ Remember to try out all of the scripts on windows, seeing if you have all of the
 # Training error
 + underfitting means that we have high test error & training error usually with less parameters
 
-# Scripts
-Naive bayes classifier script does not work
-
 # Apriori
 + When looking into if the set should be there after the merge, remember to check for **all subsets**. Fx: `AEF`, then you will have to find `AE`, `AF`, `EF`
 
@@ -22,7 +22,8 @@ Naive bayes classifier script does not work
 + Look into how to calclulate by hand
 
 # decision trees
-remember how to calculate via information gain and gini index
+**information gain** & **gini index** see [[_DM566-2023-part6.pdf#page=64]]
+
 
 # Mads.md 18 decision trees, SVMs perceptron
 1. False: Not so binary should not be. This would be multiple vandrette and lodrette lines
