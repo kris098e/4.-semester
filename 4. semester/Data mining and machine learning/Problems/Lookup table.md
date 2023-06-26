@@ -40,7 +40,7 @@
 ## DBSCAN properties & density estimation & shared nearest neighbors
 [[solution08.pdf]]
 
-## OPTICS & information gain calculation & 
+## OPTICS & decision tree information gain calculation & 
 [[solution09.pdf]]
 remember that we are looking into the valleys. If it is dense the valley stays low and will be beginning and ending with a high peak
 

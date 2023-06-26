@@ -20,38 +20,31 @@
             }
           },
           {
-            "id": "037772ed984376d7",
+            "id": "8c4114d76e204ba5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Data mining and machine learning/Problems/13. probability, k-means algorithm, probability and statistics, support vector machine.md",
+                "file": "Data mining and machine learning/Problems/Lookup table.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ce107ec56f44be51",
+            "id": "3e386121318760b6",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "pdfs/_exercise15.pdf"
-              }
-            }
-          },
-          {
-            "id": "47bec0650c7eac08",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "pdfs/_DM566-2023-part6.pdf"
+                "file": "Data mining and machine learning/Problems/2022exam.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -125,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data mining and machine learning/Problems/Lookup table.md",
+                "file": "Data mining and machine learning/Problems/2022exam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Data mining and machine learning/Problems/Lookup table.md",
+                "file": "Data mining and machine learning/Problems/2022exam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Data mining and machine learning/Problems/Lookup table.md"
+                "file": "Data mining and machine learning/Problems/2022exam.md"
               }
             }
           }
@@ -188,53 +181,54 @@
       "obsidian-ocr:Search OCR": false
     }
   },
-  "active": "f05dd74714b3ad03",
+  "active": "3e386121318760b6",
   "lastOpenFiles": [
-    "Data mining and machine learning/Problems/16..md",
+    "Pasted image 20230625191002.png",
+    "Pasted image 20230625190954.png",
+    "Pasted image 20230625190946.png",
     "Data mining and machine learning/Problems/2021exam.md",
+    "Data mining and machine learning/Problems/2022exam.md",
     "Data mining and machine learning/Problems/Lookup table.md",
-    "Data mining and machine learning/Problems/Mock exam.md",
-    "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
+    "Data mining and machine learning/Problems/solutions/Data old solutions/solution09.pdf",
     "Data mining and machine learning/Problems/13. probability, k-means algorithm, probability and statistics, support vector machine.md",
-    "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
+    "Data mining and machine learning/Problems/15. Probability, Bayes Optimal Classifier, Decision Tree.md",
     "Data mining and machine learning/Problems/12. Decision Tree, Bias-variance trade-of, Linear Discriminant Analysis.md",
+    "Data mining and machine learning/Problems/solution04.pdf",
+    "Data mining and machine learning/remember.md",
+    "Pasted image 20230625123448.png",
+    "Data mining and machine learning/Problems/16..md",
+    "Data mining and machine learning/3. Classification.md",
+    "Data mining and machine learning/Problems/11. Bayes rule, Desicion-tree, Probability, Outlier Detection.md",
+    "Data mining and machine learning/Problems/Mock exam.md",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/apriori.py~",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/decisions_tree_gini_index.py",
+    "Data mining and machine learning/Problems/solutions/dm566_tools/decisions_tree.py",
     "Data mining and machine learning/Problems/8. Clustering Algorithms, Density Estimation.md",
     "Data mining and machine learning/Problems/solution07.pdf",
     "Data mining and machine learning/Problems/solution06.pdf",
     "Data mining and machine learning/Problems/solution05.pdf",
-    "Data mining and machine learning/Problems/solution04.pdf",
     "Data mining and machine learning/Problems/solution03.pdf",
     "Data mining and machine learning/Problems/solution02.pdf",
-    "pdfs/solution02.pdf",
-    "Data mining and machine learning/Problems/solution01.pdf",
-    "Data mining and machine learning/Problems/2022exam.md",
-    "Data mining and machine learning/remember.md~",
     "Data mining and machine learning/Problems/6. Conditional probability and bayes theorem, N-Nearest Neighbor classification.md",
     "Data mining and machine learning/Problems/5. Clustering k-means and Silhouette, Evaluation of Classifiers,Probability.md",
     "Data mining and machine learning/Problems/4. problems Distance Measures, Clustering, Silhouette.md",
     "Data mining and machine learning/Problems/3. problems Closed Frequent Itemsets, Apriori, Color Histograms.md",
-    "pdfs/_DM566-2023-part6.pdf",
     "Data mining and machine learning/Problems/7. Bayes Optimal Classifier, Naive Bayes, Random Variables and Distributions, EM Clustering.md",
     "Data mining and machine learning/6. Supervised Learning.md",
     "Data mining and machine learning/5. Learning with Distributions.md",
     "Data mining and machine learning/4. Bayesian Learning.md",
-    "Data mining and machine learning/3. Classification.md",
     "Data mining and machine learning/2. Feature Spaces and Clustering.md",
     "Data mining and machine learning/1. Frequent pattern mining, Set-rules.md",
     "Data mining and machine learning/7. Neural Nets, SVMs, and Advanced Topics.md",
     "Data mining and machine learning/Problems/solutions/dm566_tools/tree.png",
     "Data mining and machine learning/8. Ensemble Learning.md",
     "Data mining and machine learning/Problems/2. Problems frequent pattern mining, Set-rules.md",
-    "Data mining and machine learning/Problems/1. Problems Set-rules.md",
     "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482216.jpg",
     "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482210.jpg",
     "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482288.jpg",
     "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482329.jpg",
     "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482264.jpg",
     "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482311.jpg",
-    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482339.jpg",
-    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482299.jpg",
-    "Data mining and machine learning/Problems/pic/2023-03-22_11-03-1679482272.jpg",
     "Untitled.canvas"
   ]
 }

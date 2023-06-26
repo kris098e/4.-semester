@@ -2,10 +2,19 @@
 1. Dont answer on questions which you are not 100% sure of. Negative points will bring **atleast** 1 of your correct answers down.
 
 # THINGS YOU THOUGHT WRONG ABOUT(things written down is what is actually correct)
-true: with a big $k$ you have a larger bias
+## KNN
+true: with a big $k$ you have a larger bias, the complexity of the model is very low. So
+* Big K:
+	* **High bias**. because you have very low complexity, the data around you speaks a lot less, meaning you have very high bias since the nearest neighbors should speak a lot.
+	* **low variance**: you remember a lot less. You just let the whole data set speak
+		* **This means we have underfitting**
 
-# MODULES
-Remember to try out all of the scripts on windows, seeing if you have all of the modules which are used installed
+## Kmeans
+* Big K:
+	* **low bias**: its like having KNN with small K. This means that you let the points around speak more having a higher variance.
+	* **high variance**: Since we have a big K, this means that we have to remember more. 
+		* **This means we have overfitting**
+![[Pasted image 20230625123448.png]]
 
 # Clustering
 + k-means and EM-clustering does not use preference score, it is not what you think it is
@@ -19,7 +28,7 @@ Remember to try out all of the scripts on windows, seeing if you have all of the
 + When looking into if the set should be there after the merge, remember to check for **all subsets**. Fx: `AEF`, then you will have to find `AE`, `AF`, `EF`
 
 # Silhuette score
-+ Look into how to calclulate by hand
++ Look into how to calculate by hand
 
 # decision trees
 **information gain** & **gini index** see [[_DM566-2023-part6.pdf#page=64]]
